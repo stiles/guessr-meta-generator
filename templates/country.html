@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ country.name }}</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="../quiz.html">Quiz</a>
+        <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
+    </div>
+    <header>
+        <h1>{{ country.name }}</h1>
+    </header>
+
+    <main>
+        <section class="overview">
+            <div id="map" class="country-map" data-lat="{{ country.lat }}" data-lon="{{ country.lon }}"></div>
+        </section>
+
+        {% if country.geoguessr_clues %}
+        <section class="clues">
+            <div class="clues-grid">
+                {% for key, value in country.geoguessr_clues.items() %}
+                <div class="clues-item">
+                    <h3>{{ key | capitalize }}</h3>
+                    {% if key == "flag" %}
+                        <img src="../static/flags/{{ country.code }}.png" alt="{{ country.name }} flag" class="clues-flag">
+                    {% else %}
+                        <p>{{ value }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% else %}
+            <p>No GeoGuessr clues available for this country.</p>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/baker-example-page-template?tab=readme-ov-file">Baker</a></p>
+    </footer>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
