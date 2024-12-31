@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Cocos (Keeling) Islands</h1>
+        <div class="header-content">
+            <h1>Cocos (Keeling) Islands</h1>
+            <img src="../static/flags/cc.png" alt="Cocos (Keeling) Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-12.164165" data-lon="96.870956"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-12.164165"
+     data-lon="96.870956"
+     data-name="cocos-keeling-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the primary language spoken. The alphabet is the standard Latin alphabet without any special characters.</p>
-                    
+                    <p>English is the primary language spoken. The alphabet is the standard Latin alphabet without any special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe and generally have a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe and generally have a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are predominantly in English and may include both metric and imperial measurements. They are typically rectangular with bright colors.</p>
-                    
+                    <p>Road signs are predominantly in English and may include both metric and imperial measurements. They are typically rectangular with bright colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The islands feature sandy beaches, coral reefs, and tropical vegetation. The landscape is flat with some low hills.</p>
-                    
+                    <p>The islands feature sandy beaches, coral reefs, and tropical vegetation. The landscape is flat with some low hills.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes a mix of colonial-style buildings and modern structures, often with a laid-back, beachside aesthetic.</p>
-                    
+                    <p>Architecture includes a mix of colonial-style buildings and modern structures, often with a laid-back, beachside aesthetic.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>The culture reflects a blend of Australian and indigenous influences, with distinct local customs and traditions. Look for signs of outdoor lifestyle and community gatherings.</p>
-                    
+                    <p>The culture reflects a blend of Australian and indigenous influences, with distinct local customs and traditions. Look for signs of outdoor lifestyle and community gatherings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for palm trees, clear turquoise waters, and small-scale tourism infrastructure. The presence of unique wildlife and marine life can also be indicative.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/cc.png" alt="Cocos (Keeling) Islands flag" class="clues-flag">
-                    
+                    <p>Look for palm trees, clear turquoise waters, and small-scale tourism infrastructure. The presence of unique wildlife and marine life can also be indicative.</p>
                 </div>
                 
             </div>

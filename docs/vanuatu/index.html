@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Vanuatu</h1>
+        <div class="header-content">
+            <h1>Vanuatu</h1>
+            <img src="../static/flags/vu.png" alt="Vanuatu flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-15.376706" data-lon="166.959158"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-15.376706"
+     data-lon="166.959158"
+     data-name="vanuatu">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Bislama, English, and French; uses the Latin alphabet without special characters</p>
-                    
+                    <p>Bislama, English, and French; uses the Latin alphabet without special characters</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe and consist of a combination of letters and numbers, often with 'Vanuatu' written on them.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe and consist of a combination of letters and numbers, often with 'Vanuatu' written on them.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are mostly in English and Bislama, often featuring a combination of pictograms and text, with a simple design.</p>
-                    
+                    <p>Road signs are mostly in English and Bislama, often featuring a combination of pictograms and text, with a simple design.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Tropical islands with lush vegetation, sandy beaches, and volcanic mountains; often surrounded by coral reefs.</p>
-                    
+                    <p>Tropical islands with lush vegetation, sandy beaches, and volcanic mountains; often surrounded by coral reefs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings are typically made from wood and thatch, reflecting Melanesian architecture; urban areas may have modern structures but retain local styles.</p>
-                    
+                    <p>Buildings are typically made from wood and thatch, reflecting Melanesian architecture; urban areas may have modern structures but retain local styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include traditional huts, local markets, and cultural festivals; presence of unique carvings and handicrafts.</p>
-                    
+                    <p>Distinctive markers include traditional huts, local markets, and cultural festivals; presence of unique carvings and handicrafts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for signs of volcanic activity, such as ash on the roads or unique geological formations; the presence of palm trees and tropical flora.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/vu.png" alt="Vanuatu flag" class="clues-flag">
-                    
+                    <p>Look for signs of volcanic activity, such as ash on the roads or unique geological formations; the presence of palm trees and tropical flora.</p>
                 </div>
                 
             </div>

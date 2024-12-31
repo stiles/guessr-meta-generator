@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Heard Island/McDonald Islands</h1>
+        <div class="header-content">
+            <h1>Heard Island/McDonald Islands</h1>
+            <img src="../static/flags/hm.png" alt="Heard Island/McDonald Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-53.08181" data-lon="73.504158"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-53.08181"
+     data-lon="73.504158"
+     data-name="heard-islandmcdonald-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English; uses the Latin alphabet</p>
-                    
+                    <p>English; uses the Latin alphabet</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>No vehicles are present; the islands are uninhabited and have no vehicle registration plates.</p>
-                    
+                    <p>No vehicles are present; the islands are uninhabited and have no vehicle registration plates.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>N/A; there are no roads or vehicles.</p>
-                    
+                    <p>N/A; there are no roads or vehicles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>N/A; there are no road signs due to the uninhabited nature of the islands.</p>
-                    
+                    <p>N/A; there are no road signs due to the uninhabited nature of the islands.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Volcanic islands with rugged terrain, glaciers, and a sub-Antarctic climate; characterized by rocky coastlines and sparse vegetation.</p>
-                    
+                    <p>Volcanic islands with rugged terrain, glaciers, and a sub-Antarctic climate; characterized by rocky coastlines and sparse vegetation.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Minimal infrastructure; primarily research stations and scientific facilities; no urban design elements due to lack of permanent residents.</p>
-                    
+                    <p>Minimal infrastructure; primarily research stations and scientific facilities; no urban design elements due to lack of permanent residents.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>N/A; the islands are uninhabited and do not have a distinct culture.</p>
-                    
+                    <p>N/A; the islands are uninhabited and do not have a distinct culture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Located in the Southern Ocean, southeast of Australia; often identified by the absence of human activity and unique wildlife.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/hm.png" alt="Heard Island/McDonald Islands flag" class="clues-flag">
-                    
+                    <p>Located in the Southern Ocean, southeast of Australia; often identified by the absence of human activity and unique wildlife.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Niue</h1>
+        <div class="header-content">
+            <h1>Niue</h1>
+            <img src="../static/flags/nu.png" alt="Niue flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-19.054445" data-lon="-169.867233"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-19.054445"
+     data-lon="-169.867233"
+     data-name="niue">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Niuean and English; the alphabet is similar to the Latin alphabet with no special characters.</p>
-                    
+                    <p>Niuean and English; the alphabet is similar to the Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border, featuring the word 'NIUE' and a unique number.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border, featuring the word 'NIUE' and a unique number.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are predominantly in English and Niuean, with simple designs and often include pictograms.</p>
-                    
+                    <p>Road signs are predominantly in English and Niuean, with simple designs and often include pictograms.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features lush vegetation, coastal cliffs, and coral reefs, with a tropical climate.</p>
-                    
+                    <p>The landscape features lush vegetation, coastal cliffs, and coral reefs, with a tropical climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings are often single-story, made from local materials, with a mix of modern and traditional styles.</p>
-                    
+                    <p>Buildings are often single-story, made from local materials, with a mix of modern and traditional styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include traditional fale (houses), cultural festivals, and local crafts displayed.</p>
-                    
+                    <p>Distinctive markers include traditional fale (houses), cultural festivals, and local crafts displayed.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique features like the absence of large urban areas, and the presence of friendly locals who may wave at the camera.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/nu.png" alt="Niue flag" class="clues-flag">
-                    
+                    <p>Look for unique features like the absence of large urban areas, and the presence of friendly locals who may wave at the camera.</p>
                 </div>
                 
             </div>

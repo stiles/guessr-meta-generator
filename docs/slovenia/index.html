@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Slovenia</h1>
+        <div class="header-content">
+            <h1>Slovenia</h1>
+            <img src="../static/flags/si.png" alt="Slovenia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="46.151241" data-lon="14.995463"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="46.151241"
+     data-lon="14.995463"
+     data-name="slovenia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Slovenian is the official language, using the Latin alphabet with special characters such as č, ž, and š.</p>
-                    
+                    <p>Slovenian is the official language, using the Latin alphabet with special characters such as č, ž, and š.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with blue lettering, featuring the 'SLO' country code on the left side.</p>
-                    
+                    <p>Vehicle registration plates are white with blue lettering, featuring the 'SLO' country code on the left side.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally in Slovenian, with standard European shapes and colors. Many signs are blue for highways and green for local roads.</p>
-                    
+                    <p>Road signs are generally in Slovenian, with standard European shapes and colors. Many signs are blue for highways and green for local roads.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Slovenia features diverse landscapes, including the Julian Alps, rolling hills, dense forests, and the Adriatic coastline.</p>
-                    
+                    <p>Slovenia features diverse landscapes, including the Julian Alps, rolling hills, dense forests, and the Adriatic coastline.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include a mix of Baroque, Gothic, and modern designs, with notable influences from Austro-Hungarian and Venetian styles.</p>
-                    
+                    <p>Architectural styles include a mix of Baroque, Gothic, and modern designs, with notable influences from Austro-Hungarian and Venetian styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include traditional wooden houses, cultural festivals, and vineyards in the countryside.</p>
-                    
+                    <p>Distinctive markers include traditional wooden houses, cultural festivals, and vineyards in the countryside.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique features such as the Triglav symbol, which can appear in various locations, and the characteristic green color of Slovenia's nature.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/si.png" alt="Slovenia flag" class="clues-flag">
-                    
+                    <p>Look for unique features such as the Triglav symbol, which can appear in various locations, and the characteristic green color of Slovenia's nature.</p>
                 </div>
                 
             </div>

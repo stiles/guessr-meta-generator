@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Martinique</h1>
+        <div class="header-content">
+            <h1>Martinique</h1>
+            <img src="../static/flags/mq.png" alt="Martinique flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="14.641528" data-lon="-61.024174"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="14.641528"
+     data-lon="-61.024174"
+     data-name="martinique">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language. The alphabet is similar to English, with no special characters, although accented letters (é, è, à, ç) are common.</p>
-                    
+                    <p>French is the official language. The alphabet is similar to English, with no special characters, although accented letters (é, è, à, ç) are common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates in Martinique have a white background with black letters and numbers, typically featuring the prefix '972' for the region.</p>
-                    
+                    <p>Vehicle registration plates in Martinique have a white background with black letters and numbers, typically featuring the prefix '972' for the region.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are in French, with standard EU-style shapes and colors, often including directional and informational signs.</p>
-                    
+                    <p>Road signs are in French, with standard EU-style shapes and colors, often including directional and informational signs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes tropical vegetation, beaches, and mountainous regions, with volcanic features like Mount Pelée.</p>
-                    
+                    <p>The landscape includes tropical vegetation, beaches, and mountainous regions, with volcanic features like Mount Pelée.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include Creole houses with colorful wooden façades, colonial buildings, and modern structures reflecting French influence.</p>
-                    
+                    <p>Architectural styles include Creole houses with colorful wooden façades, colonial buildings, and modern structures reflecting French influence.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include Creole language in informal settings, local markets, rum distilleries, and vibrant cultural festivals.</p>
-                    
+                    <p>Distinctive markers include Creole language in informal settings, local markets, rum distilleries, and vibrant cultural festivals.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for palm trees, tropical plants, and the presence of French-style cafes and bakeries in urban areas.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/mq.png" alt="Martinique flag" class="clues-flag">
-                    
+                    <p>Look for palm trees, tropical plants, and the presence of French-style cafes and bakeries in urban areas.</p>
                 </div>
                 
             </div>

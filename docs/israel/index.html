@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Israel</h1>
+        <div class="header-content">
+            <h1>Israel</h1>
+            <img src="../static/flags/il.png" alt="Israel flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="31.046051" data-lon="34.851612"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="31.046051"
+     data-lon="34.851612"
+     data-name="israel">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Hebrew and Arabic are the official languages. Hebrew uses a unique script with no vowels. Arabic script is also used in many areas.</p>
-                    
+                    <p>Hebrew and Arabic are the official languages. Hebrew uses a unique script with no vowels. Arabic script is also used in many areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are usually white with a blue strip on the left displaying the Israeli flag. The format includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are usually white with a blue strip on the left displaying the Israeli flag. The format includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are predominantly in Hebrew and Arabic, with some signs in English. Signs often have a blue and white color scheme.</p>
-                    
+                    <p>Road signs are predominantly in Hebrew and Arabic, with some signs in English. Signs often have a blue and white color scheme.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Israel features a diverse landscape, including coastal plains, hills, deserts (like the Negev), and the Jordan River Valley.</p>
-                    
+                    <p>Israel features a diverse landscape, including coastal plains, hills, deserts (like the Negev), and the Jordan River Valley.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas show a mix of modern and historical architecture, with influences from various cultures reflected in buildings. Look for buildings with a blend of Middle Eastern and Mediterranean styles.</p>
-                    
+                    <p>Urban areas show a mix of modern and historical architecture, with influences from various cultures reflected in buildings. Look for buildings with a blend of Middle Eastern and Mediterranean styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include the presence of markets (shuks), traditional cafes, and religious sites significant to Judaism, Christianity, and Islam.</p>
-                    
+                    <p>Cultural markers include the presence of markets (shuks), traditional cafes, and religious sites significant to Judaism, Christianity, and Islam.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique elements such as the Star of David in public spaces, the presence of military vehicles, and the distinct architecture of the Old City of Jerusalem.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/il.png" alt="Israel flag" class="clues-flag">
-                    
+                    <p>Look for unique elements such as the Star of David in public spaces, the presence of military vehicles, and the distinct architecture of the Old City of Jerusalem.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Costa Rica</h1>
+        <div class="header-content">
+            <h1>Costa Rica</h1>
+            <img src="../static/flags/cr.png" alt="Costa Rica flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="9.748917" data-lon="-83.753428"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="9.748917"
+     data-lon="-83.753428"
+     data-name="costa-rica">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Spanish is the official language, using the Latin alphabet with no special characters.</p>
-                    
+                    <p>Spanish is the official language, using the Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top, and the number format is usually 1234 ABC.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top, and the number format is usually 1234 ABC.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Spanish, with green highway signs indicating directions and distances, and yellow signs for warnings.</p>
-                    
+                    <p>Road signs are typically in Spanish, with green highway signs indicating directions and distances, and yellow signs for warnings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes tropical rainforests, mountains, and beaches, with diverse flora and fauna.</p>
-                    
+                    <p>The landscape includes tropical rainforests, mountains, and beaches, with diverse flora and fauna.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles range from colonial buildings in cities to modern structures, with a mix of urban and rural settings.</p>
-                    
+                    <p>Architectural styles range from colonial buildings in cities to modern structures, with a mix of urban and rural settings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for signs of a vibrant culture, such as murals, street art, and local markets; also, the presence of coffee plantations.</p>
-                    
+                    <p>Look for signs of a vibrant culture, such as murals, street art, and local markets; also, the presence of coffee plantations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Wildlife crossings are common on highways; look for unique plant life such as palm trees and bougainvillea.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/cr.png" alt="Costa Rica flag" class="clues-flag">
-                    
+                    <p>Wildlife crossings are common on highways; look for unique plant life such as palm trees and bougainvillea.</p>
                 </div>
                 
             </div>

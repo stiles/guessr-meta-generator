@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Indonesia</h1>
+        <div class="header-content">
+            <h1>Indonesia</h1>
+            <img src="../static/flags/id.png" alt="Indonesia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-0.789275" data-lon="113.921327"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-0.789275"
+     data-lon="113.921327"
+     data-name="indonesia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Indonesian is the official language, using the Latin alphabet without special characters.</p>
-                    
+                    <p>Indonesian is the official language, using the Latin alphabet without special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a blue stripe at the top, displaying the province code.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a blue stripe at the top, displaying the province code.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in Indonesian, with a mix of pictograms. Some signs may have a green background for guidance and blue for information.</p>
-                    
+                    <p>Road signs are often in Indonesian, with a mix of pictograms. Some signs may have a green background for guidance and blue for information.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including tropical rainforests, rice paddies, volcanoes, and coastal areas.</p>
-                    
+                    <p>Diverse landscapes including tropical rainforests, rice paddies, volcanoes, and coastal areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes a mix of traditional Indonesian styles, such as Joglo houses, and modern buildings; urban areas often feature colorful street markets.</p>
-                    
+                    <p>Architecture includes a mix of traditional Indonesian styles, such as Joglo houses, and modern buildings; urban areas often feature colorful street markets.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers such as traditional markets, temples, and local food stalls, as well as the presence of batik and wayang (shadow puppetry).</p>
-                    
+                    <p>Look for cultural markers such as traditional markets, temples, and local food stalls, as well as the presence of batik and wayang (shadow puppetry).</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street View may show various local street vendors, colorful murals, and distinct public transport vehicles like angkot (minibuses).</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/id.png" alt="Indonesia flag" class="clues-flag">
-                    
+                    <p>Street View may show various local street vendors, colorful murals, and distinct public transport vehicles like angkot (minibuses).</p>
                 </div>
                 
             </div>

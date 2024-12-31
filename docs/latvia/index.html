@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Latvia</h1>
+        <div class="header-content">
+            <h1>Latvia</h1>
+            <img src="../static/flags/lv.png" alt="Latvia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="56.879635" data-lon="24.603189"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="56.879635"
+     data-lon="24.603189"
+     data-name="latvia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Latvian, uses the Latin alphabet with special characters like ā, ē, ī, ū, ģ, ķ, ļ, ņ, š, ž.</p>
-                    
+                    <p>Latvian, uses the Latin alphabet with special characters like ā, ē, ī, ū, ģ, ķ, ļ, ņ, š, ž.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are blue on the left side with the letter 'LV' for Latvia, and the main part is white with a combination of numbers and letters.</p>
-                    
+                    <p>Vehicle registration plates are blue on the left side with the letter 'LV' for Latvia, and the main part is white with a combination of numbers and letters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are usually white or blue with red borders, and they often use symbols along with text in Latvian.</p>
-                    
+                    <p>Road signs are usually white or blue with red borders, and they often use symbols along with text in Latvian.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Latvia features flat landscapes, numerous lakes, forests, and a coastline along the Baltic Sea.</p>
-                    
+                    <p>Latvia features flat landscapes, numerous lakes, forests, and a coastline along the Baltic Sea.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes wooden houses, Art Nouveau buildings in Riga, and Soviet-era structures.</p>
-                    
+                    <p>Architecture includes wooden houses, Art Nouveau buildings in Riga, and Soviet-era structures.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include traditional wooden architecture, folk costumes during festivals, and regional festivals celebrating culture.</p>
-                    
+                    <p>Distinctive markers include traditional wooden architecture, folk costumes during festivals, and regional festivals celebrating culture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of pine forests, flat terrain, and specific Latvian symbols such as the sun symbol (saules zīme).</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/lv.png" alt="Latvia flag" class="clues-flag">
-                    
+                    <p>Look for the presence of pine forests, flat terrain, and specific Latvian symbols such as the sun symbol (saules zīme).</p>
                 </div>
                 
             </div>

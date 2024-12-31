@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Andorra</h1>
+        <div class="header-content">
+            <h1>Andorra</h1>
+            <img src="../static/flags/ad.png" alt="Andorra flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="42.546245" data-lon="1.601554"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="42.546245"
+     data-lon="1.601554"
+     data-name="andorra">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Catalan is the official language, using the Latin alphabet with no special characters.</p>
-                    
+                    <p>Catalan is the official language, using the Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left side featuring the letter 'AND' for Andorra.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left side featuring the letter 'AND' for Andorra.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are predominantly in Catalan, with blue and white colors, and similar to those used in Spain and France.</p>
-                    
+                    <p>Road signs are predominantly in Catalan, with blue and white colors, and similar to those used in Spain and France.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Andorra is characterized by mountainous terrain, with the Pyrenees mountain range dominating the landscape.</p>
-                    
+                    <p>Andorra is characterized by mountainous terrain, with the Pyrenees mountain range dominating the landscape.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include a mix of modern buildings and traditional stone houses, often with wooden balconies.</p>
-                    
+                    <p>Architectural styles include a mix of modern buildings and traditional stone houses, often with wooden balconies.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include ski resorts, Romanesque churches, and a strong emphasis on duty-free shopping.</p>
-                    
+                    <p>Distinctive markers include ski resorts, Romanesque churches, and a strong emphasis on duty-free shopping.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the Andorran national flag on government buildings and the presence of numerous outdoor activities like skiing.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ad.png" alt="Andorra flag" class="clues-flag">
-                    
+                    <p>Look for the Andorran national flag on government buildings and the presence of numerous outdoor activities like skiing.</p>
                 </div>
                 
             </div>

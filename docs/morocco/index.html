@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Morocco</h1>
+        <div class="header-content">
+            <h1>Morocco</h1>
+            <img src="../static/flags/ma.png" alt="Morocco flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="31.791702" data-lon="-7.09262"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="31.791702"
+     data-lon="-7.09262"
+     data-name="morocco">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic (official), Berber (official), French (widely spoken); Arabic script used</p>
-                    
+                    <p>Arabic (official), Berber (official), French (widely spoken); Arabic script used</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top containing the region code; the license plate format is usually a mix of letters and numbers</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top containing the region code; the license plate format is usually a mix of letters and numbers</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road</p>
-                    
+                    <p>Vehicles drive on the right side of the road</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Arabic and French, with distinctive green and white colors; highway signs often feature symbols and pictograms</p>
-                    
+                    <p>Road signs are primarily in Arabic and French, with distinctive green and white colors; highway signs often feature symbols and pictograms</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including mountains (Atlas and Rif), deserts (Sahara), and coastal areas along the Atlantic and Mediterranean; vegetation varies from lush areas to arid regions</p>
-                    
+                    <p>Diverse landscapes including mountains (Atlas and Rif), deserts (Sahara), and coastal areas along the Atlantic and Mediterranean; vegetation varies from lush areas to arid regions</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Mix of modern and traditional architecture; notable features include riads (traditional Moroccan houses), mosques with minarets, and medinas in cities</p>
-                    
+                    <p>Mix of modern and traditional architecture; notable features include riads (traditional Moroccan houses), mosques with minarets, and medinas in cities</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Presence of traditional markets (souks), street vendors, and distinct Moroccan motifs such as tile work and ornate doorways; vibrant colors in urban areas</p>
-                    
+                    <p>Presence of traditional markets (souks), street vendors, and distinct Moroccan motifs such as tile work and ornate doorways; vibrant colors in urban areas</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Distinctive yellow taxis in urban areas, and the occasional sight of camels or traditional Berber tents in rural areas</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ma.png" alt="Morocco flag" class="clues-flag">
-                    
+                    <p>Distinctive yellow taxis in urban areas, and the occasional sight of camels or traditional Berber tents in rural areas</p>
                 </div>
                 
             </div>

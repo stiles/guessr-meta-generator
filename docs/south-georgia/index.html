@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>South Georgia</h1>
+        <div class="header-content">
+            <h1>South Georgia</h1>
+            <img src="../static/flags/gs.png" alt="South Georgia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-54.429579" data-lon="-36.587909"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-54.429579"
+     data-lon="-36.587909"
+     data-name="south-georgia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the primary language, with no special characters.</p>
-                    
+                    <p>English is the primary language, with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicles do not have standard registration plates; most vehicles are government-owned.</p>
-                    
+                    <p>Vehicles do not have standard registration plates; most vehicles are government-owned.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are minimal and often feature English text; few official road signs exist.</p>
-                    
+                    <p>Road signs are minimal and often feature English text; few official road signs exist.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape consists of rugged mountains, glaciers, and a cold, maritime climate; often features a tundra-like environment.</p>
-                    
+                    <p>The landscape consists of rugged mountains, glaciers, and a cold, maritime climate; often features a tundra-like environment.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Limited infrastructure; primarily research stations and a few buildings with utilitarian architecture.</p>
-                    
+                    <p>Limited infrastructure; primarily research stations and a few buildings with utilitarian architecture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Predominantly British heritage; sites may include historical whaling stations and research facilities.</p>
-                    
+                    <p>Predominantly British heritage; sites may include historical whaling stations and research facilities.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of wildlife such as penguins and seals; very few human-made structures.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/gs.png" alt="South Georgia flag" class="clues-flag">
-                    
+                    <p>Look for the presence of wildlife such as penguins and seals; very few human-made structures.</p>
                 </div>
                 
             </div>

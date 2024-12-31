@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Gambia</h1>
+        <div class="header-content">
+            <h1>Gambia</h1>
+            <img src="../static/flags/gm.png" alt="Gambia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="13.443182" data-lon="-15.310139"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="13.443182"
+     data-lon="-15.310139"
+     data-name="gambia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language; local languages include Mandinka, Wolof, and Fula. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>English is the official language; local languages include Mandinka, Wolof, and Fula. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip at the top; the format includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip at the top; the format includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in English and may feature symbols familiar to international road signage.</p>
-                    
+                    <p>Road signs are typically in English and may feature symbols familiar to international road signage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes riverine areas, savannah, and coastal regions; the Gambia River is a prominent feature.</p>
-                    
+                    <p>The landscape includes riverine areas, savannah, and coastal regions; the Gambia River is a prominent feature.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings often have a mix of colonial architecture and traditional mud-brick structures; urban areas may show simple yet colorful designs.</p>
-                    
+                    <p>Buildings often have a mix of colonial architecture and traditional mud-brick structures; urban areas may show simple yet colorful designs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for distinctive local markets, vibrant street life, and traditional clothing such as the buba and kesaya.</p>
-                    
+                    <p>Look for distinctive local markets, vibrant street life, and traditional clothing such as the buba and kesaya.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Tropical vegetation, presence of baobab trees, and signs of local wildlife like monkeys or birds can be indicative.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/gm.png" alt="Gambia flag" class="clues-flag">
-                    
+                    <p>Tropical vegetation, presence of baobab trees, and signs of local wildlife like monkeys or birds can be indicative.</p>
                 </div>
                 
             </div>

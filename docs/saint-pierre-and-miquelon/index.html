@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Saint Pierre and Miquelon</h1>
+        <div class="header-content">
+            <h1>Saint Pierre and Miquelon</h1>
+            <img src="../static/flags/pm.png" alt="Saint Pierre and Miquelon flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="46.941936" data-lon="-56.27111"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="46.941936"
+     data-lon="-56.27111"
+     data-name="saint-pierre-and-miquelon">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language, using the Latin alphabet with standard French diacritics.</p>
-                    
+                    <p>French is the official language, using the Latin alphabet with standard French diacritics.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe at the top, displaying the region's name and a numerical code.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe at the top, displaying the region's name and a numerical code.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are similar to those in France, predominantly in French, with some bilingual signs that may include English.</p>
-                    
+                    <p>Road signs are similar to those in France, predominantly in French, with some bilingual signs that may include English.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features rugged coastlines, rocky terrain, and a mix of tundra and forested areas, with a maritime climate.</p>
-                    
+                    <p>The landscape features rugged coastlines, rocky terrain, and a mix of tundra and forested areas, with a maritime climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes traditional wooden houses with colorful facades, as well as modern buildings that reflect French influence.</p>
-                    
+                    <p>Architecture includes traditional wooden houses with colorful facades, as well as modern buildings that reflect French influence.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for signs of French culture, such as cafes, bakeries, and events celebrating French heritage.</p>
-                    
+                    <p>Look for signs of French culture, such as cafes, bakeries, and events celebrating French heritage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Distinctive features may include lighthouses, fishing boats, and the prevalence of French branding in shops and signage.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/pm.png" alt="Saint Pierre and Miquelon flag" class="clues-flag">
-                    
+                    <p>Distinctive features may include lighthouses, fishing boats, and the prevalence of French branding in shops and signage.</p>
                 </div>
                 
             </div>

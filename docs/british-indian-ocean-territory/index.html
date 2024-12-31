@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>British Indian Ocean Territory</h1>
+        <div class="header-content">
+            <h1>British Indian Ocean Territory</h1>
+            <img src="../static/flags/io.png" alt="British Indian Ocean Territory flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-6.343194" data-lon="71.876519"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-6.343194"
+     data-lon="71.876519"
+     data-name="british-indian-ocean-territory">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language; uses the Latin alphabet with no special characters.</p>
-                    
+                    <p>English is the official language; uses the Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band on the left, featuring the Union Jack and the text 'British Indian Ocean Territory'.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band on the left, featuring the Union Jack and the text 'British Indian Ocean Territory'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are in English and generally follow UK standards, with clear, simple designs and reflective materials.</p>
-                    
+                    <p>Road signs are in English and generally follow UK standards, with clear, simple designs and reflective materials.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Tropical islands with white sandy beaches, turquoise waters, palm trees, and coral reefs. The landscape is flat with some elevated areas.</p>
-                    
+                    <p>Tropical islands with white sandy beaches, turquoise waters, palm trees, and coral reefs. The landscape is flat with some elevated areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Limited infrastructure, primarily military and research facilities; buildings are often functional with a mix of modern and colonial styles.</p>
-                    
+                    <p>Limited infrastructure, primarily military and research facilities; buildings are often functional with a mix of modern and colonial styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>The territory is primarily a military base with little local culture; signs of British influence are evident, including pub names and British-style architecture.</p>
-                    
+                    <p>The territory is primarily a military base with little local culture; signs of British influence are evident, including pub names and British-style architecture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Sparse vegetation and clear ocean views; very few urban areas; mostly undeveloped land with some military installations.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/io.png" alt="British Indian Ocean Territory flag" class="clues-flag">
-                    
+                    <p>Sparse vegetation and clear ocean views; very few urban areas; mostly undeveloped land with some military installations.</p>
                 </div>
                 
             </div>

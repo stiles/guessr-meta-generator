@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Faroe Islands</h1>
+        <div class="header-content">
+            <h1>Faroe Islands</h1>
+            <img src="../static/flags/fo.png" alt="Faroe Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="61.892635" data-lon="-6.911806"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="61.892635"
+     data-lon="-6.911806"
+     data-name="faroe-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Faroese is the official language, using the Latin alphabet with special characters such as ð (eth) and ø (o-slash).</p>
-                    
+                    <p>Faroese is the official language, using the Latin alphabet with special characters such as ð (eth) and ø (o-slash).</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band on the left featuring the country code 'FO'.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band on the left featuring the country code 'FO'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Faroese, with many using the Latin alphabet. Signs are often triangular or rectangular with a blue, white, or yellow background.</p>
-                    
+                    <p>Road signs are typically in Faroese, with many using the Latin alphabet. Signs are often triangular or rectangular with a blue, white, or yellow background.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features rugged mountains, cliffs, and coastal areas, with a mix of green valleys and small villages.</p>
-                    
+                    <p>The landscape features rugged mountains, cliffs, and coastal areas, with a mix of green valleys and small villages.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings are often made of wood with turf roofs or painted in bright colors, reflecting Scandinavian architectural styles.</p>
-                    
+                    <p>Buildings are often made of wood with turf roofs or painted in bright colors, reflecting Scandinavian architectural styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional grass-roofed houses, distinctive sheep farming, and local Faroese flags displayed.</p>
-                    
+                    <p>Look for traditional grass-roofed houses, distinctive sheep farming, and local Faroese flags displayed.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street View may show spectacular fjords, traditional wooden boats, and panoramic views over the archipelago.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/fo.png" alt="Faroe Islands flag" class="clues-flag">
-                    
+                    <p>Street View may show spectacular fjords, traditional wooden boats, and panoramic views over the archipelago.</p>
                 </div>
                 
             </div>

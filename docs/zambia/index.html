@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Zambia</h1>
+        <div class="header-content">
+            <h1>Zambia</h1>
+            <img src="../static/flags/zm.png" alt="Zambia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-13.133897" data-lon="27.849332"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-13.133897"
+     data-lon="27.849332"
+     data-name="zambia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language, with local languages such as Bemba, Nyanja, and Tonga also spoken. The alphabet is Latin-based with no special characters.</p>
-                    
+                    <p>English is the official language, with local languages such as Bemba, Nyanja, and Tonga also spoken. The alphabet is Latin-based with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top, displaying the letters 'Z' followed by a combination of numbers and letters.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top, displaying the letters 'Z' followed by a combination of numbers and letters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in English, with white and green colors for informational signs and red for warning signs. The signs often include pictograms.</p>
-                    
+                    <p>Road signs are primarily in English, with white and green colors for informational signs and red for warning signs. The signs often include pictograms.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Zambia features a mix of savannah, plateaus, and riverine landscapes, with the Zambezi River being a significant geographical feature.</p>
-                    
+                    <p>Zambia features a mix of savannah, plateaus, and riverine landscapes, with the Zambezi River being a significant geographical feature.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas have a mix of colonial-era buildings and modern structures, with brick and concrete materials being common. Rural areas are characterized by simpler, thatched-roof houses.</p>
-                    
+                    <p>Urban areas have a mix of colonial-era buildings and modern structures, with brick and concrete materials being common. Rural areas are characterized by simpler, thatched-roof houses.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional markets, local crafts, and the presence of wildlife-themed art. Cultural festivals may also be depicted in street views.</p>
-                    
+                    <p>Look for traditional markets, local crafts, and the presence of wildlife-themed art. Cultural festivals may also be depicted in street views.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Wildlife signs indicating nearby national parks, and presence of traditional huts or rural landscapes can also be indicators.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/zm.png" alt="Zambia flag" class="clues-flag">
-                    
+                    <p>Wildlife signs indicating nearby national parks, and presence of traditional huts or rural landscapes can also be indicators.</p>
                 </div>
                 
             </div>

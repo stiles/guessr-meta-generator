@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Taiwan</h1>
+        <div class="header-content">
+            <h1>Taiwan</h1>
+            <img src="../static/flags/tw.png" alt="Taiwan flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="23.69781" data-lon="120.960515"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="23.69781"
+     data-lon="120.960515"
+     data-name="taiwan">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Mandarin Chinese is the official language, using Traditional Chinese characters. English is also widely understood, especially in urban areas.</p>
-                    
+                    <p>Mandarin Chinese is the official language, using Traditional Chinese characters. English is also widely understood, especially in urban areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe on the top. The plates typically have the letters 'Taiwan' in Chinese characters (臺灣) at the top.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe on the top. The plates typically have the letters 'Taiwan' in Chinese characters (臺灣) at the top.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Traditional Chinese characters, with some signs also featuring English translations. Signs often include clear pictograms.</p>
-                    
+                    <p>Road signs are primarily in Traditional Chinese characters, with some signs also featuring English translations. Signs often include clear pictograms.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Taiwan features a mix of urban landscapes and natural scenery, including mountains, coastlines, and dense forests. Tropical and subtropical climates are prevalent.</p>
-                    
+                    <p>Taiwan features a mix of urban landscapes and natural scenery, including mountains, coastlines, and dense forests. Tropical and subtropical climates are prevalent.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas showcase a blend of modern skyscrapers and traditional buildings, with night markets and temples being common. Public transport is well developed, with MRT systems in major cities.</p>
-                    
+                    <p>Urban areas showcase a blend of modern skyscrapers and traditional buildings, with night markets and temples being common. Public transport is well developed, with MRT systems in major cities.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive cultural markers include temples, street food stalls, night markets, and traditional festivals. The presence of scooters and motorcycles is also notable.</p>
-                    
+                    <p>Distinctive cultural markers include temples, street food stalls, night markets, and traditional festivals. The presence of scooters and motorcycles is also notable.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the prevalence of scooters, unique food stalls, and specific trees like the banyan and palm trees. The overall vibrancy and cleanliness of the streets can also be indicative.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/tw.png" alt="Taiwan flag" class="clues-flag">
-                    
+                    <p>Look for the prevalence of scooters, unique food stalls, and specific trees like the banyan and palm trees. The overall vibrancy and cleanliness of the streets can also be indicative.</p>
                 </div>
                 
             </div>

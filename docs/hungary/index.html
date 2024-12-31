@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Hungary</h1>
+        <div class="header-content">
+            <h1>Hungary</h1>
+            <img src="../static/flags/hu.png" alt="Hungary flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="47.162494" data-lon="19.503304"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="47.162494"
+     data-lon="19.503304"
+     data-name="hungary">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Hungarian; uses Latin alphabet with special characters like á, é, í, ó, ö, ő, ú, ü, ű</p>
-                    
+                    <p>Hungarian; uses Latin alphabet with special characters like á, é, í, ó, ö, ő, ú, ü, ű</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe on the left containing the EU emblem and the letters 'H'</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe on the left containing the EU emblem and the letters 'H'</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road</p>
-                    
+                    <p>Vehicles drive on the right side of the road</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically red and white, with clear pictograms and bilingual signs in tourist areas; speed limits are in kilometers per hour</p>
-                    
+                    <p>Road signs are typically red and white, with clear pictograms and bilingual signs in tourist areas; speed limits are in kilometers per hour</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including plains, hills, and the Danube River; the Great Hungarian Plain is a notable feature</p>
-                    
+                    <p>Diverse landscapes including plains, hills, and the Danube River; the Great Hungarian Plain is a notable feature</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>A mix of modern and historical architecture, with prominent styles including Baroque, Gothic, and Art Nouveau</p>
-                    
+                    <p>A mix of modern and historical architecture, with prominent styles including Baroque, Gothic, and Art Nouveau</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive cultural markers include traditional Hungarian motifs, food markets, and unique thermal baths</p>
-                    
+                    <p>Distinctive cultural markers include traditional Hungarian motifs, food markets, and unique thermal baths</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for distinctive Hungarian language signs, unique public transport vehicles like trams, and the presence of thermal baths</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/hu.png" alt="Hungary flag" class="clues-flag">
-                    
+                    <p>Look for distinctive Hungarian language signs, unique public transport vehicles like trams, and the presence of thermal baths</p>
                 </div>
                 
             </div>

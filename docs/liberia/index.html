@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Liberia</h1>
+        <div class="header-content">
+            <h1>Liberia</h1>
+            <img src="../static/flags/lr.png" alt="Liberia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="6.428055" data-lon="-9.429499"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="6.428055"
+     data-lon="-9.429499"
+     data-name="liberia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language. The alphabet is the standard Latin alphabet with no special characters.</p>
-                    
+                    <p>English is the official language. The alphabet is the standard Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe at the top and often feature a design that includes the Liberian coat of arms.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe at the top and often feature a design that includes the Liberian coat of arms.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in English, with a mix of standard international symbols. Signs may show wear and tear due to the climate.</p>
-                    
+                    <p>Road signs are often in English, with a mix of standard international symbols. Signs may show wear and tear due to the climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features a mix of coastal areas, rainforests, and hilly terrain. There are often palm trees and tropical vegetation.</p>
-                    
+                    <p>The landscape features a mix of coastal areas, rainforests, and hilly terrain. There are often palm trees and tropical vegetation.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include colonial buildings, traditional thatched-roof homes, and modern constructions in urban areas. Streets in cities may be paved, while rural areas might have unpaved roads.</p>
-                    
+                    <p>Architectural styles include colonial buildings, traditional thatched-roof homes, and modern constructions in urban areas. Streets in cities may be paved, while rural areas might have unpaved roads.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for signs of local culture such as traditional markets, public gatherings, and street vendors. Cultural attire may also be observed.</p>
-                    
+                    <p>Look for signs of local culture such as traditional markets, public gatherings, and street vendors. Cultural attire may also be observed.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>You may see the presence of motorcycles as common transport, as well as street vendors selling local food and products.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/lr.png" alt="Liberia flag" class="clues-flag">
-                    
+                    <p>You may see the presence of motorcycles as common transport, as well as street vendors selling local food and products.</p>
                 </div>
                 
             </div>

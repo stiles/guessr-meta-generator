@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Kosovo</h1>
+        <div class="header-content">
+            <h1>Kosovo</h1>
+            <img src="../static/flags/xk.png" alt="Kosovo flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="42.602636" data-lon="20.902977"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="42.602636"
+     data-lon="20.902977"
+     data-name="kosovo">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Albanian and Serbian; uses Latin and Cyrillic alphabets respectively.</p>
-                    
+                    <p>Albanian and Serbian; uses Latin and Cyrillic alphabets respectively.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates have a white background with a blue strip on the left displaying the coat of arms of Kosovo and the letters 'RKS'.</p>
-                    
+                    <p>Vehicle registration plates have a white background with a blue strip on the left displaying the coat of arms of Kosovo and the letters 'RKS'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally in both Albanian and Serbian, with a mix of Latin and Cyrillic scripts; signs may also feature blue and white colors.</p>
-                    
+                    <p>Road signs are generally in both Albanian and Serbian, with a mix of Latin and Cyrillic scripts; signs may also feature blue and white colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including mountains, valleys, and rivers; notable natural parks and rural areas.</p>
-                    
+                    <p>Diverse landscapes including mountains, valleys, and rivers; notable natural parks and rural areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include a mix of Ottoman, modern, and socialist-era buildings; urban areas often have a mix of concrete and traditional structures.</p>
-                    
+                    <p>Architectural styles include a mix of Ottoman, modern, and socialist-era buildings; urban areas often have a mix of concrete and traditional structures.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Prominent cultural markers include traditional Albanian dress, local markets, and cafes with outdoor seating; presence of mosques and churches.</p>
-                    
+                    <p>Prominent cultural markers include traditional Albanian dress, local markets, and cafes with outdoor seating; presence of mosques and churches.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street view may show the unique mix of rural and urban settings, as well as the presence of both Serbian and Albanian cultural elements.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/xk.png" alt="Kosovo flag" class="clues-flag">
-                    
+                    <p>Street view may show the unique mix of rural and urban settings, as well as the presence of both Serbian and Albanian cultural elements.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Argentina</h1>
+        <div class="header-content">
+            <h1>Argentina</h1>
+            <img src="../static/flags/ar.png" alt="Argentina flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-38.416097" data-lon="-63.616672"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-38.416097"
+     data-lon="-63.616672"
+     data-name="argentina">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Spanish; uses the Latin alphabet, with special characters like 'ñ' and accented vowels.</p>
-                    
+                    <p>Spanish; uses the Latin alphabet, with special characters like 'ñ' and accented vowels.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band on the top, featuring the province name and a unique alphanumeric code.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band on the top, featuring the province name and a unique alphanumeric code.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically blue and white, with clear and bold fonts; many signs are in Spanish and may include reflective materials.</p>
-                    
+                    <p>Road signs are typically blue and white, with clear and bold fonts; many signs are in Spanish and may include reflective materials.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including the Andes mountains, Pampas grasslands, and coastal areas; can range from urban cityscapes to rural farmland.</p>
-                    
+                    <p>Diverse landscapes including the Andes mountains, Pampas grasslands, and coastal areas; can range from urban cityscapes to rural farmland.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Colonial architecture in historical cities, modern buildings in urban areas, and distinctive use of brick and tile.</p>
-                    
+                    <p>Colonial architecture in historical cities, modern buildings in urban areas, and distinctive use of brick and tile.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Presence of tango dancing, football culture, and street art; traditional markets and cafes are common.</p>
-                    
+                    <p>Presence of tango dancing, football culture, and street art; traditional markets and cafes are common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique bus designs, local food vendors, and the prevalence of mate tea in social settings.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ar.png" alt="Argentina flag" class="clues-flag">
-                    
+                    <p>Look for unique bus designs, local food vendors, and the prevalence of mate tea in social settings.</p>
                 </div>
                 
             </div>

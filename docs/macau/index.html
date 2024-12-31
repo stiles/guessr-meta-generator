@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Macau</h1>
+        <div class="header-content">
+            <h1>Macau</h1>
+            <img src="../static/flags/mo.png" alt="Macau flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="22.198745" data-lon="113.543873"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="22.198745"
+     data-lon="113.543873"
+     data-name="macau">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Cantonese is commonly spoken; Traditional Chinese characters are used.</p>
-                    
+                    <p>Cantonese is commonly spoken; Traditional Chinese characters are used.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Chinese and Portuguese, with some English; signs are often bilingual.</p>
-                    
+                    <p>Road signs are primarily in Chinese and Portuguese, with some English; signs are often bilingual.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Macau features a mix of urban landscapes with a coastal environment; hilly terrain is common.</p>
-                    
+                    <p>Macau features a mix of urban landscapes with a coastal environment; hilly terrain is common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include a blend of Portuguese colonial and modern skyscrapers; notable structures include the Ruins of St. Paul's and the Macau Tower.</p>
-                    
+                    <p>Architectural styles include a blend of Portuguese colonial and modern skyscrapers; notable structures include the Ruins of St. Paul's and the Macau Tower.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Macau is known for its casinos, unique fusion of Portuguese and Chinese cultures, and traditional festivals.</p>
-                    
+                    <p>Macau is known for its casinos, unique fusion of Portuguese and Chinese cultures, and traditional festivals.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique features like the presence of gambling establishments and the distinct Portuguese tiles on buildings.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/mo.png" alt="Macau flag" class="clues-flag">
-                    
+                    <p>Look for unique features like the presence of gambling establishments and the distinct Portuguese tiles on buildings.</p>
                 </div>
                 
             </div>

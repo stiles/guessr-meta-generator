@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Norfolk Island</h1>
+        <div class="header-content">
+            <h1>Norfolk Island</h1>
+            <img src="../static/flags/nf.png" alt="Norfolk Island flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-29.040835" data-lon="167.954712"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-29.040835"
+     data-lon="167.954712"
+     data-name="norfolk-island">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the primary language spoken. The alphabet is the standard Latin alphabet without any special characters.</p>
-                    
+                    <p>English is the primary language spoken. The alphabet is the standard Latin alphabet without any special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border and the text 'Norfolk Island' at the top.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border and the text 'Norfolk Island' at the top.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are similar to Australian signage, with clear, easy-to-read fonts and often feature the use of green and white colors.</p>
-                    
+                    <p>Road signs are similar to Australian signage, with clear, easy-to-read fonts and often feature the use of green and white colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features lush greenery, dramatic cliffs, and a mix of sandy beaches and rocky coastlines, with a subtropical climate.</p>
-                    
+                    <p>The landscape features lush greenery, dramatic cliffs, and a mix of sandy beaches and rocky coastlines, with a subtropical climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes colonial-style buildings, wooden structures, and a few modern facilities, with a generally low-rise urban layout.</p>
-                    
+                    <p>Architecture includes colonial-style buildings, wooden structures, and a few modern facilities, with a generally low-rise urban layout.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include the use of the Norfolk Island pine tree, local festivals celebrating the island's history, and the unique blend of Australian and Polynesian cultural influences.</p>
-                    
+                    <p>Distinctive markers include the use of the Norfolk Island pine tree, local festivals celebrating the island's history, and the unique blend of Australian and Polynesian cultural influences.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for specific local businesses and landmarks like the Kingston historic area, which includes well-preserved colonial ruins.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/nf.png" alt="Norfolk Island flag" class="clues-flag">
-                    
+                    <p>Look for specific local businesses and landmarks like the Kingston historic area, which includes well-preserved colonial ruins.</p>
                 </div>
                 
             </div>

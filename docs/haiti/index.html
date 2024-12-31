@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Haiti</h1>
+        <div class="header-content">
+            <h1>Haiti</h1>
+            <img src="../static/flags/ht.png" alt="Haiti flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="18.971187" data-lon="-72.285215"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="18.971187"
+     data-lon="-72.285215"
+     data-name="haiti">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language, with Haitian Creole widely spoken; the alphabet is Latin with no special characters.</p>
-                    
+                    <p>French is the official language, with Haitian Creole widely spoken; the alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe at the top; they often have a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe at the top; they often have a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in French, with some in Haitian Creole; signs may be less standardized and can vary in quality.</p>
-                    
+                    <p>Road signs are primarily in French, with some in Haitian Creole; signs may be less standardized and can vary in quality.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Haiti features mountainous terrain, coastal areas, and tropical vegetation; you may see a mix of urban and rural landscapes.</p>
-                    
+                    <p>Haiti features mountainous terrain, coastal areas, and tropical vegetation; you may see a mix of urban and rural landscapes.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings often have a mix of colonial, modern, and local architectural styles; urban areas may have colorful houses and informal settlements.</p>
-                    
+                    <p>Buildings often have a mix of colonial, modern, and local architectural styles; urban areas may have colorful houses and informal settlements.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for vibrant street life, colorful markets, and occasional public art; music and cultural festivals may also be evident.</p>
-                    
+                    <p>Look for vibrant street life, colorful markets, and occasional public art; music and cultural festivals may also be evident.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Check for the presence of tap-taps (colorful public transportation vehicles) and the general vibrancy of street scenes.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ht.png" alt="Haiti flag" class="clues-flag">
-                    
+                    <p>Check for the presence of tap-taps (colorful public transportation vehicles) and the general vibrancy of street scenes.</p>
                 </div>
                 
             </div>

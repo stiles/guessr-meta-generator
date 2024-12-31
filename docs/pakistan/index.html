@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Pakistan</h1>
+        <div class="header-content">
+            <h1>Pakistan</h1>
+            <img src="../static/flags/pk.png" alt="Pakistan flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="30.375321" data-lon="69.345116"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="30.375321"
+     data-lon="69.345116"
+     data-name="pakistan">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Urdu is the national language, written in a modified Perso-Arabic script. English is also widely understood and used in official contexts.</p>
-                    
+                    <p>Urdu is the national language, written in a modified Perso-Arabic script. English is also widely understood and used in official contexts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a green strip on the left side. They typically have a provincial code and a numerical sequence.</p>
-                    
+                    <p>Vehicle registration plates are white with a green strip on the left side. They typically have a provincial code and a numerical sequence.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often bilingual (Urdu and English) and may include vibrant colors. They typically feature both Latin and Arabic scripts.</p>
-                    
+                    <p>Road signs are often bilingual (Urdu and English) and may include vibrant colors. They typically feature both Latin and Arabic scripts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse geographical features including mountains (e.g., the Himalayas), deserts (e.g., Thar), and river valleys (e.g., Indus River Valley).</p>
-                    
+                    <p>Diverse geographical features including mountains (e.g., the Himalayas), deserts (e.g., Thar), and river valleys (e.g., Indus River Valley).</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles vary from modern buildings in urban areas to traditional mud-brick structures in rural areas. Notable features include domes and intricate tile work.</p>
-                    
+                    <p>Architectural styles vary from modern buildings in urban areas to traditional mud-brick structures in rural areas. Notable features include domes and intricate tile work.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include the presence of mosques, traditional bazaars, and street food stalls. Clothing styles often reflect local customs.</p>
-                    
+                    <p>Cultural markers include the presence of mosques, traditional bazaars, and street food stalls. Clothing styles often reflect local customs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street names in cities may be in Urdu or English, and the presence of rickshaws is common. Look for signs of local festivals or events.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/pk.png" alt="Pakistan flag" class="clues-flag">
-                    
+                    <p>Street names in cities may be in Urdu or English, and the presence of rickshaws is common. Look for signs of local festivals or events.</p>
                 </div>
                 
             </div>

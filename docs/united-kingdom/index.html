@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>United Kingdom</h1>
+        <div class="header-content">
+            <h1>United Kingdom</h1>
+            <img src="../static/flags/gb.png" alt="United Kingdom flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="55.378051" data-lon="-3.435973"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="55.378051"
+     data-lon="-3.435973"
+     data-name="united-kingdom">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English; uses the Latin alphabet with no special characters</p>
-                    
+                    <p>English; uses the Latin alphabet with no special characters</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white at the front and yellow at the back, typically featuring a blue band with the EU flag and a letter indicating the area of registration.</p>
-                    
+                    <p>Vehicle registration plates are white at the front and yellow at the back, typically featuring a blue band with the EU flag and a letter indicating the area of registration.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are predominantly in English; highway signs often have a blue background with white text, and warning signs are typically triangular.</p>
-                    
+                    <p>Road signs are predominantly in English; highway signs often have a blue background with white text, and warning signs are typically triangular.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Varied landscapes including rolling hills, countryside, coastal areas, and urban settings; notable features include stone walls, hedgerows, and parks.</p>
-                    
+                    <p>Varied landscapes including rolling hills, countryside, coastal areas, and urban settings; notable features include stone walls, hedgerows, and parks.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture ranges from historical buildings like castles and churches to modern structures; typical urban design includes terraced houses, red telephone boxes, and double-decker buses.</p>
-                    
+                    <p>Architecture ranges from historical buildings like castles and churches to modern structures; typical urban design includes terraced houses, red telephone boxes, and double-decker buses.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Common cultural markers include traditional pubs, red post boxes, and British flags; local events may feature in community areas.</p>
-                    
+                    <p>Common cultural markers include traditional pubs, red post boxes, and British flags; local events may feature in community areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of British road markings such as 'Give Way' and distinctive roundabouts; also, the presence of Union Jack flags in certain areas.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/gb.png" alt="United Kingdom flag" class="clues-flag">
-                    
+                    <p>Look for the presence of British road markings such as 'Give Way' and distinctive roundabouts; also, the presence of Union Jack flags in certain areas.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Pitcairn Islands</h1>
+        <div class="header-content">
+            <h1>Pitcairn Islands</h1>
+            <img src="../static/flags/pn.png" alt="Pitcairn Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-24.703615" data-lon="-127.439308"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-24.703615"
+     data-lon="-127.439308"
+     data-name="pitcairn-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English, with some influence from Polynesian languages; standard Latin alphabet</p>
-                    
+                    <p>English, with some influence from Polynesian languages; standard Latin alphabet</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicles may have British-style registration plates, but there are very few cars due to the small population</p>
-                    
+                    <p>Vehicles may have British-style registration plates, but there are very few cars due to the small population</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road</p>
-                    
+                    <p>Vehicles drive on the left side of the road</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally simple, often in English, with limited variety due to low traffic</p>
-                    
+                    <p>Road signs are generally simple, often in English, with limited variety due to low traffic</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Rugged terrain with steep cliffs, lush greenery, and a coastal environment; volcanic origin</p>
-                    
+                    <p>Rugged terrain with steep cliffs, lush greenery, and a coastal environment; volcanic origin</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Limited urban infrastructure; buildings often made of wood, with a colonial architectural influence; few streets</p>
-                    
+                    <p>Limited urban infrastructure; buildings often made of wood, with a colonial architectural influence; few streets</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Islander culture with a strong sense of community; unique local traditions and historical sites</p>
-                    
+                    <p>Islander culture with a strong sense of community; unique local traditions and historical sites</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Very few people, remote location, and distinctive flora; possible views of the settlement of Adamstown</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/pn.png" alt="Pitcairn Islands flag" class="clues-flag">
-                    
+                    <p>Very few people, remote location, and distinctive flora; possible views of the settlement of Adamstown</p>
                 </div>
                 
             </div>

@@ -19,7 +19,7 @@ valid_country_codes = {
 base_url = "https://flagpedia.net/data/flags/h80"
 
 # Directory to store images
-images_dir = "images"
+images_dir = "static/flags"
 os.makedirs(images_dir, exist_ok=True)
 
 # Iterate through country codes and names

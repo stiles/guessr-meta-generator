@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Cayman Islands</h1>
+        <div class="header-content">
+            <h1>Cayman Islands</h1>
+            <img src="../static/flags/ky.png" alt="Cayman Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="19.513469" data-lon="-80.566956"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="19.513469"
+     data-lon="-80.566956"
+     data-name="cayman-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language; the alphabet is standard with no special characters.</p>
-                    
+                    <p>English is the official language; the alphabet is standard with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border; they include a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border; they include a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are in English and often feature blue and white colors; they include international symbols and are relatively simple in design.</p>
-                    
+                    <p>Road signs are in English and often feature blue and white colors; they include international symbols and are relatively simple in design.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes sandy beaches, tropical vegetation, and a flat terrain; the islands are surrounded by clear blue waters.</p>
-                    
+                    <p>The landscape includes sandy beaches, tropical vegetation, and a flat terrain; the islands are surrounded by clear blue waters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles reflect Caribbean influences, with colorful buildings, wooden structures, and a mix of modern and colonial designs.</p>
-                    
+                    <p>Architectural styles reflect Caribbean influences, with colorful buildings, wooden structures, and a mix of modern and colonial designs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include Caribbean music, local art, and signs of British influence; look for Caymanian flags and local festivals.</p>
-                    
+                    <p>Cultural markers include Caribbean music, local art, and signs of British influence; look for Caymanian flags and local festivals.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for distinctive palm trees, beach scenes, and specific local businesses or landmarks such as Seven Mile Beach.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ky.png" alt="Cayman Islands flag" class="clues-flag">
-                    
+                    <p>Look for distinctive palm trees, beach scenes, and specific local businesses or landmarks such as Seven Mile Beach.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Antarctica</h1>
+        <div class="header-content">
+            <h1>Antarctica</h1>
+            <img src="../static/flags/aq.png" alt="Antarctica flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-75.250973" data-lon="-0.071389"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-75.250973"
+     data-lon="-0.071389"
+     data-name="antarctica">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>No indigenous languages; scientific research predominantly conducted in English.</p>
-                    
+                    <p>No indigenous languages; scientific research predominantly conducted in English.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>No vehicle registration plates; vehicles are often specialized for harsh conditions.</p>
-                    
+                    <p>No vehicle registration plates; vehicles are often specialized for harsh conditions.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>No standard roadways; vehicles operate in research stations and bases.</p>
-                    
+                    <p>No standard roadways; vehicles operate in research stations and bases.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Minimal signage; any signs present are related to research activities or safety warnings.</p>
-                    
+                    <p>Minimal signage; any signs present are related to research activities or safety warnings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Ice-covered landscape, glaciers, snowfields, and mountain ranges; no vegetation.</p>
-                    
+                    <p>Ice-covered landscape, glaciers, snowfields, and mountain ranges; no vegetation.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Research stations with basic facilities; often prefabricated buildings designed for extreme weather.</p>
-                    
+                    <p>Research stations with basic facilities; often prefabricated buildings designed for extreme weather.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Presence of international research stations; visitors may see flags of various countries.</p>
-                    
+                    <p>Presence of international research stations; visitors may see flags of various countries.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Limited human presence; typical features include snowmobiles, scientific equipment, and weather monitoring stations.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/aq.png" alt="Antarctica flag" class="clues-flag">
-                    
+                    <p>Limited human presence; typical features include snowmobiles, scientific equipment, and weather monitoring stations.</p>
                 </div>
                 
             </div>

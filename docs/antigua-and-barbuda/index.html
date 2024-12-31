@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Antigua and Barbuda</h1>
+        <div class="header-content">
+            <h1>Antigua and Barbuda</h1>
+            <img src="../static/flags/ag.png" alt="Antigua and Barbuda flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="17.060816" data-lon="-61.796428"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="17.060816"
+     data-lon="-61.796428"
+     data-name="antigua-and-barbuda">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language, with no special characters.</p>
-                    
+                    <p>English is the official language, with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border, featuring a combination of letters and numbers. The plates include the name 'Antigua and Barbuda'.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border, featuring a combination of letters and numbers. The plates include the name 'Antigua and Barbuda'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs often use English and are generally white with black text. Warning signs are typically triangular, and regulatory signs are rectangular.</p>
-                    
+                    <p>Road signs often use English and are generally white with black text. Warning signs are typically triangular, and regulatory signs are rectangular.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features a mix of beautiful beaches, tropical forests, and hilly terrain. The islands are surrounded by clear blue waters.</p>
-                    
+                    <p>The landscape features a mix of beautiful beaches, tropical forests, and hilly terrain. The islands are surrounded by clear blue waters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes colonial-style buildings, brightly colored homes, and modern hotels. Urban areas may have a mix of concrete and traditional wooden structures.</p>
-                    
+                    <p>Architecture includes colonial-style buildings, brightly colored homes, and modern hotels. Urban areas may have a mix of concrete and traditional wooden structures.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for signs of Caribbean culture such as local markets, festivals, and music events. The presence of cricket fields is also common.</p>
-                    
+                    <p>Look for signs of Caribbean culture such as local markets, festivals, and music events. The presence of cricket fields is also common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Check for palm trees, sandy beaches, and local wildlife. The distinct colorful houses and small, intimate community settings are also indicators.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ag.png" alt="Antigua and Barbuda flag" class="clues-flag">
-                    
+                    <p>Check for palm trees, sandy beaches, and local wildlife. The distinct colorful houses and small, intimate community settings are also indicators.</p>
                 </div>
                 
             </div>

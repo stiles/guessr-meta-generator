@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Mozambique</h1>
+        <div class="header-content">
+            <h1>Mozambique</h1>
+            <img src="../static/flags/mz.png" alt="Mozambique flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-18.665695" data-lon="35.529562"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-18.665695"
+     data-lon="35.529562"
+     data-name="mozambique">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Portuguese is the official language, using the Latin alphabet with no special characters.</p>
-                    
+                    <p>Portuguese is the official language, using the Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically feature a white background with blue and yellow stripes. The format often includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates typically feature a white background with blue and yellow stripes. The format often includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally in Portuguese and may include both metric and imperial measurements. Signs are usually rectangular with colorful backgrounds.</p>
-                    
+                    <p>Road signs are generally in Portuguese and may include both metric and imperial measurements. Signs are usually rectangular with colorful backgrounds.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features a mix of coastal areas, savannas, and plateaus. There are also significant natural features like the Zambezi River and numerous national parks.</p>
-                    
+                    <p>The landscape features a mix of coastal areas, savannas, and plateaus. There are also significant natural features like the Zambezi River and numerous national parks.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas may display colonial architecture with Portuguese influences, while rural areas often have simpler structures. Many buildings may be made of brick or concrete.</p>
-                    
+                    <p>Urban areas may display colonial architecture with Portuguese influences, while rural areas often have simpler structures. Many buildings may be made of brick or concrete.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Common cultural markers include vibrant markets, traditional music, and local crafts. Look for signs of Portuguese influence in food and architecture.</p>
-                    
+                    <p>Common cultural markers include vibrant markets, traditional music, and local crafts. Look for signs of Portuguese influence in food and architecture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of palm trees, tropical plants, and the occasional sighting of wildlife or open savannah.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/mz.png" alt="Mozambique flag" class="clues-flag">
-                    
+                    <p>Look for the presence of palm trees, tropical plants, and the occasional sighting of wildlife or open savannah.</p>
                 </div>
                 
             </div>

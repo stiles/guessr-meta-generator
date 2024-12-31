@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Philippines</h1>
+        <div class="header-content">
+            <h1>Philippines</h1>
+            <img src="../static/flags/ph.png" alt="Philippines flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="12.879721" data-lon="121.774017"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="12.879721"
+     data-lon="121.774017"
+     data-name="philippines">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Filipino (Tagalog) is the official language, with English also widely used. The alphabet is Latin-based, with some special characters like 'ñ' and 'ng'.</p>
-                    
+                    <p>Filipino (Tagalog) is the official language, with English also widely used. The alphabet is Latin-based, with some special characters like 'ñ' and 'ng'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates have a white background with a blue band on top that contains the word 'Philippines' and the region code. They also feature a series of alphanumeric characters.</p>
-                    
+                    <p>Vehicle registration plates have a white background with a blue band on top that contains the word 'Philippines' and the region code. They also feature a series of alphanumeric characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in English and Filipino, with a mix of standard international symbols. Speed limits and directional signs are commonly seen.</p>
-                    
+                    <p>Road signs are typically in English and Filipino, with a mix of standard international symbols. Speed limits and directional signs are commonly seen.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape varies from tropical beaches to mountainous regions, with lush greenery and urban areas featuring a mix of high-rise buildings and residential homes.</p>
-                    
+                    <p>The landscape varies from tropical beaches to mountainous regions, with lush greenery and urban areas featuring a mix of high-rise buildings and residential homes.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles range from colonial Spanish influences to modern structures. Urban areas have a mix of traditional and contemporary designs with vibrant colors.</p>
-                    
+                    <p>Architectural styles range from colonial Spanish influences to modern structures. Urban areas have a mix of traditional and contemporary designs with vibrant colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include jeepneys (colorful public transport vehicles), tricycles, and vibrant street markets. Festivals and street food stalls are commonly found.</p>
-                    
+                    <p>Distinctive markers include jeepneys (colorful public transport vehicles), tricycles, and vibrant street markets. Festivals and street food stalls are commonly found.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of tropical vegetation, such as coconut trees, and the occasional presence of sari-sari stores (small neighborhood shops).</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ph.png" alt="Philippines flag" class="clues-flag">
-                    
+                    <p>Look for the presence of tropical vegetation, such as coconut trees, and the occasional presence of sari-sari stores (small neighborhood shops).</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Italy</h1>
+        <div class="header-content">
+            <h1>Italy</h1>
+            <img src="../static/flags/it.png" alt="Italy flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="41.87194" data-lon="12.56738"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="41.87194"
+     data-lon="12.56738"
+     data-name="italy">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Italian; uses the Latin alphabet with special characters such as à, è, é, ì, ò, ù.</p>
-                    
+                    <p>Italian; uses the Latin alphabet with special characters such as à, è, é, ì, ò, ù.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates have a blue strip on the left side with the European Union flag and the letters 'I' for Italy.</p>
-                    
+                    <p>Vehicle registration plates have a blue strip on the left side with the European Union flag and the letters 'I' for Italy.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically white with red or blue borders and use both Italian and European symbols. Speed limits are indicated in kilometers per hour.</p>
-                    
+                    <p>Road signs are typically white with red or blue borders and use both Italian and European symbols. Speed limits are indicated in kilometers per hour.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including mountains (Alps), coastlines (Amalfi Coast), and rural countryside with vineyards and olive groves.</p>
-                    
+                    <p>Diverse landscapes including mountains (Alps), coastlines (Amalfi Coast), and rural countryside with vineyards and olive groves.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include Roman ruins, Renaissance buildings, and modern design; cities often have historical centers with cobblestone streets.</p>
-                    
+                    <p>Architectural styles include Roman ruins, Renaissance buildings, and modern design; cities often have historical centers with cobblestone streets.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include piazzas, cafes, gelaterias, and a strong presence of art and history, such as sculptures and murals.</p>
-                    
+                    <p>Distinctive markers include piazzas, cafes, gelaterias, and a strong presence of art and history, such as sculptures and murals.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Presence of scooters and Vespas, outdoor dining areas, and the use of Italian-style street furniture.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/it.png" alt="Italy flag" class="clues-flag">
-                    
+                    <p>Presence of scooters and Vespas, outdoor dining areas, and the use of Italian-style street furniture.</p>
                 </div>
                 
             </div>

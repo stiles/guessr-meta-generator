@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Libya</h1>
+        <div class="header-content">
+            <h1>Libya</h1>
+            <img src="../static/flags/ly.png" alt="Libya flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="26.3351" data-lon="17.228331"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="26.3351"
+     data-lon="17.228331"
+     data-name="libya">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic is the official language, using the Arabic script. English is also widely understood in urban areas.</p>
-                    
+                    <p>Arabic is the official language, using the Arabic script. English is also widely understood in urban areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left side featuring the Libyan flag. The plates include Arabic script and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left side featuring the Libyan flag. The plates include Arabic script and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Arabic, with some bilingual signs in English, using simple pictograms. Signs often include directional and informational symbols.</p>
-                    
+                    <p>Road signs are typically in Arabic, with some bilingual signs in English, using simple pictograms. Signs often include directional and informational symbols.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape is predominantly desert, with arid conditions, rocky areas, and some coastal features along the Mediterranean Sea.</p>
-                    
+                    <p>The landscape is predominantly desert, with arid conditions, rocky areas, and some coastal features along the Mediterranean Sea.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes a mix of modern buildings and traditional designs, with influences from Ottoman and Italian styles, especially in urban centers like Tripoli.</p>
-                    
+                    <p>Architecture includes a mix of modern buildings and traditional designs, with influences from Ottoman and Italian styles, especially in urban centers like Tripoli.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for Islamic cultural markers, such as mosques with minarets, and local markets (souks) that reflect Libyan traditions.</p>
-                    
+                    <p>Look for Islamic cultural markers, such as mosques with minarets, and local markets (souks) that reflect Libyan traditions.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street view may show distinctive Libyan vehicles, such as pick-ups and older models, as well as occasional military presence.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ly.png" alt="Libya flag" class="clues-flag">
-                    
+                    <p>Street view may show distinctive Libyan vehicles, such as pick-ups and older models, as well as occasional military presence.</p>
                 </div>
                 
             </div>

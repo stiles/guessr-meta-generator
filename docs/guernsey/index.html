@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Guernsey</h1>
+        <div class="header-content">
+            <h1>Guernsey</h1>
+            <img src="../static/flags/gg.png" alt="Guernsey flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="49.465691" data-lon="-2.585278"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="49.465691"
+     data-lon="-2.585278"
+     data-name="guernsey">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the primary language spoken, with a local dialect called Guernsey French; the alphabet is similar to English with no special characters.</p>
-                    
+                    <p>English is the primary language spoken, with a local dialect called Guernsey French; the alphabet is similar to English with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top featuring the 'G' for Guernsey.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top featuring the 'G' for Guernsey.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs often feature both English and Guernsey French; they are typically rectangular with white backgrounds and black text.</p>
-                    
+                    <p>Road signs often feature both English and Guernsey French; they are typically rectangular with white backgrounds and black text.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes coastal cliffs, sandy beaches, and rural countryside with fields and hedgerows.</p>
-                    
+                    <p>The landscape includes coastal cliffs, sandy beaches, and rural countryside with fields and hedgerows.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes a mix of traditional stone houses, Victorian buildings, and modern structures; narrow roads and lanes are common.</p>
-                    
+                    <p>Architecture includes a mix of traditional stone houses, Victorian buildings, and modern structures; narrow roads and lanes are common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for local shops, markets, and signs in both English and Guernsey French; the presence of local festivals and events can also be indicative.</p>
-                    
+                    <p>Look for local shops, markets, and signs in both English and Guernsey French; the presence of local festivals and events can also be indicative.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Distinctive features include the coastal scenery, presence of the sea, and occasional views of small boats and harbors.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/gg.png" alt="Guernsey flag" class="clues-flag">
-                    
+                    <p>Distinctive features include the coastal scenery, presence of the sea, and occasional views of small boats and harbors.</p>
                 </div>
                 
             </div>

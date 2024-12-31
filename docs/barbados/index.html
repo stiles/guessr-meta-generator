@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Barbados</h1>
+        <div class="header-content">
+            <h1>Barbados</h1>
+            <img src="../static/flags/bb.png" alt="Barbados flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="13.193887" data-lon="-59.543198"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="13.193887"
+     data-lon="-59.543198"
+     data-name="barbados">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English; uses the Latin alphabet without special characters</p>
-                    
+                    <p>English; uses the Latin alphabet without special characters</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top; format typically includes a combination of letters and numbers</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top; format typically includes a combination of letters and numbers</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road</p>
-                    
+                    <p>Vehicles drive on the left side of the road</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are mostly in English; they are similar to those used in the UK, with some unique local variations</p>
-                    
+                    <p>Road signs are mostly in English; they are similar to those used in the UK, with some unique local variations</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Tropical climate with white sandy beaches, palm trees, and lush vegetation; the island has coral limestone and hilly terrain</p>
-                    
+                    <p>Tropical climate with white sandy beaches, palm trees, and lush vegetation; the island has coral limestone and hilly terrain</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Colonial architecture is prevalent, featuring colorful buildings, wooden shutters, and gabled roofs; urban areas have a mix of modern and traditional designs</p>
-                    
+                    <p>Colonial architecture is prevalent, featuring colorful buildings, wooden shutters, and gabled roofs; urban areas have a mix of modern and traditional designs</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Influences from African, British, and Indian cultures; look for local festivals, music, and food markets; rum distilleries are common</p>
-                    
+                    <p>Influences from African, British, and Indian cultures; look for local festivals, music, and food markets; rum distilleries are common</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for distinctive roundabouts with local art, vibrant street art, and the presence of local flora like hibiscus and bougainvillea</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/bb.png" alt="Barbados flag" class="clues-flag">
-                    
+                    <p>Look for distinctive roundabouts with local art, vibrant street art, and the presence of local flora like hibiscus and bougainvillea</p>
                 </div>
                 
             </div>

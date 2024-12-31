@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Luxembourg</h1>
+        <div class="header-content">
+            <h1>Luxembourg</h1>
+            <img src="../static/flags/lu.png" alt="Luxembourg flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="49.815273" data-lon="6.129583"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="49.815273"
+     data-lon="6.129583"
+     data-name="luxembourg">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Luxembourgish, French, German; uses the Latin alphabet with special characters like 'é', 'ë', and 'ä'.</p>
-                    
+                    <p>Luxembourgish, French, German; uses the Latin alphabet with special characters like 'é', 'ë', and 'ä'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left featuring the letter 'L' for Luxembourg.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left featuring the letter 'L' for Luxembourg.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in French or Luxembourgish, with clear, standardized symbols; often bilingual.</p>
-                    
+                    <p>Road signs are typically in French or Luxembourgish, with clear, standardized symbols; often bilingual.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Features rolling hills, forests, and rivers; urban areas are mixed with green spaces.</p>
-                    
+                    <p>Features rolling hills, forests, and rivers; urban areas are mixed with green spaces.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes a mix of medieval structures, modern buildings, and European-style town squares; cobblestone streets in older areas.</p>
-                    
+                    <p>Architecture includes a mix of medieval structures, modern buildings, and European-style town squares; cobblestone streets in older areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Presence of castles, fortifications, and a blend of French, German, and Luxembourgish cultural elements.</p>
-                    
+                    <p>Presence of castles, fortifications, and a blend of French, German, and Luxembourgish cultural elements.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the distinct green and red markings on some public buildings and the use of Luxembourgish in local signage.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/lu.png" alt="Luxembourg flag" class="clues-flag">
-                    
+                    <p>Look for the distinct green and red markings on some public buildings and the use of Luxembourgish in local signage.</p>
                 </div>
                 
             </div>

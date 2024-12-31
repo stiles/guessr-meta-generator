@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Bermuda</h1>
+        <div class="header-content">
+            <h1>Bermuda</h1>
+            <img src="../static/flags/bm.png" alt="Bermuda flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="32.321384" data-lon="-64.75737"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="32.321384"
+     data-lon="-64.75737"
+     data-name="bermuda">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the primary language spoken. The alphabet used is the Latin alphabet with no special characters.</p>
-                    
+                    <p>English is the primary language spoken. The alphabet used is the Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border and feature a combination of letters and numbers. Plates typically have 'Bermuda' written at the top.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border and feature a combination of letters and numbers. Plates typically have 'Bermuda' written at the top.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally in English. They are similar to British road signs, with distinctive colors and shapes, including roundabouts and pedestrian crossings.</p>
-                    
+                    <p>Road signs are generally in English. They are similar to British road signs, with distinctive colors and shapes, including roundabouts and pedestrian crossings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Bermuda features a subtropical climate with lush greenery, sandy beaches, and turquoise waters. The landscape includes hilly terrain and limestone formations.</p>
-                    
+                    <p>Bermuda features a subtropical climate with lush greenery, sandy beaches, and turquoise waters. The landscape includes hilly terrain and limestone formations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include pastel-colored houses with white roofs, colonial-style buildings, and a mix of modern and traditional urban designs. Roads are narrow and may include stone walls.</p>
-                    
+                    <p>Architectural styles include pastel-colored houses with white roofs, colonial-style buildings, and a mix of modern and traditional urban designs. Roads are narrow and may include stone walls.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include red telephone boxes, vibrant local art, and the presence of Bermuda shorts worn by locals. The use of the Bermuda flag and local festivals may also be observed.</p>
-                    
+                    <p>Distinctive markers include red telephone boxes, vibrant local art, and the presence of Bermuda shorts worn by locals. The use of the Bermuda flag and local festivals may also be observed.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the unique pink sand beaches and a predominance of flowering plants, as well as the use of mopeds and scooters as common forms of transportation.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/bm.png" alt="Bermuda flag" class="clues-flag">
-                    
+                    <p>Look for the unique pink sand beaches and a predominance of flowering plants, as well as the use of mopeds and scooters as common forms of transportation.</p>
                 </div>
                 
             </div>

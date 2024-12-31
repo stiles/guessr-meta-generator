@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>United States Virgin Islands</h1>
+        <div class="header-content">
+            <h1>United States Virgin Islands</h1>
+            <img src="../static/flags/vi.png" alt="United States Virgin Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="18.335765" data-lon="-64.896335"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="18.335765"
+     data-lon="-64.896335"
+     data-name="united-states-virgin-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language; Virgin Islands Creole is also spoken.</p>
-                    
+                    <p>English is the official language; Virgin Islands Creole is also spoken.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border and display 'U.S. Virgin Islands' along with a unique number.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border and display 'U.S. Virgin Islands' along with a unique number.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in English and may feature tropical motifs; signs are often reflective.</p>
-                    
+                    <p>Road signs are typically in English and may feature tropical motifs; signs are often reflective.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes tropical vegetation, mountainous areas, and coastal beaches; the climate is tropical.</p>
-                    
+                    <p>The landscape includes tropical vegetation, mountainous areas, and coastal beaches; the climate is tropical.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include Caribbean colonial and modern constructions with vibrant colors; urban areas may have a laid-back, beach town feel.</p>
-                    
+                    <p>Architectural styles include Caribbean colonial and modern constructions with vibrant colors; urban areas may have a laid-back, beach town feel.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include local festivals, Caribbean music, and cuisine featuring seafood and tropical fruits.</p>
-                    
+                    <p>Cultural markers include local festivals, Caribbean music, and cuisine featuring seafood and tropical fruits.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for distinctive palm trees, coastal views, and the presence of local markets and street vendors.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/vi.png" alt="United States Virgin Islands flag" class="clues-flag">
-                    
+                    <p>Look for distinctive palm trees, coastal views, and the presence of local markets and street vendors.</p>
                 </div>
                 
             </div>

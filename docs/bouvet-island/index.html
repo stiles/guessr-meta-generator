@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Bouvet Island</h1>
+        <div class="header-content">
+            <h1>Bouvet Island</h1>
+            <img src="../static/flags/bv.png" alt="Bouvet Island flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-54.423199" data-lon="3.413194"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-54.423199"
+     data-lon="3.413194"
+     data-name="bouvet-island">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>No indigenous languages; primarily Norwegian is used.</p>
-                    
+                    <p>No indigenous languages; primarily Norwegian is used.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Bouvet Island has no roads or vehicles; therefore, there are no vehicle registration plates.</p>
-                    
+                    <p>Bouvet Island has no roads or vehicles; therefore, there are no vehicle registration plates.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>N/A - There are no vehicles or roads.</p>
-                    
+                    <p>N/A - There are no vehicles or roads.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>N/A - There are no roads or highway signs.</p>
-                    
+                    <p>N/A - There are no roads or highway signs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Bouvet Island is a small, uninhabited volcanic island covered by glaciers, with steep cliffs and a rugged coastline.</p>
-                    
+                    <p>Bouvet Island is a small, uninhabited volcanic island covered by glaciers, with steep cliffs and a rugged coastline.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>N/A - Bouvet Island has no urban infrastructure or architectural styles.</p>
-                    
+                    <p>N/A - Bouvet Island has no urban infrastructure or architectural styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>N/A - There is no local culture as the island is uninhabited.</p>
-                    
+                    <p>N/A - There is no local culture as the island is uninhabited.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>The island is located in the South Atlantic Ocean and is known for its harsh, icy conditions; it is often depicted as a remote wilderness.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/bv.png" alt="Bouvet Island flag" class="clues-flag">
-                    
+                    <p>The island is located in the South Atlantic Ocean and is known for its harsh, icy conditions; it is often depicted as a remote wilderness.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Romania</h1>
+        <div class="header-content">
+            <h1>Romania</h1>
+            <img src="../static/flags/ro.png" alt="Romania flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="45.943161" data-lon="24.96676"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="45.943161"
+     data-lon="24.96676"
+     data-name="romania">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Romanian; uses the Latin alphabet with special characters: ă, â, î, ș, ț.</p>
-                    
+                    <p>Romanian; uses the Latin alphabet with special characters: ă, â, î, ș, ț.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band on the left displaying the EU flag and the country code 'RO'.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band on the left displaying the EU flag and the country code 'RO'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally blue or green for directions, with white text; warning signs are usually triangular.</p>
-                    
+                    <p>Road signs are generally blue or green for directions, with white text; warning signs are usually triangular.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Varied landscapes including the Carpathian Mountains, the Danube River, and flat plains; mixed forests and agricultural fields.</p>
-                    
+                    <p>Varied landscapes including the Carpathian Mountains, the Danube River, and flat plains; mixed forests and agricultural fields.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>A mix of modern and historical architecture; notable styles include Brutalist, Neo-Romanian, and Byzantine influences.</p>
-                    
+                    <p>A mix of modern and historical architecture; notable styles include Brutalist, Neo-Romanian, and Byzantine influences.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Presence of traditional wooden churches, castles (e.g., Bran Castle), and rural villages with distinct folk culture.</p>
-                    
+                    <p>Presence of traditional wooden churches, castles (e.g., Bran Castle), and rural villages with distinct folk culture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Prominent use of the Romanian flag colors (blue, yellow, red) in public spaces and buildings; distinctive local advertisements in Romanian.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ro.png" alt="Romania flag" class="clues-flag">
-                    
+                    <p>Prominent use of the Romanian flag colors (blue, yellow, red) in public spaces and buildings; distinctive local advertisements in Romanian.</p>
                 </div>
                 
             </div>

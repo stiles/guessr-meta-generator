@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>United Arab Emirates</h1>
+        <div class="header-content">
+            <h1>United Arab Emirates</h1>
+            <img src="../static/flags/ae.png" alt="United Arab Emirates flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="23.424076" data-lon="53.847818"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="23.424076"
+     data-lon="53.847818"
+     data-name="united-arab-emirates">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic is the official language. English is widely spoken. The Arabic alphabet is used, which is written from right to left.</p>
-                    
+                    <p>Arabic is the official language. English is widely spoken. The Arabic alphabet is used, which is written from right to left.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically feature a white background with black text and a red border for private vehicles. Plates often include both Arabic and English.</p>
-                    
+                    <p>Vehicle registration plates typically feature a white background with black text and a red border for private vehicles. Plates often include both Arabic and English.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Arabic and English. They are often illuminated and feature international symbol standards.</p>
-                    
+                    <p>Road signs are primarily in Arabic and English. They are often illuminated and feature international symbol standards.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Desert landscapes dominate, with sandy dunes and limited vegetation. Coastal areas feature beaches and urban development.</p>
-                    
+                    <p>Desert landscapes dominate, with sandy dunes and limited vegetation. Coastal areas feature beaches and urban development.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Modern architectural styles are prevalent, including skyscrapers and innovative designs. Notable buildings include the Burj Khalifa and various malls.</p>
-                    
+                    <p>Modern architectural styles are prevalent, including skyscrapers and innovative designs. Notable buildings include the Burj Khalifa and various malls.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include mosques, traditional markets (souks), and Islamic architectural elements.</p>
-                    
+                    <p>Distinctive markers include mosques, traditional markets (souks), and Islamic architectural elements.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for palm trees, traditional dhow boats in coastal areas, and distinctive desert wildlife.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ae.png" alt="United Arab Emirates flag" class="clues-flag">
-                    
+                    <p>Look for palm trees, traditional dhow boats in coastal areas, and distinctive desert wildlife.</p>
                 </div>
                 
             </div>

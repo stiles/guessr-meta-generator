@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Wallis and Futuna</h1>
+        <div class="header-content">
+            <h1>Wallis and Futuna</h1>
+            <img src="../static/flags/wf.png" alt="Wallis and Futuna flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-13.768752" data-lon="-177.156097"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-13.768752"
+     data-lon="-177.156097"
+     data-name="wallis-and-futuna">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language, with Wallisian and Futunan also spoken. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>French is the official language, with Wallisian and Futunan also spoken. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border and feature the letters 'WF' for Wallis and Futuna.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border and feature the letters 'WF' for Wallis and Futuna.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in French, with some local language signs. Signs are generally simple and may include symbols or images.</p>
-                    
+                    <p>Road signs are primarily in French, with some local language signs. Signs are generally simple and may include symbols or images.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The islands have a tropical climate with lush vegetation, coral reefs, and volcanic landscapes. Expect to see palm trees and coastal views.</p>
-                    
+                    <p>The islands have a tropical climate with lush vegetation, coral reefs, and volcanic landscapes. Expect to see palm trees and coastal views.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture is primarily traditional with thatched-roof houses, but there are also some modern buildings. Urban areas are small and not densely populated.</p>
-                    
+                    <p>Architecture is primarily traditional with thatched-roof houses, but there are also some modern buildings. Urban areas are small and not densely populated.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include traditional crafts, tapa cloth, and communal gatherings. Look for local markets and signs of Polynesian heritage.</p>
-                    
+                    <p>Cultural markers include traditional crafts, tapa cloth, and communal gatherings. Look for local markets and signs of Polynesian heritage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for distinctive flora such as hibiscus flowers and coconut palms, as well as small fishing boats and beach scenes.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/wf.png" alt="Wallis and Futuna flag" class="clues-flag">
-                    
+                    <p>Look for distinctive flora such as hibiscus flowers and coconut palms, as well as small fishing boats and beach scenes.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>South Korea</h1>
+        <div class="header-content">
+            <h1>South Korea</h1>
+            <img src="../static/flags/kr.png" alt="South Korea flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="35.907757" data-lon="127.766922"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="35.907757"
+     data-lon="127.766922"
+     data-name="south-korea">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>The official language is Korean, which uses the Hangul script, consisting of 14 basic consonants and 10 basic vowels.</p>
-                    
+                    <p>The official language is Korean, which uses the Hangul script, consisting of 14 basic consonants and 10 basic vowels.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a green or blue font for private vehicles, while commercial vehicles have yellow plates. There is a unique code indicating the province.</p>
-                    
+                    <p>Vehicle registration plates are white with a green or blue font for private vehicles, while commercial vehicles have yellow plates. There is a unique code indicating the province.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Hangul, with some using English. Signs are usually blue, green, or white, with clear pictograms and reflective materials.</p>
-                    
+                    <p>Road signs are typically in Hangul, with some using English. Signs are usually blue, green, or white, with clear pictograms and reflective materials.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>South Korea features a mix of urban areas, mountains, and coastal regions. The landscape is often hilly or mountainous, with cherry blossoms in spring and vibrant greenery in summer.</p>
-                    
+                    <p>South Korea features a mix of urban areas, mountains, and coastal regions. The landscape is often hilly or mountainous, with cherry blossoms in spring and vibrant greenery in summer.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture ranges from modern skyscrapers to traditional hanok houses. Urban areas often have high-density buildings and advanced public transportation systems.</p>
-                    
+                    <p>Architecture ranges from modern skyscrapers to traditional hanok houses. Urban areas often have high-density buildings and advanced public transportation systems.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for signs of Korean pop culture, such as K-pop advertisements, traditional markets, and street food vendors. Hanbok (traditional clothing) may also be seen in certain areas.</p>
-                    
+                    <p>Look for signs of Korean pop culture, such as K-pop advertisements, traditional markets, and street food vendors. Hanbok (traditional clothing) may also be seen in certain areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Google Street View may show unique items like public exercise stations, bike-sharing racks, and the prevalence of convenience stores.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/kr.png" alt="South Korea flag" class="clues-flag">
-                    
+                    <p>Google Street View may show unique items like public exercise stations, bike-sharing racks, and the prevalence of convenience stores.</p>
                 </div>
                 
             </div>

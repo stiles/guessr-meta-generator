@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Guatemala</h1>
+        <div class="header-content">
+            <h1>Guatemala</h1>
+            <img src="../static/flags/gt.png" alt="Guatemala flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="15.783471" data-lon="-90.230759"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="15.783471"
+     data-lon="-90.230759"
+     data-name="guatemala">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Spanish is the official language, and the alphabet is Latin with no special characters.</p>
-                    
+                    <p>Spanish is the official language, and the alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically have a white background with blue and yellow borders, featuring the word 'Guatemala' and a unique alphanumeric code.</p>
-                    
+                    <p>Vehicle registration plates typically have a white background with blue and yellow borders, featuring the word 'Guatemala' and a unique alphanumeric code.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Spanish, with a mix of regulatory, warning, and informational signs; many signs may use pictograms.</p>
-                    
+                    <p>Road signs are primarily in Spanish, with a mix of regulatory, warning, and informational signs; many signs may use pictograms.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes volcanic mountains, dense jungles, and agriculture; there are also urban areas with colorful houses.</p>
-                    
+                    <p>The landscape includes volcanic mountains, dense jungles, and agriculture; there are also urban areas with colorful houses.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture features colonial Spanish influences, with vibrant colors, tiled roofs, and cobblestone streets in urban areas.</p>
-                    
+                    <p>Architecture features colonial Spanish influences, with vibrant colors, tiled roofs, and cobblestone streets in urban areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional clothing, particularly the colorful huipils worn by indigenous people, and markets selling local crafts.</p>
-                    
+                    <p>Look for traditional clothing, particularly the colorful huipils worn by indigenous people, and markets selling local crafts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street View may show traditional festivals, indigenous markets, and significant archaeological sites like Tikal.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/gt.png" alt="Guatemala flag" class="clues-flag">
-                    
+                    <p>Street View may show traditional festivals, indigenous markets, and significant archaeological sites like Tikal.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Chad</h1>
+        <div class="header-content">
+            <h1>Chad</h1>
+            <img src="../static/flags/td.png" alt="Chad flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="15.454166" data-lon="18.732207"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="15.454166"
+     data-lon="18.732207"
+     data-name="chad">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language. Arabic is also widely spoken. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>French is the official language. Arabic is also widely spoken. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top. The format usually includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top. The format usually includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in French and may include both French and Arabic. Signs can be less standardized and may vary in quality.</p>
-                    
+                    <p>Road signs are often in French and may include both French and Arabic. Signs can be less standardized and may vary in quality.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features a mix of desert, savanna, and mountainous regions. Sand dunes and acacia trees are common in many areas.</p>
-                    
+                    <p>The landscape features a mix of desert, savanna, and mountainous regions. Sand dunes and acacia trees are common in many areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas may feature a mix of modern and traditional architecture, with many buildings made of mud brick. Paved roads are typically found in larger cities.</p>
-                    
+                    <p>Urban areas may feature a mix of modern and traditional architecture, with many buildings made of mud brick. Paved roads are typically found in larger cities.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include traditional markets, local crafts, and a mix of ethnic groups such as the Sara, Arab, and Kanembou.</p>
-                    
+                    <p>Cultural markers include traditional markets, local crafts, and a mix of ethnic groups such as the Sara, Arab, and Kanembou.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Dusty roads, occasional livestock on roads, and the presence of traditional huts or homes can be notable. Look for people wearing traditional attire.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/td.png" alt="Chad flag" class="clues-flag">
-                    
+                    <p>Dusty roads, occasional livestock on roads, and the presence of traditional huts or homes can be notable. Look for people wearing traditional attire.</p>
                 </div>
                 
             </div>

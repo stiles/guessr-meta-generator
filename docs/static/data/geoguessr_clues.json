@@ -685,7 +685,7 @@
     },
     "DR Congo": {
         "code": "cd",
-        "name": "DR Congo",
+        "name": "Democratic Republic of the Congo",
         "lat": -4.038333,
         "lon": 21.758664,
         "region": "Africa",
@@ -759,7 +759,7 @@
             "flag": "The flag is a red square with a white cross in the center."
         }
     },
-    "Côte d'Ivoire (Ivory Coast)": {
+    "Côte d'Ivoire": {
         "code": "ci",
         "name": "Côte d'Ivoire (Ivory Coast)",
         "lat": 7.539989,

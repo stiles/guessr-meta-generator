@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Slovakia</h1>
+        <div class="header-content">
+            <h1>Slovakia</h1>
+            <img src="../static/flags/sk.png" alt="Slovakia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="48.669026" data-lon="19.699024"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="48.669026"
+     data-lon="19.699024"
+     data-name="slovakia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Slovak is the official language. The alphabet includes special characters such as á, é, í, ó, ú, ä, č, ď, ň, ó, ř, š, and ž.</p>
-                    
+                    <p>Slovak is the official language. The alphabet includes special characters such as á, é, í, ó, ú, ä, č, ď, ň, ó, ř, š, and ž.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates have a white background with a blue vertical band on the left featuring the EU flag and the letters SK. The format typically includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates have a white background with a blue vertical band on the left featuring the EU flag and the letters SK. The format typically includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are similar to those in other EU countries, with a mix of Slovak and international symbols. Signs are typically in white with red or blue backgrounds.</p>
-                    
+                    <p>Road signs are similar to those in other EU countries, with a mix of Slovak and international symbols. Signs are typically in white with red or blue backgrounds.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features a mix of mountainous regions (the High Tatras), plains, and forests. There are many rivers, including the Danube.</p>
-                    
+                    <p>The landscape features a mix of mountainous regions (the High Tatras), plains, and forests. There are many rivers, including the Danube.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas often feature a blend of modern and historical architecture, including Gothic, Baroque, and socialist-era buildings. Towns may have cobblestone streets and central squares.</p>
-                    
+                    <p>Urban areas often feature a blend of modern and historical architecture, including Gothic, Baroque, and socialist-era buildings. Towns may have cobblestone streets and central squares.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional folk architecture, particularly in rural areas, as well as signs of Slavic heritage in festivals and cultural events.</p>
-                    
+                    <p>Look for traditional folk architecture, particularly in rural areas, as well as signs of Slavic heritage in festivals and cultural events.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Unique indicators include the use of the 'Š' character in place names, Slovak flags at public buildings, and visible traditional folk costumes during local festivals.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/sk.png" alt="Slovakia flag" class="clues-flag">
-                    
+                    <p>Unique indicators include the use of the 'Š' character in place names, Slovak flags at public buildings, and visible traditional folk costumes during local festivals.</p>
                 </div>
                 
             </div>

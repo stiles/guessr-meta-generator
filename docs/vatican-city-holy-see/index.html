@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Vatican City (Holy See)</h1>
+        <div class="header-content">
+            <h1>Vatican City (Holy See)</h1>
+            <img src="../static/flags/va.png" alt="Vatican City (Holy See) flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="41.902916" data-lon="12.453389"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="41.902916"
+     data-lon="12.453389"
+     data-name="vatican-city-holy-see">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Italian is the official language. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>Italian is the official language. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left side containing the letters 'I' for Italy.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left side containing the letters 'I' for Italy.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs generally follow Italian standards; they are often bilingual with Italian and Latin in some areas.</p>
-                    
+                    <p>Road signs generally follow Italian standards; they are often bilingual with Italian and Latin in some areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Vatican City is an urban area with limited green spaces, characterized by historical architecture and cobblestone streets.</p>
-                    
+                    <p>Vatican City is an urban area with limited green spaces, characterized by historical architecture and cobblestone streets.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>The architecture is predominantly Renaissance and Baroque, with notable structures like St. Peter's Basilica and the Vatican Museums.</p>
-                    
+                    <p>The architecture is predominantly Renaissance and Baroque, with notable structures like St. Peter's Basilica and the Vatican Museums.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include religious symbols, papal insignia, and the presence of clergy in traditional attire.</p>
-                    
+                    <p>Distinctive markers include religious symbols, papal insignia, and the presence of clergy in traditional attire.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of the Swiss Guard and the iconic dome of St. Peter's Basilica.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/va.png" alt="Vatican City (Holy See) flag" class="clues-flag">
-                    
+                    <p>Look for the presence of the Swiss Guard and the iconic dome of St. Peter's Basilica.</p>
                 </div>
                 
             </div>

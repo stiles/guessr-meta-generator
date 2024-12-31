@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Lebanon</h1>
+        <div class="header-content">
+            <h1>Lebanon</h1>
+            <img src="../static/flags/lb.png" alt="Lebanon flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="33.854721" data-lon="35.862285"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="33.854721"
+     data-lon="35.862285"
+     data-name="lebanon">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic (Lebanese dialect) and French; Arabic script is used with no special characters.</p>
-                    
+                    <p>Arabic (Lebanese dialect) and French; Arabic script is used with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with blue text for private vehicles, and red for public transport; they feature the Lebanese cedar tree emblem.</p>
-                    
+                    <p>Vehicle registration plates are white with blue text for private vehicles, and red for public transport; they feature the Lebanese cedar tree emblem.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Arabic and French; they can be colorful and may include both Latin and Arabic scripts.</p>
-                    
+                    <p>Road signs are primarily in Arabic and French; they can be colorful and may include both Latin and Arabic scripts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Lebanon features a diverse landscape including mountains, coastal areas along the Mediterranean Sea, and urban settings in cities like Beirut.</p>
-                    
+                    <p>Lebanon features a diverse landscape including mountains, coastal areas along the Mediterranean Sea, and urban settings in cities like Beirut.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles range from modern skyscrapers in Beirut to historical Ottoman and French colonial buildings; urban areas often show a mix of old and new.</p>
-                    
+                    <p>Architectural styles range from modern skyscrapers in Beirut to historical Ottoman and French colonial buildings; urban areas often show a mix of old and new.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include cafes with outdoor seating, street vendors, and lively marketplaces; cultural symbols often include the Lebanese cedar.</p>
-                    
+                    <p>Distinctive markers include cafes with outdoor seating, street vendors, and lively marketplaces; cultural symbols often include the Lebanese cedar.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of Arabic script on signs, the unique coastal geography, and the overall urban density of cities.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/lb.png" alt="Lebanon flag" class="clues-flag">
-                    
+                    <p>Look for the presence of Arabic script on signs, the unique coastal geography, and the overall urban density of cities.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Zimbabwe</h1>
+        <div class="header-content">
+            <h1>Zimbabwe</h1>
+            <img src="../static/flags/zw.png" alt="Zimbabwe flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-19.015438" data-lon="29.154857"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-19.015438"
+     data-lon="29.154857"
+     data-name="zimbabwe">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language, with Shona and Sindebele as widely spoken indigenous languages. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>English is the official language, with Shona and Sindebele as widely spoken indigenous languages. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left. The first letter represents the province, followed by a number and letters.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left. The first letter represents the province, followed by a number and letters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are mostly in English, with standard international symbols. Signs often include a mix of local languages for context.</p>
-                    
+                    <p>Road signs are mostly in English, with standard international symbols. Signs often include a mix of local languages for context.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features savannas, plateaus, and mountains, with notable wildlife and vegetation typical of southern Africa.</p>
-                    
+                    <p>The landscape features savannas, plateaus, and mountains, with notable wildlife and vegetation typical of southern Africa.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas have a mix of colonial and modern architecture, with brick and concrete buildings. Rural areas may feature traditional thatched huts.</p>
-                    
+                    <p>Urban areas have a mix of colonial and modern architecture, with brick and concrete buildings. Rural areas may feature traditional thatched huts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional markets, art, and crafts, as well as wildlife motifs. The presence of the Zimbabwean flag or national symbols can also be a clue.</p>
-                    
+                    <p>Look for traditional markets, art, and crafts, as well as wildlife motifs. The presence of the Zimbabwean flag or national symbols can also be a clue.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street view may show unique landmarks like Victoria Falls, the Great Zimbabwe ruins, and distinct wildlife parks.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/zw.png" alt="Zimbabwe flag" class="clues-flag">
-                    
+                    <p>Street view may show unique landmarks like Victoria Falls, the Great Zimbabwe ruins, and distinct wildlife parks.</p>
                 </div>
                 
             </div>

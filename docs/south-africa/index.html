@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>South Africa</h1>
+        <div class="header-content">
+            <h1>South Africa</h1>
+            <img src="../static/flags/za.png" alt="South Africa flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-30.559482" data-lon="22.937506"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-30.559482"
+     data-lon="22.937506"
+     data-name="south-africa">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>The common languages are Afrikaans, English, isiXhosa, isiZulu, and other indigenous languages. The alphabet is Latin-based.</p>
-                    
+                    <p>The common languages are Afrikaans, English, isiXhosa, isiZulu, and other indigenous languages. The alphabet is Latin-based.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip and the registration number format typically includes the province code.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip and the registration number format typically includes the province code.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in English and may include additional local language translations. They have a triangular shape for warning signs and rectangular for regulatory signs.</p>
-                    
+                    <p>Road signs are often in English and may include additional local language translations. They have a triangular shape for warning signs and rectangular for regulatory signs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape varies from savannahs, mountains, and coastal regions to urban areas. Notable features include the iconic Table Mountain and diverse wildlife.</p>
-                    
+                    <p>The landscape varies from savannahs, mountains, and coastal regions to urban areas. Notable features include the iconic Table Mountain and diverse wildlife.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture ranges from colonial buildings to modern designs. Urban areas may feature colorful houses and townships.</p>
-                    
+                    <p>Architecture ranges from colonial buildings to modern designs. Urban areas may feature colorful houses and townships.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers such as traditional markets, braai (barbecue) spots, and local music performances.</p>
-                    
+                    <p>Look for cultural markers such as traditional markets, braai (barbecue) spots, and local music performances.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique features like the presence of penguins at Boulders Beach, or the distinctive red post boxes.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/za.png" alt="South Africa flag" class="clues-flag">
-                    
+                    <p>Look for unique features like the presence of penguins at Boulders Beach, or the distinctive red post boxes.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Cape Verde</h1>
+        <div class="header-content">
+            <h1>Cape Verde</h1>
+            <img src="../static/flags/cv.png" alt="Cape Verde flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="16.002082" data-lon="-24.013197"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="16.002082"
+     data-lon="-24.013197"
+     data-name="cape-verde">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Portuguese is the official language, with Cape Verdean Creole (Kriolu) being widely spoken. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>Portuguese is the official language, with Cape Verdean Creole (Kriolu) being widely spoken. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically have a white background with blue lettering, featuring the letters 'CV' indicating Cape Verde.</p>
-                    
+                    <p>Vehicle registration plates typically have a white background with blue lettering, featuring the letters 'CV' indicating Cape Verde.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are similar to those in Portugal, using Portuguese language and standard European road sign designs.</p>
-                    
+                    <p>Road signs are similar to those in Portugal, using Portuguese language and standard European road sign designs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape consists of volcanic islands with rugged mountains, sandy beaches, and arid plains, often with a dry climate.</p>
-                    
+                    <p>The landscape consists of volcanic islands with rugged mountains, sandy beaches, and arid plains, often with a dry climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include a mix of colonial Portuguese buildings, modern structures, and traditional thatched houses. Urban areas may show a blend of concrete and colorful facades.</p>
-                    
+                    <p>Architectural styles include a mix of colonial Portuguese buildings, modern structures, and traditional thatched houses. Urban areas may show a blend of concrete and colorful facades.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include traditional music styles like morna and coladeira, local markets, and festivals celebrating Cape Verdean heritage.</p>
-                    
+                    <p>Distinctive markers include traditional music styles like morna and coladeira, local markets, and festivals celebrating Cape Verdean heritage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique local vegetation such as palm trees and cacti, as well as the absence of lush greenery typical of tropical regions.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/cv.png" alt="Cape Verde flag" class="clues-flag">
-                    
+                    <p>Look for unique local vegetation such as palm trees and cacti, as well as the absence of lush greenery typical of tropical regions.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Guadeloupe</h1>
+        <div class="header-content">
+            <h1>Guadeloupe</h1>
+            <img src="../static/flags/gp.png" alt="Guadeloupe flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="16.995971" data-lon="-62.067641"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="16.995971"
+     data-lon="-62.067641"
+     data-name="guadeloupe">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language, uses the Latin alphabet with standard French characters.</p>
-                    
+                    <p>French is the official language, uses the Latin alphabet with standard French characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with blue on the left side, displaying the letter 'F' for France.</p>
-                    
+                    <p>Vehicle registration plates are white with blue on the left side, displaying the letter 'F' for France.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are similar to those in France, using French language and standard European shapes.</p>
-                    
+                    <p>Road signs are similar to those in France, using French language and standard European shapes.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Tropical climate with lush vegetation, mountains, beaches, and volcanic landscapes.</p>
-                    
+                    <p>Tropical climate with lush vegetation, mountains, beaches, and volcanic landscapes.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture features a mix of Creole, French colonial styles, and modern buildings, often with brightly colored facades.</p>
-                    
+                    <p>Architecture features a mix of Creole, French colonial styles, and modern buildings, often with brightly colored facades.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Influences from French, Caribbean, and African cultures, evident in music, food, and local festivals.</p>
-                    
+                    <p>Influences from French, Caribbean, and African cultures, evident in music, food, and local festivals.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Presence of tropical plants, palm trees, and distinct Creole houses; often sunny weather.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/gp.png" alt="Guadeloupe flag" class="clues-flag">
-                    
+                    <p>Presence of tropical plants, palm trees, and distinct Creole houses; often sunny weather.</p>
                 </div>
                 
             </div>

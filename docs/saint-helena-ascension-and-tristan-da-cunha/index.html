@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Saint Helena, Ascension and Tristan da Cunha</h1>
+        <div class="header-content">
+            <h1>Saint Helena, Ascension and Tristan da Cunha</h1>
+            <img src="../static/flags/sh.png" alt="Saint Helena, Ascension and Tristan da Cunha flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-24.143474" data-lon="-10.030696"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-24.143474"
+     data-lon="-10.030696"
+     data-name="saint-helena-ascension-and-tristan-da-cunha">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the common language. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>English is the common language. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left featuring the coat of arms.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left featuring the coat of arms.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in English and often feature a mix of British and local styles.</p>
-                    
+                    <p>Road signs are primarily in English and often feature a mix of British and local styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes rugged terrain, volcanic islands, and lush greenery, particularly on Saint Helena.</p>
-                    
+                    <p>The landscape includes rugged terrain, volcanic islands, and lush greenery, particularly on Saint Helena.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles vary from colonial buildings in Jamestown, Saint Helena to simple structures on Tristan da Cunha.</p>
-                    
+                    <p>Architectural styles vary from colonial buildings in Jamestown, Saint Helena to simple structures on Tristan da Cunha.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include the local flora and fauna, as well as traditional fishing and farming practices.</p>
-                    
+                    <p>Distinctive markers include the local flora and fauna, as well as traditional fishing and farming practices.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>The presence of unique wildlife, such as the Saint Helena plover, and the lack of large urban areas are notable.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/sh.png" alt="Saint Helena, Ascension and Tristan da Cunha flag" class="clues-flag">
-                    
+                    <p>The presence of unique wildlife, such as the Saint Helena plover, and the lack of large urban areas are notable.</p>
                 </div>
                 
             </div>

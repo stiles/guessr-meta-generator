@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Nauru</h1>
+        <div class="header-content">
+            <h1>Nauru</h1>
+            <img src="../static/flags/nr.png" alt="Nauru flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-0.522778" data-lon="166.931503"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-0.522778"
+     data-lon="166.931503"
+     data-name="nauru">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Nauruan is the official language. English is also widely spoken. The alphabet used is the Latin alphabet, with no special characters.</p>
-                    
+                    <p>Nauruan is the official language. English is also widely spoken. The alphabet used is the Latin alphabet, with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates in Nauru are typically white with black letters and numbers. The plates often feature the word 'Nauru' at the top.</p>
-                    
+                    <p>Vehicle registration plates in Nauru are typically white with black letters and numbers. The plates often feature the word 'Nauru' at the top.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs in Nauru are often in English and use standard road sign shapes and colors. They may include distances in kilometers.</p>
-                    
+                    <p>Road signs in Nauru are often in English and use standard road sign shapes and colors. They may include distances in kilometers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Nauru is a small island country with a flat landscape, surrounded by coral reefs. The interior features phosphate deposits, and there are some tropical plants along the coast.</p>
-                    
+                    <p>Nauru is a small island country with a flat landscape, surrounded by coral reefs. The interior features phosphate deposits, and there are some tropical plants along the coast.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings in Nauru tend to be low-rise and utilitarian, with some colonial-style architecture. The main town, Yaren, has basic urban infrastructure.</p>
-                    
+                    <p>Buildings in Nauru tend to be low-rise and utilitarian, with some colonial-style architecture. The main town, Yaren, has basic urban infrastructure.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include traditional Nauruan dances, music, and the use of local motifs in art. There are also signs of the island's phosphate mining history.</p>
-                    
+                    <p>Cultural markers include traditional Nauruan dances, music, and the use of local motifs in art. There are also signs of the island's phosphate mining history.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Unique features may include the absence of large urban areas, the presence of palm trees, and the distinctive appearance of the island's phosphate mines.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/nr.png" alt="Nauru flag" class="clues-flag">
-                    
+                    <p>Unique features may include the absence of large urban areas, the presence of palm trees, and the distinctive appearance of the island's phosphate mines.</p>
                 </div>
                 
             </div>

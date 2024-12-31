@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Albania</h1>
+        <div class="header-content">
+            <h1>Albania</h1>
+            <img src="../static/flags/al.png" alt="Albania flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="41.153332" data-lon="20.168331"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="41.153332"
+     data-lon="20.168331"
+     data-name="albania">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Albanian, uses Latin alphabet with special characters such as ë, ç, and sh</p>
-                    
+                    <p>Albanian, uses Latin alphabet with special characters such as ë, ç, and sh</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top, featuring the letters and numbers in a specific format (e.g., 'AL 1234 AB')</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top, featuring the letters and numbers in a specific format (e.g., 'AL 1234 AB')</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road</p>
-                    
+                    <p>Vehicles drive on the right side of the road</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Albanian, with some signs in English in urban areas; signs may feature distinctive symbols and colors</p>
-                    
+                    <p>Road signs are typically in Albanian, with some signs in English in urban areas; signs may feature distinctive symbols and colors</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including mountains, coastal areas along the Adriatic and Ionian Seas, and rural countryside</p>
-                    
+                    <p>Diverse landscapes including mountains, coastal areas along the Adriatic and Ionian Seas, and rural countryside</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture features a mix of Ottoman, Italian, and modern designs; urban areas may have concrete buildings with colorful facades</p>
-                    
+                    <p>Architecture features a mix of Ottoman, Italian, and modern designs; urban areas may have concrete buildings with colorful facades</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Traditional elements like bazaars, cafes, and street vendors, as well as the presence of Albanian flags and symbols</p>
-                    
+                    <p>Traditional elements like bazaars, cafes, and street vendors, as well as the presence of Albanian flags and symbols</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of street vendors, unique local businesses, and traditional clothing in rural areas; also, the mountainous terrain can be a clue</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/al.png" alt="Albania flag" class="clues-flag">
-                    
+                    <p>Look for the presence of street vendors, unique local businesses, and traditional clothing in rural areas; also, the mountainous terrain can be a clue</p>
                 </div>
                 
             </div>

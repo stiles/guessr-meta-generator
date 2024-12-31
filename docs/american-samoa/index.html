@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>American Samoa</h1>
+        <div class="header-content">
+            <h1>American Samoa</h1>
+            <img src="../static/flags/as.png" alt="American Samoa flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-14.270972" data-lon="-170.132217"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-14.270972"
+     data-lon="-170.132217"
+     data-name="american-samoa">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Samoan and English; the alphabet is the Latin alphabet with some additional letters like ʻ (okina) for glottal stops.</p>
-                    
+                    <p>Samoan and English; the alphabet is the Latin alphabet with some additional letters like ʻ (okina) for glottal stops.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically display a white background with blue text, featuring the abbreviation 'AS' for American Samoa.</p>
-                    
+                    <p>Vehicle registration plates typically display a white background with blue text, featuring the abbreviation 'AS' for American Samoa.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in English and Samoan, with a mix of standard American road sign styles and local variations.</p>
-                    
+                    <p>Road signs are primarily in English and Samoan, with a mix of standard American road sign styles and local variations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features lush tropical vegetation, volcanic mountains, and coastal areas with coral reefs.</p>
-                    
+                    <p>The landscape features lush tropical vegetation, volcanic mountains, and coastal areas with coral reefs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings often exhibit traditional Samoan architecture, such as fale (open-sided structures), along with some modern concrete structures.</p>
-                    
+                    <p>Buildings often exhibit traditional Samoan architecture, such as fale (open-sided structures), along with some modern concrete structures.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include traditional Samoan tattoos, local art, fale, and public gatherings that reflect Samoan customs and community life.</p>
-                    
+                    <p>Cultural markers include traditional Samoan tattoos, local art, fale, and public gatherings that reflect Samoan customs and community life.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Google Street View may show vibrant local markets, traditional festivals, and distinct natural vistas such as the National Park of American Samoa.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/as.png" alt="American Samoa flag" class="clues-flag">
-                    
+                    <p>Google Street View may show vibrant local markets, traditional festivals, and distinct natural vistas such as the National Park of American Samoa.</p>
                 </div>
                 
             </div>

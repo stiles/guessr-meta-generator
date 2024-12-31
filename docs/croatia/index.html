@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Croatia</h1>
+        <div class="header-content">
+            <h1>Croatia</h1>
+            <img src="../static/flags/hr.png" alt="Croatia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="45.1" data-lon="15.2"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="45.1"
+     data-lon="15.2"
+     data-name="croatia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Croatian; Latin alphabet with diacritics (č, ć, ž, š, đ)</p>
-                    
+                    <p>Croatian; Latin alphabet with diacritics (č, ć, ž, š, đ)</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>White background with blue and red stripes; the registration plate format is 'XX 1234 YY' with two letters, four digits, and two letters.</p>
-                    
+                    <p>White background with blue and red stripes; the registration plate format is 'XX 1234 YY' with two letters, four digits, and two letters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Right side of the road</p>
-                    
+                    <p>Right side of the road</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily blue and white with some signs having Croatian language. Warning signs are often triangular.</p>
-                    
+                    <p>Road signs are primarily blue and white with some signs having Croatian language. Warning signs are often triangular.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Varied landscapes including coastal areas along the Adriatic Sea, mountainous regions, and numerous islands.</p>
-                    
+                    <p>Varied landscapes including coastal areas along the Adriatic Sea, mountainous regions, and numerous islands.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Mix of modern and historical architecture; notable use of stone and Mediterranean style buildings.</p>
-                    
+                    <p>Mix of modern and historical architecture; notable use of stone and Mediterranean style buildings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive elements include traditional costumes, outdoor cafés, and local markets. Look for café culture and historical landmarks.</p>
-                    
+                    <p>Distinctive elements include traditional costumes, outdoor cafés, and local markets. Look for café culture and historical landmarks.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Presence of street names in Croatian; often see natural scenery like olive trees and vineyards.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/hr.png" alt="Croatia flag" class="clues-flag">
-                    
+                    <p>Presence of street names in Croatian; often see natural scenery like olive trees and vineyards.</p>
                 </div>
                 
             </div>

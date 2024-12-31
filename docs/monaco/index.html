@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Monaco</h1>
+        <div class="header-content">
+            <h1>Monaco</h1>
+            <img src="../static/flags/mc.png" alt="Monaco flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="43.750298" data-lon="7.412841"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="43.750298"
+     data-lon="7.412841"
+     data-name="monaco">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language, using the standard Latin alphabet with typical French diacritics.</p>
-                    
+                    <p>French is the official language, using the standard Latin alphabet with typical French diacritics.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicles have white registration plates with a blue band on the left side displaying 'MC' for Monaco.</p>
-                    
+                    <p>Vehicles have white registration plates with a blue band on the left side displaying 'MC' for Monaco.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are in French and follow the standard European road sign conventions.</p>
-                    
+                    <p>Road signs are in French and follow the standard European road sign conventions.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Monaco is characterized by its coastal Mediterranean climate, steep hills, and urbanized area along the coastline.</p>
-                    
+                    <p>Monaco is characterized by its coastal Mediterranean climate, steep hills, and urbanized area along the coastline.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include Belle Époque, modern high-rises, and luxury hotels, with a compact urban layout.</p>
-                    
+                    <p>Architectural styles include Belle Époque, modern high-rises, and luxury hotels, with a compact urban layout.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include the Casino de Monte-Carlo, luxury boutiques, and the presence of the Monaco Grand Prix.</p>
-                    
+                    <p>Distinctive markers include the Casino de Monte-Carlo, luxury boutiques, and the presence of the Monaco Grand Prix.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the iconic skyline featuring the Monte Carlo Casino, and the presence of yachts in the harbor.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/mc.png" alt="Monaco flag" class="clues-flag">
-                    
+                    <p>Look for the iconic skyline featuring the Monte Carlo Casino, and the presence of yachts in the harbor.</p>
                 </div>
                 
             </div>

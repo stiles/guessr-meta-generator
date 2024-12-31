@@ -157,13 +157,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.country-map {
-    height: 300px;
-    border-radius: 12px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .clues {
     margin-top: 40px;
 }
@@ -293,13 +286,15 @@ p {
     font-size: 12px;
     color: #666; 
 }
-#map {
+
+/* #map {
     width: 100%;
-    max-width: 2000px;
-    height: 450px;
-    border-radius: 5;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
 .quiz-container {
     text-align: center;
 }
@@ -389,8 +384,8 @@ p {
 
 .clues-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
@@ -403,8 +398,8 @@ p {
     background-color: var(--white);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+    padding: 30px;
+    /* text-align: center; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -414,17 +409,17 @@ p {
 }
 
 .clues-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: var(--dark-gray);
     margin-bottom: 10px;
 }
 
 .clues-item p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 300;
-    color: var(--battleship-gray);
+    color: var(--charcoal);
 }
 
 @media (max-width: 600px) {
@@ -478,13 +473,13 @@ body {
 }
 
 /* Map container styling */
-#map {
+/* #map {
     width: 100%;
     height: 400px;
     margin: 0 auto;
     border-radius: var(--border-radius);
     box-shadow: 0 4px 6px var(--shadow-color);
-}
+} */
 
 /* Map container styling */
 #quiz-map {
@@ -578,4 +573,65 @@ footer a:hover {
     .options {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+#country-map {
+    width: 100%; /* Ensure full width */
+    height: 500px; 
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; /* Ensure visibility */
+    position: relative; /* Required for Mapbox canvas */
+    background: lightgray; /* Debugging: Ensure the container is visible */
+    z-index: 1; /* Ensure no overlap */
+}
+
+.mapboxgl-map {
+    font: inherit;
+    position: relative;
+}
+
+.mapboxgl-canvas-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.overview {
+    width: 100%; /* Ensures it spans the container width */
+    max-width: 1200px; /* Optional: Limit the maximum width */
+    margin: 20px auto; /* Center and add spacing */
+    padding: 20px; /* Add some inner spacing */
+    display: flex; /* Allows flexible layout */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center align child elements */
+    justify-content: center; /* Vertically center contents */
+}
+
+#inset-map {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Center align header content */
+    gap: 10px; /* Space between the flag and the text */
+}
+
+.header-flag {
+    max-height: 40px; /* Restrict the height of the flag */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space to the left */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Optional: Add a subtle border */
+    border-radius: 4px; /* Optional: Rounded corners */
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Czechia</h1>
+        <div class="header-content">
+            <h1>Czechia</h1>
+            <img src="../static/flags/cz.png" alt="Czechia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="49.817492" data-lon="15.472962"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="49.817492"
+     data-lon="15.472962"
+     data-name="czechia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Czech is the official language, using the Latin alphabet with diacritics (e.g., á, č, ď, ě, ň, ó, ŕ, š, ť, ú, ž).</p>
-                    
+                    <p>Czech is the official language, using the Latin alphabet with diacritics (e.g., á, č, ď, ě, ň, ó, ŕ, š, ť, ú, ž).</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates have a white background with a blue band on the left containing the EU flag and the country code 'CZ'.</p>
-                    
+                    <p>Vehicle registration plates have a white background with a blue band on the left containing the EU flag and the country code 'CZ'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally white with blue or green backgrounds and include both Czech and EU-standard symbols.</p>
-                    
+                    <p>Road signs are generally white with blue or green backgrounds and include both Czech and EU-standard symbols.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Czechia features a mix of urban areas, rolling hills, forests, and rivers, with notable regions like the Bohemian Paradise and Moravian Karst.</p>
-                    
+                    <p>Czechia features a mix of urban areas, rolling hills, forests, and rivers, with notable regions like the Bohemian Paradise and Moravian Karst.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include Gothic, Baroque, and modern designs, with key features such as castles, cathedrals, and well-preserved historic towns.</p>
-                    
+                    <p>Architectural styles include Gothic, Baroque, and modern designs, with key features such as castles, cathedrals, and well-preserved historic towns.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include traditional Czech architecture, local cuisine (like trdelník), and cultural events like folk festivals.</p>
-                    
+                    <p>Distinctive markers include traditional Czech architecture, local cuisine (like trdelník), and cultural events like folk festivals.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the prevalence of red-tiled roofs, cobblestone streets, and the presence of public transport trams in cities like Prague.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/cz.png" alt="Czechia flag" class="clues-flag">
-                    
+                    <p>Look for the prevalence of red-tiled roofs, cobblestone streets, and the presence of public transport trams in cities like Prague.</p>
                 </div>
                 
             </div>

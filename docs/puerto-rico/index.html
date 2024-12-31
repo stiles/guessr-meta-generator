@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Puerto Rico</h1>
+        <div class="header-content">
+            <h1>Puerto Rico</h1>
+            <img src="../static/flags/pr.png" alt="Puerto Rico flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="18.220833" data-lon="-66.590149"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="18.220833"
+     data-lon="-66.590149"
+     data-name="puerto-rico">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Spanish is the official language, with English also widely spoken. The alphabet is similar to the English alphabet, featuring special characters like 'ñ'.</p>
-                    
+                    <p>Spanish is the official language, with English also widely spoken. The alphabet is similar to the English alphabet, featuring special characters like 'ñ'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically have a combination of letters and numbers, often starting with 'J' for Puerto Rico. Plates are colorful and may feature a tropical theme.</p>
-                    
+                    <p>Vehicle registration plates typically have a combination of letters and numbers, often starting with 'J' for Puerto Rico. Plates are colorful and may feature a tropical theme.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Spanish, using familiar shapes like rectangles, circles, and triangles. Warning signs often feature bright colors.</p>
-                    
+                    <p>Road signs are primarily in Spanish, using familiar shapes like rectangles, circles, and triangles. Warning signs often feature bright colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes tropical features such as lush greenery, mountainous regions, and coastal areas with beaches. It is often characterized by palm trees and vibrant flora.</p>
-                    
+                    <p>The landscape includes tropical features such as lush greenery, mountainous regions, and coastal areas with beaches. It is often characterized by palm trees and vibrant flora.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture ranges from colonial Spanish-style buildings to modern structures. Urban areas may have colorful facades and tiled roofs, while rural areas feature wooden houses.</p>
-                    
+                    <p>Architecture ranges from colonial Spanish-style buildings to modern structures. Urban areas may have colorful facades and tiled roofs, while rural areas feature wooden houses.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include the presence of salsa music, street vendors selling local food like mofongo, and colorful murals depicting Puerto Rican history.</p>
-                    
+                    <p>Cultural markers include the presence of salsa music, street vendors selling local food like mofongo, and colorful murals depicting Puerto Rican history.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for tropical plants, beaches, and the occasional presence of roosters in urban areas. Street art is also common.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/pr.png" alt="Puerto Rico flag" class="clues-flag">
-                    
+                    <p>Look for tropical plants, beaches, and the occasional presence of roosters in urban areas. Street art is also common.</p>
                 </div>
                 
             </div>

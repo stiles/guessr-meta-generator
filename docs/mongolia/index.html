@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Mongolia</h1>
+        <div class="header-content">
+            <h1>Mongolia</h1>
+            <img src="../static/flags/mn.png" alt="Mongolia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="46.862496" data-lon="103.846656"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="46.862496"
+     data-lon="103.846656"
+     data-name="mongolia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Mongolian is the official language, written in Cyrillic script, which includes characters such as Ө, Ү, and Җ.</p>
-                    
+                    <p>Mongolian is the official language, written in Cyrillic script, which includes characters such as Ө, Ү, and Җ.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band on the left side. The first letter indicates the region.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band on the left side. The first letter indicates the region.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Mongolian Cyrillic, with standard colors like blue for informational signs and red for prohibitory signs.</p>
-                    
+                    <p>Road signs are typically in Mongolian Cyrillic, with standard colors like blue for informational signs and red for prohibitory signs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape is characterized by vast steppes, mountains, and deserts, with a generally arid climate.</p>
-                    
+                    <p>The landscape is characterized by vast steppes, mountains, and deserts, with a generally arid climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas feature a mix of Soviet-era architecture and modern constructions, with low-rise buildings common in rural areas.</p>
-                    
+                    <p>Urban areas feature a mix of Soviet-era architecture and modern constructions, with low-rise buildings common in rural areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional ger (yurt) structures in rural settings, as well as nomadic herding practices.</p>
-                    
+                    <p>Look for traditional ger (yurt) structures in rural settings, as well as nomadic herding practices.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Google Street View may show wide open roads with little traffic, often surrounded by nature and few urban developments.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/mn.png" alt="Mongolia flag" class="clues-flag">
-                    
+                    <p>Google Street View may show wide open roads with little traffic, often surrounded by nature and few urban developments.</p>
                 </div>
                 
             </div>

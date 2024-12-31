@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Timor-Leste</h1>
+        <div class="header-content">
+            <h1>Timor-Leste</h1>
+            <img src="../static/flags/tl.png" alt="Timor-Leste flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-8.874217" data-lon="125.727539"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-8.874217"
+     data-lon="125.727539"
+     data-name="timor-leste">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>The official language is Portuguese, and Tetum is also widely spoken. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>The official language is Portuguese, and Tetum is also widely spoken. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top, displaying the letters 'TL' for Timor-Leste.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top, displaying the letters 'TL' for Timor-Leste.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in Portuguese and Tetum, with a mix of standard international symbols. They can be colorful but may also be faded or less standardized.</p>
-                    
+                    <p>Road signs are often in Portuguese and Tetum, with a mix of standard international symbols. They can be colorful but may also be faded or less standardized.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features mountainous regions, coastal areas, and tropical vegetation. There are also rice paddies and rugged terrain.</p>
-                    
+                    <p>The landscape features mountainous regions, coastal areas, and tropical vegetation. There are also rice paddies and rugged terrain.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings may show colonial architecture, particularly in Dili, with a mix of modern and traditional styles. Common materials include concrete and corrugated metal.</p>
-                    
+                    <p>Buildings may show colonial architecture, particularly in Dili, with a mix of modern and traditional styles. Common materials include concrete and corrugated metal.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional markets, churches, and community gatherings. Cultural festivals may also be observed in local areas.</p>
-                    
+                    <p>Look for traditional markets, churches, and community gatherings. Cultural festivals may also be observed in local areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street views may show local transport such as motorbikes and shared taxis, as well as signs of community life like street vendors.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/tl.png" alt="Timor-Leste flag" class="clues-flag">
-                    
+                    <p>Street views may show local transport such as motorbikes and shared taxis, as well as signs of community life like street vendors.</p>
                 </div>
                 
             </div>

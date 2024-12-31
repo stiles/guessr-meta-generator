@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Montserrat</h1>
+        <div class="header-content">
+            <h1>Montserrat</h1>
+            <img src="../static/flags/ms.png" alt="Montserrat flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="16.742498" data-lon="-62.187366"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="16.742498"
+     data-lon="-62.187366"
+     data-name="montserrat">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language, with a standard Latin alphabet and no special characters.</p>
-                    
+                    <p>English is the official language, with a standard Latin alphabet and no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band on the left side; they often feature the coat of arms of Montserrat.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band on the left side; they often feature the coat of arms of Montserrat.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in English, following the British style, with clear typography and often using reflective materials.</p>
-                    
+                    <p>Road signs are primarily in English, following the British style, with clear typography and often using reflective materials.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The terrain is characterized by volcanic hills, lush greenery, and a tropical climate; the landscape includes beaches, cliffs, and the Soufrière Hills volcano.</p>
-                    
+                    <p>The terrain is characterized by volcanic hills, lush greenery, and a tropical climate; the landscape includes beaches, cliffs, and the Soufrière Hills volcano.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings are typically colonial-style, with some modern structures; urban areas feature a mix of single-story and two-story homes, often with vibrant colors.</p>
-                    
+                    <p>Buildings are typically colonial-style, with some modern structures; urban areas feature a mix of single-story and two-story homes, often with vibrant colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include Caribbean influences in architecture, music, and festivals, as well as the presence of Irish heritage reflected in place names.</p>
-                    
+                    <p>Distinctive markers include Caribbean influences in architecture, music, and festivals, as well as the presence of Irish heritage reflected in place names.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of English-style telephone boxes, tropical flora, and occasional views of the volcanic landscape.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ms.png" alt="Montserrat flag" class="clues-flag">
-                    
+                    <p>Look for the presence of English-style telephone boxes, tropical flora, and occasional views of the volcanic landscape.</p>
                 </div>
                 
             </div>

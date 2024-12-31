@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Iraq</h1>
+        <div class="header-content">
+            <h1>Iraq</h1>
+            <img src="../static/flags/iq.png" alt="Iraq flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="33.223191" data-lon="43.679291"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="33.223191"
+     data-lon="43.679291"
+     data-name="iraq">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic (official), Kurdish; Arabic script with Latin script in some areas</p>
-                    
+                    <p>Arabic (official), Kurdish; Arabic script with Latin script in some areas</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a colored band at the top, usually blue or red, displaying the governorate name and vehicle type.</p>
-                    
+                    <p>Vehicle registration plates are white with a colored band at the top, usually blue or red, displaying the governorate name and vehicle type.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right-hand side of the road.</p>
-                    
+                    <p>Vehicles drive on the right-hand side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Arabic, with some bilingual signs in Kurdish in northern regions; signs often feature a mix of Latin and Arabic numerals.</p>
-                    
+                    <p>Road signs are primarily in Arabic, with some bilingual signs in Kurdish in northern regions; signs often feature a mix of Latin and Arabic numerals.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Iraq features a mix of desert landscapes, river valleys (especially around the Tigris and Euphrates), and mountainous areas in the north.</p>
-                    
+                    <p>Iraq features a mix of desert landscapes, river valleys (especially around the Tigris and Euphrates), and mountainous areas in the north.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture ranges from modern urban buildings to traditional mud-brick structures, with notable historical sites and mosques featuring domes and minarets.</p>
-                    
+                    <p>Architecture ranges from modern urban buildings to traditional mud-brick structures, with notable historical sites and mosques featuring domes and minarets.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional markets (souks), local food stalls, and cultural symbols such as the Iraqi flag or references to Mesopotamian history.</p>
-                    
+                    <p>Look for traditional markets (souks), local food stalls, and cultural symbols such as the Iraqi flag or references to Mesopotamian history.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Presence of palm trees, unique patterns in urban layouts, and traditional clothing can also be indicators.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/iq.png" alt="Iraq flag" class="clues-flag">
-                    
+                    <p>Presence of palm trees, unique patterns in urban layouts, and traditional clothing can also be indicators.</p>
                 </div>
                 
             </div>

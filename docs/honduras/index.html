@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Honduras</h1>
+        <div class="header-content">
+            <h1>Honduras</h1>
+            <img src="../static/flags/hn.png" alt="Honduras flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="15.199999" data-lon="-86.241905"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="15.199999"
+     data-lon="-86.241905"
+     data-name="honduras">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Spanish is the official language. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>Spanish is the official language. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top. They often have a unique identifier format.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top. They often have a unique identifier format.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Spanish, with a mix of standard road signs and some unique local variations.</p>
-                    
+                    <p>Road signs are typically in Spanish, with a mix of standard road signs and some unique local variations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Honduras features diverse landscapes including mountains, rainforests, and coastal areas along the Caribbean Sea.</p>
-                    
+                    <p>Honduras features diverse landscapes including mountains, rainforests, and coastal areas along the Caribbean Sea.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas may show colonial architecture, colorful buildings, and concrete structures. Rural areas often have simpler, functional buildings.</p>
-                    
+                    <p>Urban areas may show colonial architecture, colorful buildings, and concrete structures. Rural areas often have simpler, functional buildings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Common cultural markers include traditional clothing, local markets, and street vendors selling food.</p>
-                    
+                    <p>Common cultural markers include traditional clothing, local markets, and street vendors selling food.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of palm trees, tropical vegetation, and signs of local wildlife. Also, be aware of the common use of murals and graffiti in urban areas.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/hn.png" alt="Honduras flag" class="clues-flag">
-                    
+                    <p>Look for the presence of palm trees, tropical vegetation, and signs of local wildlife. Also, be aware of the common use of murals and graffiti in urban areas.</p>
                 </div>
                 
             </div>

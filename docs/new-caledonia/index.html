@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>New Caledonia</h1>
+        <div class="header-content">
+            <h1>New Caledonia</h1>
+            <img src="../static/flags/nc.png" alt="New Caledonia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-20.904305" data-lon="165.618042"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-20.904305"
+     data-lon="165.618042"
+     data-name="new-caledonia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language. The alphabet is Latin, and there are no special characters.</p>
-                    
+                    <p>French is the official language. The alphabet is Latin, and there are no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates have a white background with blue text and the letters 'NC' for New Caledonia.</p>
-                    
+                    <p>Vehicle registration plates have a white background with blue text and the letters 'NC' for New Caledonia.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in French and feature a mix of standard international symbols and local variations.</p>
-                    
+                    <p>Road signs are typically in French and feature a mix of standard international symbols and local variations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>New Caledonia has a diverse environment, including lush green landscapes, tropical forests, and a stunning coastline with coral reefs.</p>
-                    
+                    <p>New Caledonia has a diverse environment, including lush green landscapes, tropical forests, and a stunning coastline with coral reefs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles often reflect French colonial influence, featuring colorful buildings, wide boulevards, and local Kanak tribal designs.</p>
-                    
+                    <p>Architectural styles often reflect French colonial influence, featuring colorful buildings, wide boulevards, and local Kanak tribal designs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers such as traditional Kanak huts, local markets, and French restaurants showcasing a blend of Melanesian and French culture.</p>
-                    
+                    <p>Look for cultural markers such as traditional Kanak huts, local markets, and French restaurants showcasing a blend of Melanesian and French culture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Wildlife signs may feature unique local species, and you might see a mix of French and Kanak cultural symbols in public spaces.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/nc.png" alt="New Caledonia flag" class="clues-flag">
-                    
+                    <p>Wildlife signs may feature unique local species, and you might see a mix of French and Kanak cultural symbols in public spaces.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>British Virgin Islands</h1>
+        <div class="header-content">
+            <h1>British Virgin Islands</h1>
+            <img src="../static/flags/vg.png" alt="British Virgin Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="18.420695" data-lon="-64.639968"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="18.420695"
+     data-lon="-64.639968"
+     data-name="british-virgin-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language; the alphabet is the standard Latin alphabet with no special characters.</p>
-                    
+                    <p>English is the official language; the alphabet is the standard Latin alphabet with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates usually have a white background with black text, featuring a prefix that indicates the territory.</p>
-                    
+                    <p>Vehicle registration plates usually have a white background with black text, featuring a prefix that indicates the territory.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally in English, with a mix of standard British and local road signage styles.</p>
-                    
+                    <p>Road signs are generally in English, with a mix of standard British and local road signage styles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape is characterized by mountainous terrain, lush greenery, and coastal areas with beautiful beaches.</p>
-                    
+                    <p>The landscape is characterized by mountainous terrain, lush greenery, and coastal areas with beautiful beaches.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include a mix of colonial and modern Caribbean designs, often featuring pastel colors and wooden balconies.</p>
-                    
+                    <p>Architectural styles include a mix of colonial and modern Caribbean designs, often featuring pastel colors and wooden balconies.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include local festivals, food stalls with traditional Caribbean cuisine, and signs of British colonial influence.</p>
-                    
+                    <p>Distinctive markers include local festivals, food stalls with traditional Caribbean cuisine, and signs of British colonial influence.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of palm trees, tropical plants, and the general vibe of a laid-back island lifestyle.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/vg.png" alt="British Virgin Islands flag" class="clues-flag">
-                    
+                    <p>Look for the presence of palm trees, tropical plants, and the general vibe of a laid-back island lifestyle.</p>
                 </div>
                 
             </div>

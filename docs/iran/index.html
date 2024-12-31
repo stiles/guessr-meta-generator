@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Iran</h1>
+        <div class="header-content">
+            <h1>Iran</h1>
+            <img src="../static/flags/ir.png" alt="Iran flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="32.427908" data-lon="53.688046"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="32.427908"
+     data-lon="53.688046"
+     data-name="iran">
+</div>
         </section>
 
         

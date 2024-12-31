@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Algeria</h1>
+        <div class="header-content">
+            <h1>Algeria</h1>
+            <img src="../static/flags/dz.png" alt="Algeria flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="28.033886" data-lon="1.659626"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="28.033886"
+     data-lon="1.659626"
+     data-name="algeria">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic (official), Berber (official), French (widely used); uses Arabic script and Latin script for French</p>
-                    
+                    <p>Arabic (official), Berber (official), French (widely used); uses Arabic script and Latin script for French</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top, displaying 'DZ' for Algeria. The format often includes an area code and a numerical sequence.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top, displaying 'DZ' for Algeria. The format often includes an area code and a numerical sequence.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Arabic and French, with reflective materials; signs may include both Latin and Arabic scripts.</p>
-                    
+                    <p>Road signs are typically in Arabic and French, with reflective materials; signs may include both Latin and Arabic scripts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Varied landscapes including the Sahara Desert in the south, mountainous regions in the north, and Mediterranean coastline.</p>
-                    
+                    <p>Varied landscapes including the Sahara Desert in the south, mountainous regions in the north, and Mediterranean coastline.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include a mix of French colonial buildings, modern structures, and traditional Algerian designs like kasbahs.</p>
-                    
+                    <p>Architectural styles include a mix of French colonial buildings, modern structures, and traditional Algerian designs like kasbahs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive elements include Arabic calligraphy in public spaces, traditional clothing (like the burnous), and markets (souks) with local crafts.</p>
-                    
+                    <p>Distinctive elements include Arabic calligraphy in public spaces, traditional clothing (like the burnous), and markets (souks) with local crafts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for palm trees, desert landscapes, and the prevalence of French language in urban areas.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/dz.png" alt="Algeria flag" class="clues-flag">
-                    
+                    <p>Look for palm trees, desert landscapes, and the prevalence of French language in urban areas.</p>
                 </div>
                 
             </div>

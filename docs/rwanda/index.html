@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Rwanda</h1>
+        <div class="header-content">
+            <h1>Rwanda</h1>
+            <img src="../static/flags/rw.png" alt="Rwanda flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-1.940278" data-lon="29.873888"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-1.940278"
+     data-lon="29.873888"
+     data-name="rwanda">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Kinyarwanda (official), French, English; uses Latin alphabet</p>
-                    
+                    <p>Kinyarwanda (official), French, English; uses Latin alphabet</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a blue band at the top featuring the Rwandan flag.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a blue band at the top featuring the Rwandan flag.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in Kinyarwanda, with some bilingual signs in French or English; many signs are well-maintained and use bright colors.</p>
-                    
+                    <p>Road signs are often in Kinyarwanda, with some bilingual signs in French or English; many signs are well-maintained and use bright colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Rwanda is known as the 'Land of a Thousand Hills,' featuring lush green landscapes, rolling hills, and volcanic mountains.</p>
-                    
+                    <p>Rwanda is known as the 'Land of a Thousand Hills,' featuring lush green landscapes, rolling hills, and volcanic mountains.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas have modern buildings with some colonial architecture; rural areas may feature traditional mud houses with thatched roofs.</p>
-                    
+                    <p>Urban areas have modern buildings with some colonial architecture; rural areas may feature traditional mud houses with thatched roofs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional markets, colorful fabrics, and public murals depicting Rwandan culture; the presence of gorilla trekking signs in certain areas.</p>
-                    
+                    <p>Look for traditional markets, colorful fabrics, and public murals depicting Rwandan culture; the presence of gorilla trekking signs in certain areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Rwanda has a clean and organized appearance in urban areas; the presence of street vendors and gatherings in town centers can be a clue.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/rw.png" alt="Rwanda flag" class="clues-flag">
-                    
+                    <p>Rwanda has a clean and organized appearance in urban areas; the presence of street vendors and gatherings in town centers can be a clue.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Singapore</h1>
+        <div class="header-content">
+            <h1>Singapore</h1>
+            <img src="../static/flags/sg.png" alt="Singapore flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="1.352083" data-lon="103.819836"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="1.352083"
+     data-lon="103.819836"
+     data-name="singapore">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the primary language, with Malay, Mandarin, and Tamil also widely spoken; the alphabet is Latin with no special characters.</p>
-                    
+                    <p>English is the primary language, with Malay, Mandarin, and Tamil also widely spoken; the alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a black font; the format usually consists of one letter followed by a number and two letters (e.g., S1234AB).</p>
-                    
+                    <p>Vehicle registration plates are white with a black font; the format usually consists of one letter followed by a number and two letters (e.g., S1234AB).</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are in English and follow international standards; they typically use clear symbols and are well-maintained.</p>
-                    
+                    <p>Road signs are in English and follow international standards; they typically use clear symbols and are well-maintained.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape is predominantly urban with high-rise buildings; there are also parks and green spaces, and the coastal area features beaches.</p>
-                    
+                    <p>The landscape is predominantly urban with high-rise buildings; there are also parks and green spaces, and the coastal area features beaches.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles range from modern high-rises to colonial buildings; notable structures include Marina Bay Sands and Gardens by the Bay.</p>
-                    
+                    <p>Architectural styles range from modern high-rises to colonial buildings; notable structures include Marina Bay Sands and Gardens by the Bay.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include hawker centers, a mix of cultural festivals, and public transport systems like the MRT.</p>
-                    
+                    <p>Distinctive markers include hawker centers, a mix of cultural festivals, and public transport systems like the MRT.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Taxis are often brightly colored; there are extensive pedestrian walkways and covered walkways connecting buildings.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/sg.png" alt="Singapore flag" class="clues-flag">
-                    
+                    <p>Taxis are often brightly colored; there are extensive pedestrian walkways and covered walkways connecting buildings.</p>
                 </div>
                 
             </div>

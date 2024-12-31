@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Mali</h1>
+        <div class="header-content">
+            <h1>Mali</h1>
+            <img src="../static/flags/ml.png" alt="Mali flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="17.570692" data-lon="-3.996166"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="17.570692"
+     data-lon="-3.996166"
+     data-name="mali">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language. The alphabet is Latin with no special characters.</p>
-                    
+                    <p>French is the official language. The alphabet is Latin with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a blue band on the left featuring the country code 'ML'.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a blue band on the left featuring the country code 'ML'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally in French, using standard European signage styles with some local variations.</p>
-                    
+                    <p>Road signs are generally in French, using standard European signage styles with some local variations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Mali features a mix of savannah, desert, and river landscapes, including the Niger River and the Sahara Desert.</p>
-                    
+                    <p>Mali features a mix of savannah, desert, and river landscapes, including the Niger River and the Sahara Desert.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas may feature mud-brick buildings and traditional architecture, while cities like Bamako have a mix of modern and colonial influences.</p>
-                    
+                    <p>Urban areas may feature mud-brick buildings and traditional architecture, while cities like Bamako have a mix of modern and colonial influences.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive markers include traditional markets, mosques, and cultural events such as festivals featuring music and dance.</p>
-                    
+                    <p>Distinctive markers include traditional markets, mosques, and cultural events such as festivals featuring music and dance.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique street vendors, traditional attire, and the presence of bicycles and motorcycles as common modes of transport.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ml.png" alt="Mali flag" class="clues-flag">
-                    
+                    <p>Look for unique street vendors, traditional attire, and the presence of bicycles and motorcycles as common modes of transport.</p>
                 </div>
                 
             </div>

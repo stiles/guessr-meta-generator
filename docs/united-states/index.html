@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>United States</h1>
+        <div class="header-content">
+            <h1>United States</h1>
+            <img src="../static/flags/us.png" alt="United States flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="39.817075" data-lon="-98.362361"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="39.817075"
+     data-lon="-98.362361"
+     data-name="united-states">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English; uses the Latin alphabet (A-Z) with no special characters</p>
-                    
+                    <p>English; uses the Latin alphabet (A-Z) with no special characters</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a colored state name and may include a state slogan.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a colored state name and may include a state slogan.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally rectangular or octagonal, with a mix of green, blue, yellow, and red colors. Speed limits are usually in miles per hour (mph).</p>
-                    
+                    <p>Road signs are generally rectangular or octagonal, with a mix of green, blue, yellow, and red colors. Speed limits are usually in miles per hour (mph).</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including plains, mountains, forests, deserts, and coastal areas; can vary significantly by region.</p>
-                    
+                    <p>Diverse landscapes including plains, mountains, forests, deserts, and coastal areas; can vary significantly by region.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Variety of architectural styles, from colonial and Victorian to modern skyscrapers and suburban developments.</p>
-                    
+                    <p>Variety of architectural styles, from colonial and Victorian to modern skyscrapers and suburban developments.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Presence of various cultural markers such as diners, fast food chains, and national chain stores; local sports team insignias may be visible.</p>
-                    
+                    <p>Presence of various cultural markers such as diners, fast food chains, and national chain stores; local sports team insignias may be visible.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Interstate highway signs (with blue and white colors), distinctive yellow school bus, and presence of large parking lots.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/us.png" alt="United States flag" class="clues-flag">
-                    
+                    <p>Interstate highway signs (with blue and white colors), distinctive yellow school bus, and presence of large parking lots.</p>
                 </div>
                 
             </div>

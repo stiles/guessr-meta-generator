@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Panama</h1>
+        <div class="header-content">
+            <h1>Panama</h1>
+            <img src="../static/flags/pa.png" alt="Panama flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="8.537981" data-lon="-80.782127"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="8.537981"
+     data-lon="-80.782127"
+     data-name="panama">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Spanish is the official language, using the Latin alphabet with common Spanish diacritics.</p>
-                    
+                    <p>Spanish is the official language, using the Latin alphabet with common Spanish diacritics.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe at the top; the format usually includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe at the top; the format usually includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Spanish and often feature the distinctive use of symbols and colors typical of Central America.</p>
-                    
+                    <p>Road signs are primarily in Spanish and often feature the distinctive use of symbols and colors typical of Central America.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Panama features a mix of tropical rainforest, coastal areas, and mountainous regions; notable locations include the Panama Canal and lush greenery.</p>
-                    
+                    <p>Panama features a mix of tropical rainforest, coastal areas, and mountainous regions; notable locations include the Panama Canal and lush greenery.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas showcase a blend of colonial architecture and modern skyscrapers, especially in Panama City with its distinctive skyline.</p>
-                    
+                    <p>Urban areas showcase a blend of colonial architecture and modern skyscrapers, especially in Panama City with its distinctive skyline.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional Panamanian elements like Pollera dresses, indigenous art, and festive decorations during local celebrations.</p>
-                    
+                    <p>Look for traditional Panamanian elements like Pollera dresses, indigenous art, and festive decorations during local celebrations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>The presence of the Panama Canal, tropical flora, and the common sight of indigenous people in traditional attire can also help identify the country.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/pa.png" alt="Panama flag" class="clues-flag">
-                    
+                    <p>The presence of the Panama Canal, tropical flora, and the common sight of indigenous people in traditional attire can also help identify the country.</p>
                 </div>
                 
             </div>

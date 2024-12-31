@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Tuvalu</h1>
+        <div class="header-content">
+            <h1>Tuvalu</h1>
+            <img src="../static/flags/tv.png" alt="Tuvalu flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-7.109535" data-lon="177.64933"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-7.109535"
+     data-lon="177.64933"
+     data-name="tuvalu">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language, with Tuvaluan and Samoan also spoken. The alphabet is Latin-based without any special characters.</p>
-                    
+                    <p>English is the official language, with Tuvaluan and Samoan also spoken. The alphabet is Latin-based without any special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border, and they typically feature the letters 'TV' for Tuvalu.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border, and they typically feature the letters 'TV' for Tuvalu.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are in English and often use simple pictograms. Warning signs may include local language translations.</p>
-                    
+                    <p>Road signs are in English and often use simple pictograms. Warning signs may include local language translations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Tuvalu is characterized by low-lying islands, coral atolls, sandy beaches, and lush vegetation. The landscape is generally flat with limited elevation.</p>
-                    
+                    <p>Tuvalu is characterized by low-lying islands, coral atolls, sandy beaches, and lush vegetation. The landscape is generally flat with limited elevation.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings are typically simple, often made from local materials. Structures may include traditional thatched huts as well as modern concrete buildings.</p>
-                    
+                    <p>Buildings are typically simple, often made from local materials. Structures may include traditional thatched huts as well as modern concrete buildings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include traditional attire, local crafts, and community gatherings. You may also see flags or symbols representing the islands' heritage.</p>
-                    
+                    <p>Cultural markers include traditional attire, local crafts, and community gatherings. You may also see flags or symbols representing the islands' heritage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Google Street View may show local events, traditional ceremonies, and wildlife unique to the Pacific Islands, such as sea turtles or various bird species.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/tv.png" alt="Tuvalu flag" class="clues-flag">
-                    
+                    <p>Google Street View may show local events, traditional ceremonies, and wildlife unique to the Pacific Islands, such as sea turtles or various bird species.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Canada</h1>
+        <div class="header-content">
+            <h1>Canada</h1>
+            <img src="../static/flags/ca.png" alt="Canada flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="56.130366" data-lon="-106.346771"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="56.130366"
+     data-lon="-106.346771"
+     data-name="canada">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English and French; uses the Latin alphabet with special characters like é, à, and ç.</p>
-                    
+                    <p>English and French; uses the Latin alphabet with special characters like é, à, and ç.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically have a white background with blue lettering; the standard format includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates typically have a white background with blue lettering; the standard format includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often bilingual (English and French) and are standardized with clear symbols; highway signs usually have a green background.</p>
-                    
+                    <p>Road signs are often bilingual (English and French) and are standardized with clear symbols; highway signs usually have a green background.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse landscapes including forests, mountains, prairies, and coastlines; notable features include the Rocky Mountains and the Great Lakes.</p>
-                    
+                    <p>Diverse landscapes including forests, mountains, prairies, and coastlines; notable features include the Rocky Mountains and the Great Lakes.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles vary, but common elements include modern urban buildings in cities and wooden houses in rural areas; presence of distinct landmarks like CN Tower in Toronto.</p>
-                    
+                    <p>Architectural styles vary, but common elements include modern urban buildings in cities and wooden houses in rural areas; presence of distinct landmarks like CN Tower in Toronto.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Influences from Indigenous cultures, British, and French heritage; recognizable features include totem poles, maple syrup shops, and hockey rinks.</p>
-                    
+                    <p>Influences from Indigenous cultures, British, and French heritage; recognizable features include totem poles, maple syrup shops, and hockey rinks.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street furniture may include bilingual signs; look for snow in winter months; Canadian flags or symbols may appear on buildings or vehicles.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ca.png" alt="Canada flag" class="clues-flag">
-                    
+                    <p>Street furniture may include bilingual signs; look for snow in winter months; Canadian flags or symbols may appear on buildings or vehicles.</p>
                 </div>
                 
             </div>

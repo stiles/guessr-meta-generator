@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,25 +16,29 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>{{ country.name }}</h1>
+        <div class="header-content">
+            <h1>{{ country.name }}</h1>
+            <img src="../static/flags/{{ country.code }}.png" alt="{{ country.name }} flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="{{ country.lat }}" data-lon="{{ country.lon }}"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="{{ country.lat }}"
+     data-lon="{{ country.lon }}"
+     data-name="{{ country.name | slugify }}">
+</div>
         </section>
 
         {% if country.geoguessr_clues %}
         <section class="clues">
             <div class="clues-grid">
-                {% for key, value in country.geoguessr_clues.items() %}
+                {% for key, value in country.geoguessr_clues.items() if key != "flag" %}
                 <div class="clues-item">
                     <h3>{{ key | capitalize }}</h3>
-                    {% if key == "flag" %}
-                        <img src="../static/flags/{{ country.code }}.png" alt="{{ country.name }} flag" class="clues-flag">
-                    {% else %}
-                        <p>{{ value }}</p>
-                    {% endif %}
+                    <p>{{ value }}</p>
                 </div>
                 {% endfor %}
             </div>

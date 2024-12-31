@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Kuwait</h1>
+        <div class="header-content">
+            <h1>Kuwait</h1>
+            <img src="../static/flags/kw.png" alt="Kuwait flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="29.31166" data-lon="47.481766"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="29.31166"
+     data-lon="47.481766"
+     data-name="kuwait">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic is the official language. The Arabic alphabet is used, which has special characters such as ح, خ, and ع.</p>
-                    
+                    <p>Arabic is the official language. The Arabic alphabet is used, which has special characters such as ح, خ, and ع.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates typically have a white background with a blue band at the top featuring the emblem of Kuwait. The plates are numbered in Arabic and English.</p>
-                    
+                    <p>Vehicle registration plates typically have a white background with a blue band at the top featuring the emblem of Kuwait. The plates are numbered in Arabic and English.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Arabic, often accompanied by English translations. Signs may feature a combination of green and white for direction and informational signs.</p>
-                    
+                    <p>Road signs are primarily in Arabic, often accompanied by English translations. Signs may feature a combination of green and white for direction and informational signs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Kuwait has a mostly flat desert landscape with coastal areas along the Arabian Gulf. Sand dunes and sparse vegetation are common.</p>
-                    
+                    <p>Kuwait has a mostly flat desert landscape with coastal areas along the Arabian Gulf. Sand dunes and sparse vegetation are common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Modern architecture is prevalent, with a mix of traditional Islamic designs. Notable buildings include the Kuwait Towers and the Grand Mosque.</p>
-                    
+                    <p>Modern architecture is prevalent, with a mix of traditional Islamic designs. Notable buildings include the Kuwait Towers and the Grand Mosque.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers such as traditional markets (souks), mosques, and distinctively styled cafes. Arabic calligraphy and patterns are also common.</p>
-                    
+                    <p>Look for cultural markers such as traditional markets (souks), mosques, and distinctively styled cafes. Arabic calligraphy and patterns are also common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Kuwait's skyline is characterized by tall towers and modern high-rises, which are easily recognizable. The presence of palm trees and desert-like scenery can also be a clue.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/kw.png" alt="Kuwait flag" class="clues-flag">
-                    
+                    <p>Kuwait's skyline is characterized by tall towers and modern high-rises, which are easily recognizable. The presence of palm trees and desert-like scenery can also be a clue.</p>
                 </div>
                 
             </div>

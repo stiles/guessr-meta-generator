@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Denmark</h1>
+        <div class="header-content">
+            <h1>Denmark</h1>
+            <img src="../static/flags/dk.png" alt="Denmark flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="56.26392" data-lon="9.501785"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="56.26392"
+     data-lon="9.501785"
+     data-name="denmark">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Danish is the official language, using the Latin alphabet with special characters æ, ø, and å.</p>
-                    
+                    <p>Danish is the official language, using the Latin alphabet with special characters æ, ø, and å.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top, featuring a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top, featuring a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally blue and white or green and white, with clear, easy-to-read fonts. They often include pictograms.</p>
-                    
+                    <p>Road signs are generally blue and white or green and white, with clear, easy-to-read fonts. They often include pictograms.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Denmark features flat landscapes, coastal areas, and farmland, with a mix of urban and rural settings.</p>
-                    
+                    <p>Denmark features flat landscapes, coastal areas, and farmland, with a mix of urban and rural settings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles vary from traditional half-timbered houses to modern Scandinavian designs, often characterized by minimalism and functionality.</p>
-                    
+                    <p>Architectural styles vary from traditional half-timbered houses to modern Scandinavian designs, often characterized by minimalism and functionality.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for bicycles as a common mode of transport, and the presence of Danish flags (Dannebrog) in homes and public spaces.</p>
-                    
+                    <p>Look for bicycles as a common mode of transport, and the presence of Danish flags (Dannebrog) in homes and public spaces.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street names often include 'gade' (street) or 'vej' (way). The presence of wind turbines is also common in many areas.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/dk.png" alt="Denmark flag" class="clues-flag">
-                    
+                    <p>Street names often include 'gade' (street) or 'vej' (way). The presence of wind turbines is also common in many areas.</p>
                 </div>
                 
             </div>

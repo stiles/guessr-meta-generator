@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Somalia</h1>
+        <div class="header-content">
+            <h1>Somalia</h1>
+            <img src="../static/flags/so.png" alt="Somalia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="5.152149" data-lon="46.199616"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="5.152149"
+     data-lon="46.199616"
+     data-name="somalia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Somali and Arabic; Somali uses the Latin alphabet with some special characters like 'q' and 'x'.</p>
-                    
+                    <p>Somali and Arabic; Somali uses the Latin alphabet with some special characters like 'q' and 'x'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are usually white with a blue band at the top and include Somali scripts and numbers.</p>
-                    
+                    <p>Vehicle registration plates are usually white with a blue band at the top and include Somali scripts and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs may be in Somali and Arabic; they often have a simple design and can include both languages.</p>
-                    
+                    <p>Road signs may be in Somali and Arabic; they often have a simple design and can include both languages.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features arid terrains, coastal areas, and some mountainous regions, particularly in the north.</p>
-                    
+                    <p>The landscape features arid terrains, coastal areas, and some mountainous regions, particularly in the north.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas may show a mix of modern and traditional architectural styles, with some concrete buildings and colorful markets.</p>
-                    
+                    <p>Urban areas may show a mix of modern and traditional architectural styles, with some concrete buildings and colorful markets.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for signs of nomadic culture, traditional clothing like the 'dirac' for women, and the presence of camels or goats.</p>
-                    
+                    <p>Look for signs of nomadic culture, traditional clothing like the 'dirac' for women, and the presence of camels or goats.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street View may show local markets, mosques, and evidence of the Somali civil architecture.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/so.png" alt="Somalia flag" class="clues-flag">
-                    
+                    <p>Street View may show local markets, mosques, and evidence of the Somali civil architecture.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Belarus</h1>
+        <div class="header-content">
+            <h1>Belarus</h1>
+            <img src="../static/flags/by.png" alt="Belarus flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="53.709807" data-lon="27.953389"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="53.709807"
+     data-lon="27.953389"
+     data-name="belarus">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Belarusian and Russian; uses Cyrillic alphabet.</p>
-                    
+                    <p>Belarusian and Russian; uses Cyrillic alphabet.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with blue bands at the top; the code for Belarus is 'BY'.</p>
-                    
+                    <p>Vehicle registration plates are white with blue bands at the top; the code for Belarus is 'BY'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs typically use Cyrillic script and may also feature symbols and colors that are distinctively European.</p>
-                    
+                    <p>Road signs typically use Cyrillic script and may also feature symbols and colors that are distinctively European.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Flat terrain with extensive forests, rivers, and lakes; includes agricultural fields.</p>
-                    
+                    <p>Flat terrain with extensive forests, rivers, and lakes; includes agricultural fields.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Mix of Soviet-era architecture and modern buildings; often includes large public squares and wide boulevards.</p>
-                    
+                    <p>Mix of Soviet-era architecture and modern buildings; often includes large public squares and wide boulevards.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Traditional wooden houses can be found in rural areas; Belarusian motifs may be present in local art and crafts.</p>
-                    
+                    <p>Traditional wooden houses can be found in rural areas; Belarusian motifs may be present in local art and crafts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Presence of rural landscapes and villages; often see public transport buses; distinctive Soviet-era monuments.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/by.png" alt="Belarus flag" class="clues-flag">
-                    
+                    <p>Presence of rural landscapes and villages; often see public transport buses; distinctive Soviet-era monuments.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Tonga</h1>
+        <div class="header-content">
+            <h1>Tonga</h1>
+            <img src="../static/flags/to.png" alt="Tonga flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-21.178986" data-lon="-175.198242"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-21.178986"
+     data-lon="-175.198242"
+     data-name="tonga">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Tongan is the official language, using the Latin alphabet without any special characters.</p>
-                    
+                    <p>Tongan is the official language, using the Latin alphabet without any special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates in Tonga typically have a blue background with white letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates in Tonga typically have a blue background with white letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in English and Tongan, with simple designs and often colorful backgrounds.</p>
-                    
+                    <p>Road signs are primarily in English and Tongan, with simple designs and often colorful backgrounds.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Tonga consists of lush tropical islands, sandy beaches, coral reefs, and volcanic landscapes.</p>
-                    
+                    <p>Tonga consists of lush tropical islands, sandy beaches, coral reefs, and volcanic landscapes.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include traditional Tongan fale (thatched roof houses) and colonial-style buildings.</p>
-                    
+                    <p>Architectural styles include traditional Tongan fale (thatched roof houses) and colonial-style buildings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Distinctive cultural markers include Tongan fale, traditional tapa cloth, and signs of Polynesian heritage.</p>
-                    
+                    <p>Distinctive cultural markers include Tongan fale, traditional tapa cloth, and signs of Polynesian heritage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Tonga has a warm tropical climate, and the presence of palm trees and local flora can be indicators.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/to.png" alt="Tonga flag" class="clues-flag">
-                    
+                    <p>Tonga has a warm tropical climate, and the presence of palm trees and local flora can be indicators.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Montenegro</h1>
+        <div class="header-content">
+            <h1>Montenegro</h1>
+            <img src="../static/flags/me.png" alt="Montenegro flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="42.708678" data-lon="19.37439"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="42.708678"
+     data-lon="19.37439"
+     data-name="montenegro">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Montenegrin, which uses the Latin alphabet with some special characters such as č, ž, and đ.</p>
-                    
+                    <p>Montenegrin, which uses the Latin alphabet with some special characters such as č, ž, and đ.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left featuring the coat of arms of Montenegro.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left featuring the coat of arms of Montenegro.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Montenegrin and follow the EU standards, with many signs being bilingual in Albanian in certain areas.</p>
-                    
+                    <p>Road signs are typically in Montenegrin and follow the EU standards, with many signs being bilingual in Albanian in certain areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Montenegro features a diverse landscape with mountains, fjords, and coastal regions along the Adriatic Sea.</p>
-                    
+                    <p>Montenegro features a diverse landscape with mountains, fjords, and coastal regions along the Adriatic Sea.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles range from Venetian in coastal towns to Ottoman influences in the north, with modern buildings in urban areas.</p>
-                    
+                    <p>Architectural styles range from Venetian in coastal towns to Ottoman influences in the north, with modern buildings in urban areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional elements such as the use of the double-headed eagle emblem and historic churches or monasteries.</p>
-                    
+                    <p>Look for traditional elements such as the use of the double-headed eagle emblem and historic churches or monasteries.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>The presence of unique natural sites like the Bay of Kotor and the Durmitor National Park can also be clues.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/me.png" alt="Montenegro flag" class="clues-flag">
-                    
+                    <p>The presence of unique natural sites like the Bay of Kotor and the Durmitor National Park can also be clues.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Thailand</h1>
+        <div class="header-content">
+            <h1>Thailand</h1>
+            <img src="../static/flags/th.png" alt="Thailand flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="15.870032" data-lon="100.992541"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="15.870032"
+     data-lon="100.992541"
+     data-name="thailand">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Thai; uses the Thai script, which has 44 consonants and 15 vowel symbols</p>
-                    
+                    <p>Thai; uses the Thai script, which has 44 consonants and 15 vowel symbols</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a blue border and consist of Thai characters and numbers; private vehicles usually have a blue background with white letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a blue border and consist of Thai characters and numbers; private vehicles usually have a blue background with white letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs often have both Thai and English text; signs may be colorful and feature local symbols or icons.</p>
-                    
+                    <p>Road signs often have both Thai and English text; signs may be colorful and feature local symbols or icons.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Thailand features tropical landscapes, including beaches, mountains, and rice paddies; urban areas have a mix of modern and traditional architecture.</p>
-                    
+                    <p>Thailand features tropical landscapes, including beaches, mountains, and rice paddies; urban areas have a mix of modern and traditional architecture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Common architectural styles include traditional wooden houses, modern concrete buildings, and ornate Buddhist temples; cities are often bustling with street vendors and markets.</p>
-                    
+                    <p>Common architectural styles include traditional wooden houses, modern concrete buildings, and ornate Buddhist temples; cities are often bustling with street vendors and markets.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include temples (wats), street food stalls, and markets; presence of Buddhist symbols and imagery is prevalent.</p>
-                    
+                    <p>Cultural markers include temples (wats), street food stalls, and markets; presence of Buddhist symbols and imagery is prevalent.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for tuk-tuks and motorcycles as common forms of transport; also, street scenes often showcase vibrant colors and activity.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/th.png" alt="Thailand flag" class="clues-flag">
-                    
+                    <p>Look for tuk-tuks and motorcycles as common forms of transport; also, street scenes often showcase vibrant colors and activity.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Brazil</h1>
+        <div class="header-content">
+            <h1>Brazil</h1>
+            <img src="../static/flags/br.png" alt="Brazil flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-14.235004" data-lon="-51.92528"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-14.235004"
+     data-lon="-51.92528"
+     data-name="brazil">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Portuguese, using the Latin alphabet with diacritics such as ç, ã, and é</p>
-                    
+                    <p>Portuguese, using the Latin alphabet with diacritics such as ç, ã, and é</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates have a white background with a blue band at the top featuring the name of the state; plates also include a QR code and a unique alphanumeric code.</p>
-                    
+                    <p>Vehicle registration plates have a white background with a blue band at the top featuring the name of the state; plates also include a QR code and a unique alphanumeric code.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Portuguese and feature a mix of standard international symbols and unique local signage, often with a green and yellow color scheme.</p>
-                    
+                    <p>Road signs are typically in Portuguese and feature a mix of standard international symbols and unique local signage, often with a green and yellow color scheme.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse geographical features including the Amazon rainforest, coastal beaches, mountains, and urban areas with a tropical climate.</p>
-                    
+                    <p>Diverse geographical features including the Amazon rainforest, coastal beaches, mountains, and urban areas with a tropical climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles range from colonial buildings to modern skyscrapers, with notable use of colorful facades in cities like Salvador and Brasília's modernist architecture.</p>
-                    
+                    <p>Architectural styles range from colonial buildings to modern skyscrapers, with notable use of colorful facades in cities like Salvador and Brasília's modernist architecture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Indicators of Brazilian culture include samba and carnival influences, street art, and local cuisine represented in food stalls and restaurants.</p>
-                    
+                    <p>Indicators of Brazilian culture include samba and carnival influences, street art, and local cuisine represented in food stalls and restaurants.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for the presence of tropical vegetation, favelas (informal housing), and occasional Portuguese-language advertising.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/br.png" alt="Brazil flag" class="clues-flag">
-                    
+                    <p>Look for the presence of tropical vegetation, favelas (informal housing), and occasional Portuguese-language advertising.</p>
                 </div>
                 
             </div>

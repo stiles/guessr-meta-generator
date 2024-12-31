@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Saint Kitts and Nevis</h1>
+        <div class="header-content">
+            <h1>Saint Kitts and Nevis</h1>
+            <img src="../static/flags/kn.png" alt="Saint Kitts and Nevis flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="17.357822" data-lon="-62.782998"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="17.357822"
+     data-lon="-62.782998"
+     data-name="saint-kitts-and-nevis">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language; the alphabet is the standard Latin alphabet without special characters.</p>
-                    
+                    <p>English is the official language; the alphabet is the standard Latin alphabet without special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top, featuring the letters 'SK' for Saint Kitts and 'NE' for Nevis.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top, featuring the letters 'SK' for Saint Kitts and 'NE' for Nevis.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are generally in English and may feature a mix of British and American style signage.</p>
-                    
+                    <p>Road signs are generally in English and may feature a mix of British and American style signage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes volcanic mountains, lush rainforests, and coastal areas with beautiful beaches.</p>
-                    
+                    <p>The landscape includes volcanic mountains, lush rainforests, and coastal areas with beautiful beaches.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architectural styles include colonial buildings, brightly colored wooden houses, and modern Caribbean designs.</p>
-                    
+                    <p>Architectural styles include colonial buildings, brightly colored wooden houses, and modern Caribbean designs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers such as Carnival celebrations, music festivals, and local markets showcasing regional crafts.</p>
-                    
+                    <p>Look for cultural markers such as Carnival celebrations, music festivals, and local markets showcasing regional crafts.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Presence of palm trees, tropical flora, and views of both the Atlantic Ocean and the Caribbean Sea can help identify the country.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/kn.png" alt="Saint Kitts and Nevis flag" class="clues-flag">
-                    
+                    <p>Presence of palm trees, tropical flora, and views of both the Atlantic Ocean and the Caribbean Sea can help identify the country.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>French Polynesia</h1>
+        <div class="header-content">
+            <h1>French Polynesia</h1>
+            <img src="../static/flags/pf.png" alt="French Polynesia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-17.679742" data-lon="-149.406843"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-17.679742"
+     data-lon="-149.406843"
+     data-name="french-polynesia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language, with Tahitian also widely spoken. The alphabet is Latin-based, and may include accented characters such as é, è, and ê.</p>
-                    
+                    <p>French is the official language, with Tahitian also widely spoken. The alphabet is Latin-based, and may include accented characters such as é, è, and ê.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates in French Polynesia typically have a blue background with white characters and include a 'PF' prefix to indicate Polynesia.</p>
-                    
+                    <p>Vehicle registration plates in French Polynesia typically have a blue background with white characters and include a 'PF' prefix to indicate Polynesia.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in French, using standard French road sign shapes and colors. Look for signs with both French and Tahitian names.</p>
-                    
+                    <p>Road signs are primarily in French, using standard French road sign shapes and colors. Look for signs with both French and Tahitian names.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>French Polynesia features stunning tropical landscapes, including lush green mountains, coral reefs, and sandy beaches. The flora includes palm trees and vibrant flowers.</p>
-                    
+                    <p>French Polynesia features stunning tropical landscapes, including lush green mountains, coral reefs, and sandy beaches. The flora includes palm trees and vibrant flowers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Common architectural styles include traditional Polynesian structures with thatched roofs, as well as modern buildings influenced by French styles. Urban areas may have brightly colored houses.</p>
-                    
+                    <p>Common architectural styles include traditional Polynesian structures with thatched roofs, as well as modern buildings influenced by French styles. Urban areas may have brightly colored houses.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Cultural markers include traditional Polynesian carvings, tiki statues, and local markets. The presence of boats, particularly outrigger canoes, is also a notable aspect.</p>
-                    
+                    <p>Cultural markers include traditional Polynesian carvings, tiki statues, and local markets. The presence of boats, particularly outrigger canoes, is also a notable aspect.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for distinct tropical vegetation, ocean views, and the presence of overwater bungalows which are iconic to the region.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/pf.png" alt="French Polynesia flag" class="clues-flag">
-                    
+                    <p>Look for distinct tropical vegetation, ocean views, and the presence of overwater bungalows which are iconic to the region.</p>
                 </div>
                 
             </div>

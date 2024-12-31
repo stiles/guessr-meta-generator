@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Sweden</h1>
+        <div class="header-content">
+            <h1>Sweden</h1>
+            <img src="../static/flags/se.png" alt="Sweden flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="60.128161" data-lon="18.643501"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="60.128161"
+     data-lon="18.643501"
+     data-name="sweden">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Swedish is the official language, using the Latin alphabet with the addition of å, ä, and ö.</p>
-                    
+                    <p>Swedish is the official language, using the Latin alphabet with the addition of å, ä, and ö.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue strip on the left side that contains the EU flag and the country code 'S'.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue strip on the left side that contains the EU flag and the country code 'S'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs typically use blue, green, and yellow backgrounds with text in Swedish; signs are often rectangular or circular.</p>
-                    
+                    <p>Road signs typically use blue, green, and yellow backgrounds with text in Swedish; signs are often rectangular or circular.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse geography including forests, lakes, and coastal areas; flat plains in the south and mountainous regions in the north.</p>
-                    
+                    <p>Diverse geography including forests, lakes, and coastal areas; flat plains in the south and mountainous regions in the north.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Modern urban designs with a mix of historic and contemporary architecture; notable features include wooden houses and brick buildings.</p>
-                    
+                    <p>Modern urban designs with a mix of historic and contemporary architecture; notable features include wooden houses and brick buildings.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Traditional red wooden houses, the prominence of nature, and the presence of fika culture (coffee and pastries).</p>
-                    
+                    <p>Traditional red wooden houses, the prominence of nature, and the presence of fika culture (coffee and pastries).</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street names often include 'gata' (street), 'väg' (road), and 'torg' (square); presence of Swedish cultural symbols such as the Dala horse.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/se.png" alt="Sweden flag" class="clues-flag">
-                    
+                    <p>Street names often include 'gata' (street), 'väg' (road), and 'torg' (square); presence of Swedish cultural symbols such as the Dala horse.</p>
                 </div>
                 
             </div>

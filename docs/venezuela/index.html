@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Venezuela</h1>
+        <div class="header-content">
+            <h1>Venezuela</h1>
+            <img src="../static/flags/ve.png" alt="Venezuela flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="6.42375" data-lon="-66.58973"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="6.42375"
+     data-lon="-66.58973"
+     data-name="venezuela">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Spanish; uses the Latin alphabet with special characters such as ñ and accented vowels (á, é, í, ó, ú)</p>
-                    
+                    <p>Spanish; uses the Latin alphabet with special characters such as ñ and accented vowels (á, é, í, ó, ú)</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top that features the Venezuelan coat of arms, and they often start with a letter followed by numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top that features the Venezuelan coat of arms, and they often start with a letter followed by numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are typically in Spanish, with a mix of standard international symbols and unique local variations; signs often feature bright colors.</p>
-                    
+                    <p>Road signs are typically in Spanish, with a mix of standard international symbols and unique local variations; signs often feature bright colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Diverse geographical features including the Andes mountains, Amazon rainforest, and Caribbean coastline; tropical climate in many areas.</p>
-                    
+                    <p>Diverse geographical features including the Andes mountains, Amazon rainforest, and Caribbean coastline; tropical climate in many areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas may display a mix of colonial architecture and modern buildings, with notable structures like the Parque Central Complex in Caracas.</p>
-                    
+                    <p>Urban areas may display a mix of colonial architecture and modern buildings, with notable structures like the Parque Central Complex in Caracas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Venezuelan culture is marked by colorful murals, street art, and local music styles; look for signs of traditional celebrations or local markets.</p>
-                    
+                    <p>Venezuelan culture is marked by colorful murals, street art, and local music styles; look for signs of traditional celebrations or local markets.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for distinctive palm trees and tropical vegetation; rural areas often feature dirt roads and small houses with vibrant colors.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ve.png" alt="Venezuela flag" class="clues-flag">
-                    
+                    <p>Look for distinctive palm trees and tropical vegetation; rural areas often feature dirt roads and small houses with vibrant colors.</p>
                 </div>
                 
             </div>

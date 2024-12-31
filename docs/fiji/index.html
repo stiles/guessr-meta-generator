@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Fiji</h1>
+        <div class="header-content">
+            <h1>Fiji</h1>
+            <img src="../static/flags/fj.png" alt="Fiji flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-16.578193" data-lon="179.414413"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-16.578193"
+     data-lon="179.414413"
+     data-name="fiji">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language, and Fijian and Hindi are also widely spoken. The alphabet is based on the Latin script.</p>
-                    
+                    <p>English is the official language, and Fijian and Hindi are also widely spoken. The alphabet is based on the Latin script.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with blue lettering. They display a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are typically white with blue lettering. They display a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in English and may include traditional Fijian symbols. They can be colorful and may have a tropical or natural theme.</p>
-                    
+                    <p>Road signs are often in English and may include traditional Fijian symbols. They can be colorful and may have a tropical or natural theme.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features tropical forests, coastal beaches, coral reefs, and mountainous regions. Distinctive flora includes coconut palms and sugarcane fields.</p>
-                    
+                    <p>The landscape features tropical forests, coastal beaches, coral reefs, and mountainous regions. Distinctive flora includes coconut palms and sugarcane fields.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings often have a blend of modern and traditional designs, including thatched roofs and wooden structures. Urban areas might feature colonial-style architecture.</p>
-                    
+                    <p>Buildings often have a blend of modern and traditional designs, including thatched roofs and wooden structures. Urban areas might feature colonial-style architecture.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers such as traditional Fijian villages, meke performances, and handicrafts. The presence of kava ceremonies is also significant.</p>
-                    
+                    <p>Look for cultural markers such as traditional Fijian villages, meke performances, and handicrafts. The presence of kava ceremonies is also significant.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street View may show distinct tropical flora, beach activities, and vibrant local markets. Traditional Fijian architecture with thatched roofs can also be a clue.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/fj.png" alt="Fiji flag" class="clues-flag">
-                    
+                    <p>Street View may show distinct tropical flora, beach activities, and vibrant local markets. Traditional Fijian architecture with thatched roofs can also be a clue.</p>
                 </div>
                 
             </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Guinea</h1>
+        <div class="header-content">
+            <h1>Guinea</h1>
+            <img src="../static/flags/gn.png" alt="Guinea flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="9.945587" data-lon="-9.696645"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="9.945587"
+     data-lon="-9.696645"
+     data-name="guinea">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French (official), Malinke, Susu, Fulfulde; uses the Latin alphabet</p>
-                    
+                    <p>French (official), Malinke, Susu, Fulfulde; uses the Latin alphabet</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top; format includes the letters 'GN' for Guinea</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top; format includes the letters 'GN' for Guinea</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road</p>
-                    
+                    <p>Vehicles drive on the right side of the road</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are predominantly in French, with some using local languages; generally rectangular with a mix of colors</p>
-                    
+                    <p>Road signs are predominantly in French, with some using local languages; generally rectangular with a mix of colors</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Characterized by hilly terrain, forests, and rivers; coastal areas near the Atlantic Ocean</p>
-                    
+                    <p>Characterized by hilly terrain, forests, and rivers; coastal areas near the Atlantic Ocean</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas feature a mix of colonial and modern architecture; rural areas may have thatched-roof houses</p>
-                    
+                    <p>Urban areas feature a mix of colonial and modern architecture; rural areas may have thatched-roof houses</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Presence of vibrant markets, traditional crafts, and cultural festivals; visible use of traditional clothing</p>
-                    
+                    <p>Presence of vibrant markets, traditional crafts, and cultural festivals; visible use of traditional clothing</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Street View may show lush greenery, bustling markets, and a variety of transportation methods including bicycles and motorbikes</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/gn.png" alt="Guinea flag" class="clues-flag">
-                    
+                    <p>Street View may show lush greenery, bustling markets, and a variety of transportation methods including bicycles and motorbikes</p>
                 </div>
                 
             </div>

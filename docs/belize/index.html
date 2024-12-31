@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Belize</h1>
+        <div class="header-content">
+            <h1>Belize</h1>
+            <img src="../static/flags/bz.png" alt="Belize flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="17.189877" data-lon="-88.49765"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="17.189877"
+     data-lon="-88.49765"
+     data-name="belize">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the official language; Spanish and Kriol are also widely spoken. The alphabet is the same as in English with no special characters.</p>
-                    
+                    <p>English is the official language; Spanish and Kriol are also widely spoken. The alphabet is the same as in English with no special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue border, featuring the word 'Belize' at the top and a unique alphanumeric code.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue border, featuring the word 'Belize' at the top and a unique alphanumeric code.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are in English and often feature a mix of standard and unique designs, including some with colorful graphics and local themes.</p>
-                    
+                    <p>Road signs are in English and often feature a mix of standard and unique designs, including some with colorful graphics and local themes.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape includes coastal areas, rainforests, and barrier reefs, with tropical vegetation and diverse wildlife.</p>
-                    
+                    <p>The landscape includes coastal areas, rainforests, and barrier reefs, with tropical vegetation and diverse wildlife.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture is a mix of colonial styles, including wooden houses, and modern concrete buildings, often with vibrant colors.</p>
-                    
+                    <p>Architecture is a mix of colonial styles, including wooden houses, and modern concrete buildings, often with vibrant colors.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers like Garifuna music, Mayan ruins, and local markets that reflect the diverse heritage.</p>
-                    
+                    <p>Look for cultural markers like Garifuna music, Mayan ruins, and local markets that reflect the diverse heritage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Distinctive features include the presence of palm trees, Caribbean-style architecture, and the use of English in most public signage.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/bz.png" alt="Belize flag" class="clues-flag">
-                    
+                    <p>Distinctive features include the presence of palm trees, Caribbean-style architecture, and the use of English in most public signage.</p>
                 </div>
                 
             </div>

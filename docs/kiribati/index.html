@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Kiribati</h1>
+        <div class="header-content">
+            <h1>Kiribati</h1>
+            <img src="../static/flags/ki.png" alt="Kiribati flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-3.370417" data-lon="-168.734039"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-3.370417"
+     data-lon="-168.734039"
+     data-name="kiribati">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Gilbertese is the most widely spoken language, using the Latin alphabet without any special characters.</p>
-                    
+                    <p>Gilbertese is the most widely spoken language, using the Latin alphabet without any special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a blue border, featuring the name 'Kiribati' and the registration number in black.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a blue border, featuring the name 'Kiribati' and the registration number in black.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are usually in English, with a mix of Gilbertese. They may include simple symbols and are often faded or worn due to the tropical climate.</p>
-                    
+                    <p>Road signs are usually in English, with a mix of Gilbertese. They may include simple symbols and are often faded or worn due to the tropical climate.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Kiribati consists of low-lying atolls and islands, surrounded by turquoise waters, with sandy beaches and palm trees.</p>
-                    
+                    <p>Kiribati consists of low-lying atolls and islands, surrounded by turquoise waters, with sandy beaches and palm trees.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture includes traditional thatched-roof huts, concrete buildings in urban areas, and minimal high-rise structures.</p>
-                    
+                    <p>Architecture includes traditional thatched-roof huts, concrete buildings in urban areas, and minimal high-rise structures.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional crafts, local markets, and the presence of cultural motifs in public places. The use of bright colors in clothing is also common.</p>
-                    
+                    <p>Look for traditional crafts, local markets, and the presence of cultural motifs in public places. The use of bright colors in clothing is also common.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Google Street View may show remote islands, with limited infrastructure and often only a few roads. Expect to see extensive marine views and local flora.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ki.png" alt="Kiribati flag" class="clues-flag">
-                    
+                    <p>Google Street View may show remote islands, with limited infrastructure and often only a few roads. Expect to see extensive marine views and local flora.</p>
                 </div>
                 
             </div>

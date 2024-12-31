@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Côte d'Ivoire (Ivory Coast)</h1>
+        <div class="header-content">
+            <h1>Côte d'Ivoire (Ivory Coast)</h1>
+            <img src="../static/flags/ci.png" alt="Côte d'Ivoire (Ivory Coast) flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="7.539989" data-lon="-5.54708"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="7.539989"
+     data-lon="-5.54708"
+     data-name="cote-divoire-ivory-coast">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>French is the official language, using the Latin alphabet without special characters.</p>
-                    
+                    <p>French is the official language, using the Latin alphabet without special characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a blue band at the top featuring the Ivorian flag and the number 'Côte d'Ivoire'.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a blue band at the top featuring the Ivorian flag and the number 'Côte d'Ivoire'.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are often in French, featuring blue, green, and white colors. Stop signs are octagonal and red.</p>
-                    
+                    <p>Road signs are often in French, featuring blue, green, and white colors. Stop signs are octagonal and red.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features a mix of coastal areas, savannahs, and rainforests, with notable palm trees along the coast.</p>
-                    
+                    <p>The landscape features a mix of coastal areas, savannahs, and rainforests, with notable palm trees along the coast.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Urban areas feature modern buildings alongside traditional architecture, with a mix of concrete and colorful facades.</p>
-                    
+                    <p>Urban areas feature modern buildings alongside traditional architecture, with a mix of concrete and colorful facades.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for vibrant markets, traditional clothing, and local art such as wood carvings and textiles.</p>
-                    
+                    <p>Look for vibrant markets, traditional clothing, and local art such as wood carvings and textiles.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Presence of distinctive public transport vehicles like 'gbaka' (shared minibuses) and 'brouhaha' (motorbike taxis).</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ci.png" alt="Côte d'Ivoire (Ivory Coast) flag" class="clues-flag">
-                    
+                    <p>Presence of distinctive public transport vehicles like 'gbaka' (shared minibuses) and 'brouhaha' (motorbike taxis).</p>
                 </div>
                 
             </div>

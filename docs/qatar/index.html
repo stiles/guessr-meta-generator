@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Qatar</h1>
+        <div class="header-content">
+            <h1>Qatar</h1>
+            <img src="../static/flags/qa.png" alt="Qatar flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="25.354826" data-lon="51.183884"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="25.354826"
+     data-lon="51.183884"
+     data-name="qatar">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Arabic is the official language, using the Arabic alphabet. English is also widely spoken.</p>
-                    
+                    <p>Arabic is the official language, using the Arabic alphabet. English is also widely spoken.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are typically white with a red border. The registration number is displayed in Arabic and English.</p>
-                    
+                    <p>Vehicle registration plates are typically white with a red border. The registration number is displayed in Arabic and English.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right-hand side of the road.</p>
-                    
+                    <p>Vehicles drive on the right-hand side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs are primarily in Arabic and English, with a mix of both languages present. Signs are often large and well-lit.</p>
-                    
+                    <p>Road signs are primarily in Arabic and English, with a mix of both languages present. Signs are often large and well-lit.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>Qatar is characterized by its desert landscape, with sandy terrain, sparse vegetation, and coastal areas along the Persian Gulf.</p>
-                    
+                    <p>Qatar is characterized by its desert landscape, with sandy terrain, sparse vegetation, and coastal areas along the Persian Gulf.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Modern architectural styles are prevalent, including skyscrapers and innovative buildings. Traditional Qatari architecture can be seen in older areas.</p>
-                    
+                    <p>Modern architectural styles are prevalent, including skyscrapers and innovative buildings. Traditional Qatari architecture can be seen in older areas.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for cultural markers such as traditional markets (souqs), Islamic architecture, and public art that reflects Qatari heritage.</p>
-                    
+                    <p>Look for cultural markers such as traditional markets (souqs), Islamic architecture, and public art that reflects Qatari heritage.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>The presence of palm trees, large shopping malls, and modern highways are distinctive features. Look for signs of rapid urban development.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/qa.png" alt="Qatar flag" class="clues-flag">
-                    
+                    <p>The presence of palm trees, large shopping malls, and modern highways are distinctive features. Look for signs of rapid urban development.</p>
                 </div>
                 
             </div>

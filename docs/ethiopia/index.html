@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Ethiopia</h1>
+        <div class="header-content">
+            <h1>Ethiopia</h1>
+            <img src="../static/flags/et.png" alt="Ethiopia flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="9.145" data-lon="40.489673"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="9.145"
+     data-lon="40.489673"
+     data-name="ethiopia">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>Amharic is the official language, using the Ge'ez script which features unique characters and is an abugida with consonant-vowel combinations.</p>
-                    
+                    <p>Amharic is the official language, using the Ge'ez script which features unique characters and is an abugida with consonant-vowel combinations.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue band at the top. The format typically includes a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue band at the top. The format typically includes a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the right side of the road.</p>
-                    
+                    <p>Vehicles drive on the right side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs often feature Amharic script, with some also including English. Signs may have distinctive colors like blue and green.</p>
-                    
+                    <p>Road signs often feature Amharic script, with some also including English. Signs may have distinctive colors like blue and green.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape varies from mountainous regions to plateaus and valleys. Common features include the Great Rift Valley and diverse vegetation.</p>
-                    
+                    <p>The landscape varies from mountainous regions to plateaus and valleys. Common features include the Great Rift Valley and diverse vegetation.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Architecture often includes a mix of traditional Ethiopian structures with thatched roofs and modern buildings in urban areas. Churches often feature unique designs.</p>
-                    
+                    <p>Architecture often includes a mix of traditional Ethiopian structures with thatched roofs and modern buildings in urban areas. Churches often feature unique designs.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Ethiopian cultural markers include traditional coffee ceremonies, unique cuisine (like injera), and religious festivals. Look for traditional clothing.</p>
-                    
+                    <p>Ethiopian cultural markers include traditional coffee ceremonies, unique cuisine (like injera), and religious festivals. Look for traditional clothing.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Look for unique features like tuk-tuks, distinct local markets, and rural areas with traditional huts. Also, the presence of Ethiopian Orthodox churches.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/et.png" alt="Ethiopia flag" class="clues-flag">
-                    
+                    <p>Look for unique features like tuk-tuks, distinct local markets, and rural areas with traditional huts. Also, the presence of Ethiopian Orthodox churches.</p>
                 </div>
                 
             </div>

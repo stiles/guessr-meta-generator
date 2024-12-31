@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
     <div class="topnav">
@@ -15,12 +16,20 @@
         <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
     </div>
     <header>
-        <h1>Cook Islands</h1>
+        <div class="header-content">
+            <h1>Cook Islands</h1>
+            <img src="../static/flags/ck.png" alt="Cook Islands flag" class="header-flag">
+        </div>
     </header>
 
     <main>
         <section class="overview">
-            <div id="map" class="country-map" data-lat="-21.236736" data-lon="-159.777671"></div>
+            <div id="country-map"
+     class="country-map mapboxgl-map"
+     data-lat="-21.236736"
+     data-lon="-159.777671"
+     data-name="cook-islands">
+</div>
         </section>
 
         
@@ -29,65 +38,42 @@
                 
                 <div class="clues-item">
                     <h3>Language</h3>
-                    
-                        <p>English is the predominant language, with Māori also spoken. The alphabet is Latin with standard characters.</p>
-                    
+                    <p>English is the predominant language, with Māori also spoken. The alphabet is Latin with standard characters.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Cars</h3>
-                    
-                        <p>Vehicle registration plates are white with a blue stripe and feature the word 'Cook Islands'. The format is usually a combination of letters and numbers.</p>
-                    
+                    <p>Vehicle registration plates are white with a blue stripe and feature the word 'Cook Islands'. The format is usually a combination of letters and numbers.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Driving</h3>
-                    
-                        <p>Vehicles drive on the left side of the road.</p>
-                    
+                    <p>Vehicles drive on the left side of the road.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Signs</h3>
-                    
-                        <p>Road signs often have English and Māori text. Signs may be in both languages, and are typically white with black or blue lettering.</p>
-                    
+                    <p>Road signs often have English and Māori text. Signs may be in both languages, and are typically white with black or blue lettering.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Environment</h3>
-                    
-                        <p>The landscape features tropical islands, with sandy beaches, palm trees, and volcanic mountains. The environment is lush and coastal.</p>
-                    
+                    <p>The landscape features tropical islands, with sandy beaches, palm trees, and volcanic mountains. The environment is lush and coastal.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Infrastructure</h3>
-                    
-                        <p>Buildings are often low-rise, with a mix of traditional thatched-roof structures and modern architecture. Urban areas may have colorful wooden houses.</p>
-                    
+                    <p>Buildings are often low-rise, with a mix of traditional thatched-roof structures and modern architecture. Urban areas may have colorful wooden houses.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Culture</h3>
-                    
-                        <p>Look for traditional Polynesian cultural elements, such as tattoos, handicrafts, and local markets. The presence of cultural festivals may also be evident.</p>
-                    
+                    <p>Look for traditional Polynesian cultural elements, such as tattoos, handicrafts, and local markets. The presence of cultural festivals may also be evident.</p>
                 </div>
                 
                 <div class="clues-item">
                     <h3>Bonus</h3>
-                    
-                        <p>Google Street View may show vibrant local flora, ocean views, and small fishing boats. Look for signs in both English and Māori.</p>
-                    
-                </div>
-                
-                <div class="clues-item">
-                    <h3>Flag</h3>
-                    
-                        <img src="../static/flags/ck.png" alt="Cook Islands flag" class="clues-flag">
-                    
+                    <p>Google Street View may show vibrant local flora, ocean views, and small fishing boats. Look for signs in both English and Māori.</p>
                 </div>
                 
             </div>
