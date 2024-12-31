@@ -26,7 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const mapLon = parseFloat(mapContainer.getAttribute("data-lon"));
     const countryName = mapContainer.getAttribute("data-name");
 
-    const geojsonUrl = `/static/data/geo/${countryName}.geojson`;
+    // Dynamically determine the base path
+    const basePath = window.location.pathname.includes('/guessr-meta-generator/')
+        ? '/guessr-meta-generator'
+        : '';
+
+    // Construct the GeoJSON URL
+    const geojsonUrl = `${basePath}/static/data/geo/${countryName}.geojson`;
 
     console.log("GeoJSON URL:", geojsonUrl);
 
@@ -38,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         zoom: 5,
     });
 
-    // Load country boundary GeoJSON
     map.on('load', function () {
+        // Load country boundary GeoJSON
         map.addSource('country-boundary', {
             type: 'geojson',
             data: geojsonUrl,
@@ -76,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
             interactive: false,
         });
 
-        // Add a source and layer for the bounding box on the inset map
         insetMap.on('load', () => {
             insetMap.addSource('main-map-bounds', {
                 type: 'geojson',
@@ -108,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             [bounds.getNorthWest().lng, bounds.getNorthWest().lat],
                             [bounds.getNorthEast().lng, bounds.getNorthEast().lat],
                             [bounds.getSouthEast().lng, bounds.getSouthEast().lat],
-                            [bounds.getSouthWest().lng, bounds.getSouthWest().lat] // Close the polygon
+                            [bounds.getSouthWest().lng, bounds.getSouthWest().lat], // Close the polygon
                         ]],
                     },
                 };
@@ -129,4 +134,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
