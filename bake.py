@@ -105,12 +105,14 @@ def kill(port=8000):
 
 
 def copy_static_files():
-    """Copy static assets to the build directory."""
-    static_src = "static"
-    static_dest = os.path.join(output_dir, "static")
-    if os.path.exists(static_dest):
+    static_dest = os.path.join("docs", "static")
+    print(f"Removing static files at {static_dest}")
+    try:
         shutil.rmtree(static_dest)
-    shutil.copytree(static_src, static_dest)
+    except Exception as e:
+        print(f"Failed to remove {static_dest}: {e}")
+    os.makedirs(static_dest, exist_ok=True)
+    shutil.copytree("static", static_dest, dirs_exist_ok=True)
     print(f"Copied static files to {static_dest}")
 
 @baker.command
