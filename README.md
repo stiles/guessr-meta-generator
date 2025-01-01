@@ -6,7 +6,7 @@ The project was born out of a desire to help my kids better understand geography
 
 The project, for now, includes scripts to collect and generate game-specific metadata about countries and US states. It also contains code to create a simple country mapping quiz and a filterable grid of national flags, with country-specific pages baked into static files. In addition, there are scripts to fetch details about specific duels or to compile a dataframe of all of your duels.
 
-*It's very new and a work in progress.*
+*It's very new and a work in progress, but live here: [https://levelupgeo.com](https://levelupgeo.com)*
 
 ## Features
 
