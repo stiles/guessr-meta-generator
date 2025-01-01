@@ -13,16 +13,33 @@ from watchdog.events import FileSystemEventHandler
 import subprocess
 import time
 
-# Load country data
-with open("./static/data/geoguessr_clues.json", "r") as f:
-    country_data = json.load(f)
-
 # Set up Jinja2 environment for rendering templates
 env = Environment(loader=FileSystemLoader("templates"))
 
+# Load and process country data
+with open("./static/data/geoguessr_clues.json", "r") as f:
+    country_data = json.load(f)
+
+# Group countries by region and sub-region
+regions = {}
+for code, country in country_data.items():  # Iterate over the dictionary items
+    region = country.get("region", "Unknown")
+    subregion = country.get("sub-region", "Other")
+
+    if region not in regions:
+        regions[region] = {}
+    if subregion not in regions[region]:
+        regions[region][subregion] = []
+
+    regions[region][subregion].append(country)
+
+
+
 def slugify(value):
     """Converts a string to a slug-friendly format."""
-    value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')  # Remove accents
+    if not value:  # Handle None or empty values
+        return "uncategorized"
+    value = unicodedata.normalize('NFKD', str(value)).encode('ascii', 'ignore').decode('ascii')  # Remove accents
     value = re.sub(r'[^\w\s-]', '', value).strip().lower()  # Remove non-alphanumeric characters
     value = re.sub(r'[-\s]+', '-', value)  # Replace spaces and repeated dashes with a single dash
     return value
@@ -103,17 +120,65 @@ def build_index():
     output_path = os.path.join(output_dir, "index.html")
     os.makedirs(output_dir, exist_ok=True)
 
+    # Organize countries by region and sub-region
+    regions = {}
+    for code, country in country_data.items():
+        region = country.get("region", "Unknown")
+        sub_region = country.get("sub-region", "Other")
+        if region not in regions:
+            regions[region] = {}
+        if sub_region not in regions[region]:
+            regions[region][sub_region] = []
+        regions[region][sub_region].append(country)
+
     # Copy static files to build directory
     copy_static_files()
 
-    # Render the index with all countries
-    rendered_index = template.render(countries={
-        code.lower(): country for code, country in country_data.items()
-    })
+    # Render the index with regions and sub-regions
+    rendered_index = template.render(regions=regions)
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(rendered_index)
     print(f"Generated homepage: {output_path}")
+
+@baker.command
+def build_regions():
+    """Generate region pages."""
+    template = env.get_template("region.html")
+    for region, subregions in regions.items():
+        output_path = os.path.join(output_dir, region.lower().replace(" ", "-"), "index.html")
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(template.render(region_name=region, subregions=subregions))
+        print(f"Generated region page: {output_path}")
+
+@baker.command
+def build_subregions():
+    """Generate subregion pages."""
+    template = env.get_template("subregion.html")
+    for region, subregions in regions.items():
+        for subregion, countries in subregions.items():
+            output_path = os.path.join(
+                output_dir, region.lower().replace(" ", "-"),
+                subregion.lower().replace(" ", "-"), "index.html"
+            )
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(template.render(subregion_name=subregion, countries=countries))
+            print(f"Generated subregion page: {output_path}")
+
+@baker.command
+def build_quiz():
+    """Generate the quiz page."""
+    template = env.get_template("quiz.html")
+    output_path = os.path.join(output_dir, "quiz.html")
+    os.makedirs(output_dir, exist_ok=True)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(template.render())
+    print(f"Generated quiz page: {output_path}")
 
 @baker.command
 def build_countries():
@@ -147,6 +212,8 @@ def build_all():
     build_index()
     build_countries()
     build_quiz()
+    build_regions()
+    build_subregions()
     print("All pages built successfully!")
 
 if __name__ == "__main__":

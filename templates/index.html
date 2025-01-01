@@ -4,43 +4,54 @@
     <meta charset="UTF-8">
     <link rel="icon" href="static/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoGuessr cheat sheet</title>
+    <title>GeoGuessr Cheat Sheet</title>
     <link rel="stylesheet" href="static/style.css">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
 </head>
 
 <body>
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <a href="quiz.html">Quiz</a>
-        <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
+        <a href="https://github.com/stiles/guessr-meta-generator/blob/main/README.md">About</a>
     </div>
-    <header>
-        <h1>GeoGuessr Tools</h1>
+
+    <header class="main-header">
+        <div class="intro-container">
+            <h1 class="main-title">Explore the world. Improve your GeoGuessr game.</h1>
+            <p class="intro-text">
+                This is your AI-powered resource for learning about world countries and enhancing your GeoGuessr skills.
+                Dive into regional insights, discover unique features — and become a master of global geography!
+            </p>
+        </div>
         <div class="filter-container">
-            <input type="text" id="filter-input" class="filter-input" oninput="filterCountries()" placeholder="Search countries...">
+            <input type="text" id="filter-input" class="filter-input" oninput="filterCountries()" placeholder="Explore countries...">
         </div>
     </header>
 
     <main>
-        <div id="grid-container" class="grid-container">
-            {% for code, country in countries.items() %}
-            <a href="{{ country.name | slugify }}/index.html" class="grid-item" data-name="{{ country.name }}">
-                <img src="static/flags/{{ country.code }}.png" alt="{{ country.name }} flag" class="flag">
-                <p>{{ country.name }}</p>
-            </a>
+        {% for region, subregions in regions.items() %}
+        <section class="region-section">
+            <h2 class="region-title">{{ region }}</h2>
+            {% for subregion, countries in subregions.items() %}
+            <h3 class="subregion-title">{{ subregion }}</h3>
+            <div class="grid-container">
+                {% for country in countries %}
+                <a href="{{ country.name | slugify }}/index.html" class="grid-item" data-name="{{ country.name }}">
+                    <img src="static/flags/{{ country.code }}.png" alt="{{ country.name }} flag" class="flag">
+                    <p>{{ country.name }}</p>
+                </a>
+                {% endfor %}
+            </div>
             {% endfor %}
-        </div>
+        </section>
+        {% endfor %}
     </main>
 
     <footer>
-        <p>Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/baker-example-page-template?tab=readme-ov-file">Baker</a></p>
+        <p class="credits">Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/LA Times -example-page-template?tab=readme-ov-file">LA Times Baker</a>. Flag images via <a href="https://flagpedia.net/">Flagpedia</a>.</p>
     </footer>
 
-    <!-- Link to external scripts -->
-    <script src="/static/script.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>

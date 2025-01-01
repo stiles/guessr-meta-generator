@@ -10,28 +10,44 @@
     <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
+    <!-- Top Navbar -->
     <div class="topnav">
-        <a href="../index.html">Home</a>
-        <a href="../quiz.html">Quiz</a>
-        <a href="https://github.com/stiles/guessr-tools/blob/main/README.md">About</a>
+        <a href="/index.html">Home</a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="https://github.com/stiles/guessr-meta-generator/blob/main/README.md">About</a>
     </div>
-    <header>
+
+    <!-- Header Section -->
+    <header class="country-header">
         <div class="header-content">
-            <h1>Australia</h1>
+            <h1 class="main-title">Australia</h1>
             <img src="../static/flags/au.png" alt="Australia flag" class="header-flag">
         </div>
     </header>
 
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb">
+            <a href="/index.html">Home</a> > 
+            <a href="/oceania/index.html">Oceania</a> > 
+            
+            <a href="/oceania/australia-and-new-zealand/index.html">Australia and New Zealand</a> >
+            
+            <span>Australia</span>
+        </nav>
+
+    <!-- Main Content -->
     <main>
+        <!-- Country Map Section -->
         <section class="overview">
             <div id="country-map"
-     class="country-map mapboxgl-map"
-     data-lat="-25.274398"
-     data-lon="133.775136"
-     data-name="australia">
-</div>
+                 class="country-map mapboxgl-map"
+                 data-lat="-25.274398"
+                 data-lon="133.775136"
+                 data-name="australia">
+            </div>
         </section>
 
+        <!-- Clues Section -->
         
         <section class="clues">
             <div class="clues-grid">
@@ -79,12 +95,16 @@
             </div>
         </section>
         
+        
+        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/baker-example-page-template?tab=readme-ov-file">Baker</a></p>
+        <p class="credits">Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/LA Times -example-page-template?tab=readme-ov-file">LA Times Baker</a>. Flag images via <a href="https://flagpedia.net/">Flagpedia</a>.</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="../static/script.js"></script>
 </body>
 </html>

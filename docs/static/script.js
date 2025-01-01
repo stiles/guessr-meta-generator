@@ -13,6 +13,48 @@ function filterCountries() {
     });
 }
 
+function filterCountries() {
+    const filterValue = document.getElementById("filter-input").value.toLowerCase();
+    const gridItems = document.querySelectorAll(".grid-item");
+    const regionSections = document.querySelectorAll(".region-section");
+
+    gridItems.forEach(item => {
+        const countryName = item.getAttribute("data-name").toLowerCase();
+        if (countryName.includes(filterValue)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+
+    // Check each region section for visible items
+    regionSections.forEach(regionSection => {
+        const subregionTitles = regionSection.querySelectorAll(".subregion-title");
+        let regionHasVisibleItems = false;
+
+        subregionTitles.forEach(subregionTitle => {
+            const gridContainer = subregionTitle.nextElementSibling; // The grid-container after the subregion title
+            const visibleItems = gridContainer.querySelectorAll(".grid-item:not([style*='display: none'])");
+            if (visibleItems.length > 0) {
+                subregionTitle.style.display = "block";
+                gridContainer.style.display = "grid";
+                regionHasVisibleItems = true;
+            } else {
+                subregionTitle.style.display = "none";
+                gridContainer.style.display = "none";
+            }
+        });
+
+        // Hide the entire region if no subregions have visible items
+        if (regionHasVisibleItems) {
+            regionSection.style.display = "block";
+        } else {
+            regionSection.style.display = "none";
+        }
+    });
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     mapboxgl.accessToken = 'pk.eyJ1Ijoic3RpbGVzIiwiYSI6ImNsd3Rpc3V2aTAzeXUydm9sMHdoN210b2oifQ.66AJmPYxe2ixku1o7Rwdlg';
 
@@ -39,9 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize the main map
     const map = new mapboxgl.Map({
         container: 'country-map',
-        style: 'mapbox://styles/mapbox/streets-v12',
+        style: 'mapbox://styles/stiles/cm5cvawys00ti01su1mxw905f',
         center: [mapLon, mapLat],
         zoom: 5,
+        minzoom: 4,
+        maxzoom: 10
     });
 
     map.on('load', function () {
@@ -56,22 +100,46 @@ document.addEventListener("DOMContentLoaded", function () {
             type: 'line',
             source: 'country-boundary',
             paint: {
-                'line-color': '#c52622',
+                'line-color': '#c8553d',
                 'line-width': 2,
             },
         });
 
+        // Fetch the GeoJSON to dynamically set bounds
+        fetch(geojsonUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch GeoJSON: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(geojsonData => {
+                const bounds = new mapboxgl.LngLatBounds();
+
+                // Calculate bounds for all features
+                geojsonData.features.forEach(feature => {
+                    const coordinates = feature.geometry.coordinates;
+                    if (feature.geometry.type === 'Polygon') {
+                        coordinates[0].forEach(coord => bounds.extend(coord));
+                    } else if (feature.geometry.type === 'MultiPolygon') {
+                        coordinates.forEach(polygon => {
+                            polygon[0].forEach(coord => bounds.extend(coord));
+                        });
+                    }
+                });
+
+                // Apply bounds to the map
+                map.fitBounds(bounds, {
+                    padding: 20,
+                });
+            })
+            .catch(error => {
+                console.error("Error loading GeoJSON:", error);
+            });
+
         // Initialize the inset map
         const insetContainer = document.createElement('div');
         insetContainer.id = 'inset-map';
-        insetContainer.style.width = '150px';
-        insetContainer.style.height = '150px';
-        insetContainer.style.position = 'absolute';
-        insetContainer.style.bottom = '20px';
-        insetContainer.style.right = '10px';
-        insetContainer.style.border = '1px solid #999';
-        insetContainer.style.borderRadius = '8px';
-        insetContainer.style.overflow = 'hidden';
         mapContainer.appendChild(insetContainer);
 
         const insetMap = new mapboxgl.Map({
@@ -132,5 +200,28 @@ document.addEventListener("DOMContentLoaded", function () {
             map.on('move', updateInsetMap);
             updateInsetMap();
         });
+
+        // Dynamically adjust inset map for mobile
+        function adjustInsetMapLayout() {
+            if (window.innerWidth <= 768) {
+                insetContainer.style.position = "relative";
+                insetContainer.style.width = "100%";
+                insetContainer.style.height = "150px";
+                insetContainer.style.border = "none";
+                insetContainer.style.marginTop = "10px"; // Add space below the main map
+            } else {
+                insetContainer.style.position = "absolute";
+                insetContainer.style.width = "150px";
+                insetContainer.style.height = "150px";
+                insetContainer.style.border = "1px solid #999";
+                insetContainer.style.borderRadius = "8px";
+                insetContainer.style.overflow = "hidden";
+                insetContainer.style.marginTop = "0";
+            }
+        }
+
+        // Adjust on page load and window resize
+        adjustInsetMapLayout();
+        window.addEventListener("resize", adjustInsetMapLayout);
     });
 });
