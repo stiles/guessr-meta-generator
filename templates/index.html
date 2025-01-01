@@ -36,7 +36,7 @@
             {% for subregion, countries in subregions.items() %}
             <h3 class="subregion-title">{{ subregion }}</h3>
             <div class="grid-container">
-                {% for country in countries %}
+                {% for country in countries if country.name != "Antarctica"%}
                 <a href="{{ country.name | slugify }}/index.html" class="grid-item" data-name="{{ country.name }}">
                     <img src="https://flagcdn.com/w80/{{ country.code }}.png" src="https://flagcdn.com/w160/{{ country.code }}.png 2x" alt="{{ country.name }} flag" class="flag" width="80">
                     <p>{{ country.name }}</p>

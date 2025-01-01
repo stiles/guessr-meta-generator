@@ -23,7 +23,7 @@ with open("./static/data/geoguessr_clues.json", "r") as f:
 
 # Group countries by region and sub-region
 regions = {}
-for code, country in country_data.items():  # Iterate over the dictionary items
+for code, country in country_data.items():
     region = country.get("region", "Unknown")
     subregion = country.get("sub-region", "Other")
 
@@ -33,8 +33,6 @@ for code, country in country_data.items():  # Iterate over the dictionary items
         regions[region][subregion] = []
 
     regions[region][subregion].append(country)
-
-
 
 def slugify(value):
     """Converts a string to a slug-friendly format."""
@@ -232,9 +230,15 @@ def build_countries():
     template = env.get_template("country.html")
 
     for code, country in country_data.items():
+        clues = country['geoguessr_clues']
+
         slug = slugify(country["name"])
         output_path = os.path.join(output_dir, slug, "index.html")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        # Ensure tld and capital are passed to the template
+        country["tld"] = clues.get("tld", "Unknown")
+        country["capital"] = clues.get("capital", "Unknown")
 
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(template.render(country=country))
