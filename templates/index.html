@@ -12,20 +12,20 @@
 <body>
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
-        <a href="quiz.html">Quiz</a>
+        <a href="quiz.html">Map quiz</a>
+        <a href="flags.html">Flashcards</a>
         <a href="https://github.com/stiles/guessr-meta-generator/blob/main/README.md">About</a>
     </div>
 
     <header class="main-header">
         <div class="intro-container">
-            <h1 class="main-title">Explore the world. Improve your GeoGuessr game.</h1>
+            <h1 class="main-title">Master the world. Level up your GeoGuessr skills.</h1>
             <p class="intro-text">
-                This is your AI-powered resource for learning about world countries and enhancing your GeoGuessr skills.
-                Dive into regional insights, discover unique features — and become a master of global geography!
+                Explore the world's countries and sharpen your geographic knowledge.
             </p>
         </div>
         <div class="filter-container">
-            <input type="text" id="filter-input" class="filter-input" oninput="filterCountries()" placeholder="Explore countries...">
+            <input type="text" id="filter-input" class="filter-input" oninput="filterCountries()" placeholder="Learn about a place...">
         </div>
     </header>
 
@@ -38,7 +38,7 @@
             <div class="grid-container">
                 {% for country in countries %}
                 <a href="{{ country.name | slugify }}/index.html" class="grid-item" data-name="{{ country.name }}">
-                    <img src="static/flags/{{ country.code }}.png" alt="{{ country.name }} flag" class="flag">
+                    <img src="https://flagcdn.com/w80/{{ country.code }}.png" src="https://flagcdn.com/w160/{{ country.code }}.png 2x" alt="{{ country.name }} flag" class="flag" width="80">
                     <p>{{ country.name }}</p>
                 </a>
                 {% endfor %}

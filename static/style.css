@@ -309,7 +309,8 @@ p {
     background-color: #dddada;
 }
 .flag {
-    max-height: 30px; 
+    /* max-height: 30px;  */
+    border: .5px solid #bbbbbb;
     height: auto;
     margin-top: 5px;
 }
@@ -603,6 +604,12 @@ body {
     }
 }
 
+.subhead {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--battleship-gray);
+    text-align: center;
+}
 
 .header-content {
     display: flex;
@@ -1246,3 +1253,105 @@ footer {
 .grid-item:hover .flag {
     transform: scale(1.1); /* Slight zoom on hover */
 }
+
+.flashcards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.flashcard {
+    width: 640px; /* Larger width for desktop */
+    height: 400px; /* Larger height for desktop */
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.flashcard-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flashcard:hover .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard-front {
+    background: #f9f9f9;
+}
+
+.flashcard-back {
+    background: #f9f9f9;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 20px;
+}
+
+.hint-button {
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hint-button:hover {
+    background-color: #005ea2;
+}
+
+.hints-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hint {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.hint-category {
+    font-size: 1rem;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.flashcard-img {
+    height: 80%; 
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 768px) {
+    .flashcard {
+        width: 100%; /* Take full width of the container */
+        height: auto; /* Adjust height automatically */
+        aspect-ratio: 16/9; /* Maintain a 16:9 aspect ratio */
+    }
+
+    .flashcard-inner {
+        width: 100%;
+        height: 100%;
+    }
+}
+

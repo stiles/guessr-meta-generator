@@ -1,4 +1,4 @@
-import psutil  # Add this import at the top
+import psutil
 import baker
 import json
 import os
@@ -12,6 +12,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import subprocess
 import time
+import random
 
 # Set up Jinja2 environment for rendering templates
 env = Environment(loader=FileSystemLoader("templates"))
@@ -183,6 +184,46 @@ def build_quiz():
     print(f"Generated quiz page: {output_path}")
 
 @baker.command
+def build_flags():
+    """Build the flag flashcards page."""
+    # Prepare the flashcards data, including fallback for missing 'geoguessr_clues'
+    flashcards = [
+        {
+            "name": key,
+            "code": value.get("code", "unknown"),  # Fallback to 'unknown' if 'code' is missing
+            "region": value.get("region", "Unknown"),
+            "subRegion": value.get("sub-region", "Other"),
+            "geoguessrClues": value.get("geoguessr_clues", {  # Default to an empty dictionary
+                "language": "No language clue available.",
+                "cars": "No car clue available.",
+                "driving": "No driving clue available.",
+                "signs": "No signage clue available.",
+                "environment": "No environment clue available.",
+                "infrastructure": "No infrastructure clue available.",
+                "culture": "No culture clue available.",
+                "bonus": "No bonus clue available.",
+                "flag": "No flag clue available."
+            })
+        }
+        for key, value in country_data.items()
+    ]
+
+    # Shuffle the flashcards for randomness
+    random.shuffle(flashcards)
+
+    # Render the template
+    template = env.get_template('flags.html')
+    output = template.render(flashcards=flashcards)
+
+    # Write the output
+    output_path = os.path.join(output_dir, "flags.html")
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w") as f:
+        f.write(output)
+
+    print(f"Flag Flashcards page built successfully at {output_path}!")
+
+@baker.command
 def build_countries():
     """Generate individual country pages."""
     template = env.get_template("country.html")
@@ -216,6 +257,7 @@ def build_all():
     build_quiz()
     build_regions()
     build_subregions()
+    build_flags()
     print("All pages built successfully!")
 
 if __name__ == "__main__":

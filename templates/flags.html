@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag flashcards</title>
+    <link rel="icon" href="../static/favicon.ico">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="../quiz.html">Map quiz</a>
+        <a class="active" href="flags.html">Flashcards</a>
+        <a href="https://github.com/stiles/guessr-meta-generator/blob/main/README.md">About</a>
+    </div>
+
+    <main class="flashcards-container">
+        {% for flashcard in flashcards %}
+        <div class="flashcard" 
+            data-region="{{ flashcard.region }}" 
+            data-subregion="{{ flashcard.subRegion }}" 
+            data-language="{{ flashcard.geoguessrClues.language }}" 
+            data-culture="{{ flashcard.geoguessrClues.culture }}" 
+            data-bonus="{{ flashcard.geoguessrClues.bonus }}">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <img class="flashcard-img" src="https://flagpedia.net/data/flags/h240/{{ flashcard.code }}.png" srcset="https://flagcdn.com/h240/{{ flashcard.code }}.png 2x" alt="{{ flashcard.name }} flag">
+                </div>
+                <div class="flashcard-back">
+                    <h2>{{ flashcard.name }}</h2>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="hints-container">
+            <p id="region-hint" class="hint"></p>
+            <p id="subregion-hint" class="hint"></p>
+            <p id="clue-hint" class="hint"></p>
+            <button id="show-hint" class="hint-button">Hints</button>
+        </div>
+        <button id="next-card" class="hint-button">Next country</button>
+    </main>
+
+    <footer>
+        <p class="credits">Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/LA Times -example-page-template?tab=readme-ov-file">LA Times Baker</a>. Flag images via <a href="https://flagpedia.net/">Flagpedia</a>.</p>
+    </footer>
+
+    <script src="../static/flag-flashcards.js"></script>
+</body>
+</html>
