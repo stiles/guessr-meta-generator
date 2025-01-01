@@ -186,11 +186,13 @@ def build_quiz():
 @baker.command
 def build_flags():
     """Build the flag flashcards page."""
-    # Prepare the flashcards data, including fallback for missing 'geoguessr_clues'
+    # Prepare the flashcards data, including fallback for missing fields
     flashcards = [
         {
             "name": key,
             "code": value.get("code", "unknown"),  # Fallback to 'unknown' if 'code' is missing
+            "lat": value.get("lat", None),  # Ensure 'lat' is included, fallback to None
+            "lon": value.get("lon", None),  # Ensure 'lon' is included, fallback to None
             "region": value.get("region", "Unknown"),
             "subRegion": value.get("sub-region", "Other"),
             "geoguessrClues": value.get("geoguessr_clues", {  # Default to an empty dictionary
@@ -218,10 +220,11 @@ def build_flags():
     # Write the output
     output_path = os.path.join(output_dir, "flags.html")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(output)
 
     print(f"Flag Flashcards page built successfully at {output_path}!")
+
 
 @baker.command
 def build_countries():

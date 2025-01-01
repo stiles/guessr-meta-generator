@@ -1327,12 +1327,15 @@ footer {
 }
 
 .hint {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.4em;
     margin: 5px 0;
+    max-width: 400px;
 }
 
 .hint-category {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.4em;
     margin: 5px 0;
     font-weight: 500;
 }
@@ -1355,3 +1358,33 @@ footer {
     }
 }
 
+.instructions {
+    font-size: .8em;
+    color: #b1b1b1;
+    font-style:italic;
+    margin-bottom: 10px; 
+}
+
+.flashcard-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.country-name {
+    margin-bottom: 15px; /* Add space between the name and the map */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333; /* Neutral color for visibility */
+}
+
+.static-map {
+    border: 2px solid #ccc; /* Light border for the map */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    max-width: 200px; /* Responsive sizing */
+    height: auto;
+}

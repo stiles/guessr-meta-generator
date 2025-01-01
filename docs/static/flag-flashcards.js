@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function showFlashcard(index) {
         flashcards.forEach((card, i) => {
             card.style.display = i === index ? "block" : "none";
-            // Reset any flips
             card.querySelector(".flashcard-inner").style.transform = "rotateY(0deg)";
         });
+        const currentCard = flashcards[currentIndex];
+        console.log(`Lat: ${currentCard.dataset.lat}, Lon: ${currentCard.dataset.lon}`); // Debug lat/lon
         resetHints();
     }
 
