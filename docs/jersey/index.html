@@ -26,40 +26,103 @@
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/europe/index.html">Europe</a> > 
-            
-            <a href="/europe/northern-europe/index.html">Northern Europe</a> >
-            
-            <span>Jersey</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/europe/index.html">Europe</a> > 
+        
+        <a href="/europe/northern-europe/index.html">Northern Europe</a> >
+        
+        <span>Jersey</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="49.214439"
-                 data-lon="-2.13125"
-                 data-name="jersey">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="49.214439"
+                     data-lon="-2.13125"
+                     data-name="jersey">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Capital</h4>
+                            <p class="clues-item-text">St. Helier</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">English is the primary language, with French also commonly used. The alphabet is the standard Latin alphabet.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Coverage</h4>
+                            <p class="clues-item-text">True</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Foliage</h4>
+                            <p class="clues-item-text">Common tree types include oak, beech, and chestnut, with a variety of grasses found in the countryside.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Topography</h4>
+                            <p class="clues-item-text">Jersey features a mix of rolling hills and coastal cliffs, with some flat agricultural areas.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Stop</h4>
+                            <p class="clues-item-text">Stop signs in Jersey read 'STOP'.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Bollards</h4>
+                            <p class="clues-item-text">Bollards in Jersey are typically painted black and white, often used to control traffic and protect pedestrians.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Poles</h4>
+                            <p class="clues-item-text">Utility poles in Jersey are generally wooden and may have multiple lines for telephone and internet services.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->

@@ -26,80 +26,138 @@
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/africa/index.html">Africa</a> > 
-            
-            <a href="/africa/sub-saharan-africa/index.html">Sub-Saharan Africa</a> >
-            
-            <span>Seychelles</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/africa/index.html">Africa</a> > 
+        
+        <a href="/africa/sub-saharan-africa/index.html">Sub-Saharan Africa</a> >
+        
+        <span>Seychelles</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="-4.679574"
-                 data-lon="55.491977"
-                 data-name="seychelles">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="-4.679574"
+                     data-lon="55.491977"
+                     data-name="seychelles">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            <div class="clues-item">
-                <h3>Language</h3>
-                <p>The official languages are English, French, and Seychellois Creole. The alphabet is Latin-based with no special characters.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Cars</h3>
-                <p>Vehicle registration plates are white with a blue band at the top that includes the 'Seychelles' label. The format typically includes numbers and letters.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Driving</h3>
-                <p>Vehicles drive on the left side of the road.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Signs</h3>
-                <p>Road signs are often in English and French, with a mix of pictograms. Stop signs are red with white lettering.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Environment</h3>
-                <p>The landscape features lush tropical vegetation, white sandy beaches, and granite boulders. The islands are surrounded by turquoise waters.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Infrastructure</h3>
-                <p>Architectural styles include Creole houses with vibrant colors and wooden balconies. Urban areas may have colonial-style buildings.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Culture</h3>
-                <p>Look for elements of Creole culture, including local markets, traditional music, and food stalls selling seafood and tropical fruits.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Bonus</h3>
-                <p>Google Street View may show unique natural features like the Aldabra Atoll and the Vallée de Mai, a UNESCO World Heritage site.</p>
-            </div>
-        
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">The official language is English, but French and Seychellois Creole (Seselwa) are also widely spoken. The alphabet is Latin with no special characters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Culture</h4>
+                            <p class="clues-item-text">Look for elements of Creole culture, including local markets, traditional music, and food stalls selling seafood and tropical fruits.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Miscellaneous</h4>
+                            <p class="clues-item-text">Google Street View may show unique natural features like the Aldabra Atoll and the Vallée de Mai, a UNESCO World Heritage site.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Capital</h4>
+                            <p class="clues-item-text">Victoria</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Environment</h4>
+                            <p class="clues-item-text">The landscape features lush tropical vegetation, white sandy beaches, and granite boulders. The islands are surrounded by turquoise waters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Infrastructure</h4>
+                            <p class="clues-item-text">Architectural styles include Creole houses with vibrant colors and wooden balconies. Urban areas may have colonial-style buildings.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Coverage</h4>
+                            <p class="clues-item-text">True</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Foliage</h4>
+                            <p class="clues-item-text">Common tree types include coconut palms, takamaka trees, and tropical hardwoods like mahogany. Grasses are generally lush and tropical.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Topography</h4>
+                            <p class="clues-item-text">Seychelles is predominantly mountainous with many islands featuring steep hills and rocky coastlines.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Cars</h4>
+                            <p class="clues-item-text">Vehicle registration plates are white with a blue band at the top that includes the 'Seychelles' label. The format typically includes numbers and letters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Driving</h4>
+                            <p class="clues-item-text">Vehicles drive on the left side of the road.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Signs</h4>
+                            <p class="clues-item-text">Road signs are often in English and French, with a mix of pictograms. Stop signs are red with white lettering.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Stop</h4>
+                            <p class="clues-item-text">Stop signs read 'STOP' in Seychelles.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Bollards</h4>
+                            <p class="clues-item-text">Bollards are generally standard and may feature local decorative designs, but are not particularly unique.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Poles</h4>
+                            <p class="clues-item-text">Utility poles are commonly made of wood and may carry multiple lines, often featuring local signage.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->

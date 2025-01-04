@@ -26,80 +26,138 @@
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/americas/index.html">Americas</a> > 
-            
-            <a href="/americas/latin-america-and-the-caribbean/index.html">Latin America and the Caribbean</a> >
-            
-            <span>Anguilla</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/americas/index.html">Americas</a> > 
+        
+        <a href="/americas/latin-america-and-the-caribbean/index.html">Latin America and the Caribbean</a> >
+        
+        <span>Anguilla</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="18.220554"
-                 data-lon="-63.068615"
-                 data-name="anguilla">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="18.220554"
+                     data-lon="-63.068615"
+                     data-name="anguilla">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            <div class="clues-item">
-                <h3>Language</h3>
-                <p>English is the official language; the alphabet is Latin with no special characters.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Cars</h3>
-                <p>Vehicle registration plates are white with a blue band at the top, featuring the prefix 'A' for Anguilla.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Driving</h3>
-                <p>Vehicles drive on the left side of the road.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Signs</h3>
-                <p>Road signs are in English and follow the British style, often using white backgrounds with black text.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Environment</h3>
-                <p>Anguilla features flat, low-lying land, sandy beaches, and turquoise waters; vegetation includes palm trees and coastal flora.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Infrastructure</h3>
-                <p>Architecture includes Caribbean-style homes, with many buildings painted in bright colors, and a mix of modern and traditional designs.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Culture</h3>
-                <p>Distinctive markers include local music, festivals, and a relaxed island lifestyle; look for cultural symbols like the Anguilla sea turtle.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Bonus</h3>
-                <p>Look for beach scenes, clear blue waters, and the absence of high-rise buildings; the presence of beach bars and resorts are common.</p>
-            </div>
-        
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">English is the primary language, using the Latin alphabet without special characters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Culture</h4>
+                            <p class="clues-item-text">Distinctive markers include local music, festivals, and a relaxed island lifestyle; look for cultural symbols like the Anguilla sea turtle.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Miscellaneous</h4>
+                            <p class="clues-item-text">Look for beach scenes, clear blue waters, and the absence of high-rise buildings; the presence of beach bars and resorts are common.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Capital</h4>
+                            <p class="clues-item-text">The Valley</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Environment</h4>
+                            <p class="clues-item-text">Anguilla features flat, low-lying land, sandy beaches, and turquoise waters; vegetation includes palm trees and coastal flora.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Infrastructure</h4>
+                            <p class="clues-item-text">Architecture includes Caribbean-style homes, with many buildings painted in bright colors, and a mix of modern and traditional designs.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Coverage</h4>
+                            <p class="clues-item-text">True</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Foliage</h4>
+                            <p class="clues-item-text">Common tree types include coconut palms and casuarinas, with grasses that are typical of coastal environments.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Topography</h4>
+                            <p class="clues-item-text">Anguilla is generally flat with some low-lying areas and a few gentle hills, predominantly coastal.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Cars</h4>
+                            <p class="clues-item-text">Vehicle registration plates are white with a blue band at the top, featuring the prefix 'A' for Anguilla.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Driving</h4>
+                            <p class="clues-item-text">Vehicles drive on the left side of the road.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Signs</h4>
+                            <p class="clues-item-text">Road signs are in English and follow the British style, often using white backgrounds with black text.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Stop</h4>
+                            <p class="clues-item-text">Stop signs in Anguilla read 'STOP'.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Bollards</h4>
+                            <p class="clues-item-text">Bollards are generally simple and functional, often painted in bright colors for visibility, but do not have unique distinguishing features.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Poles</h4>
+                            <p class="clues-item-text">Utility poles in Anguilla are typically wooden, with some metal poles present, and may have visible crossarms for supporting lines.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->

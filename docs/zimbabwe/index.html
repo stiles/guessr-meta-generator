@@ -26,80 +26,138 @@
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/africa/index.html">Africa</a> > 
-            
-            <a href="/africa/sub-saharan-africa/index.html">Sub-Saharan Africa</a> >
-            
-            <span>Zimbabwe</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/africa/index.html">Africa</a> > 
+        
+        <a href="/africa/sub-saharan-africa/index.html">Sub-Saharan Africa</a> >
+        
+        <span>Zimbabwe</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="-19.015438"
-                 data-lon="29.154857"
-                 data-name="zimbabwe">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="-19.015438"
+                     data-lon="29.154857"
+                     data-name="zimbabwe">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            <div class="clues-item">
-                <h3>Language</h3>
-                <p>English is the official language, with Shona and Sindebele as widely spoken indigenous languages. The alphabet is Latin with no special characters.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Cars</h3>
-                <p>Vehicle registration plates are white with a blue strip on the left. The first letter represents the province, followed by a number and letters.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Driving</h3>
-                <p>Vehicles drive on the left side of the road.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Signs</h3>
-                <p>Road signs are mostly in English, with standard international symbols. Signs often include a mix of local languages for context.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Environment</h3>
-                <p>The landscape features savannas, plateaus, and mountains, with notable wildlife and vegetation typical of southern Africa.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Infrastructure</h3>
-                <p>Urban areas have a mix of colonial and modern architecture, with brick and concrete buildings. Rural areas may feature traditional thatched huts.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Culture</h3>
-                <p>Look for traditional markets, art, and crafts, as well as wildlife motifs. The presence of the Zimbabwean flag or national symbols can also be a clue.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Bonus</h3>
-                <p>Street view may show unique landmarks like Victoria Falls, the Great Zimbabwe ruins, and distinct wildlife parks.</p>
-            </div>
-        
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">English is the official language, with Shona and Sindebele (Ndebele) also widely spoken. The alphabet is the Latin script, and there are no special characters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Culture</h4>
+                            <p class="clues-item-text">Look for traditional markets, art, and crafts, as well as wildlife motifs. The presence of the Zimbabwean flag or national symbols can also be a clue.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Miscellaneous</h4>
+                            <p class="clues-item-text">Street view may show unique landmarks like Victoria Falls, the Great Zimbabwe ruins, and distinct wildlife parks.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Capital</h4>
+                            <p class="clues-item-text">Harare</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Environment</h4>
+                            <p class="clues-item-text">The landscape features savannas, plateaus, and mountains, with notable wildlife and vegetation typical of southern Africa.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Infrastructure</h4>
+                            <p class="clues-item-text">Urban areas have a mix of colonial and modern architecture, with brick and concrete buildings. Rural areas may feature traditional thatched huts.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Coverage</h4>
+                            <p class="clues-item-text">True: Zimbabwe has official Google Street View coverage.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Foliage</h4>
+                            <p class="clues-item-text">Common tree types include acacias and baobabs, with grasses such as red grass and elephant grass prevalent in various regions.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Topography</h4>
+                            <p class="clues-item-text">Zimbabwe is characterized by a mix of high plateaus, rolling hills, and some mountainous areas, notably the Eastern Highlands.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Cars</h4>
+                            <p class="clues-item-text">Vehicle registration plates are white with a blue strip on the left. The first letter represents the province, followed by a number and letters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Driving</h4>
+                            <p class="clues-item-text">Vehicles drive on the left side of the road.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Signs</h4>
+                            <p class="clues-item-text">Road signs are mostly in English, with standard international symbols. Signs often include a mix of local languages for context.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Stop</h4>
+                            <p class="clues-item-text">Stop signs read 'STOP' in Zimbabwe.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Bollards</h4>
+                            <p class="clues-item-text">Bollards in Zimbabwe are typically simple and functional, often painted in bright colors for visibility, without any unique designs.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Poles</h4>
+                            <p class="clues-item-text">Utility poles in Zimbabwe are generally wooden and may have insulators attached, but they do not have distinctive markings.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->

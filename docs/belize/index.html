@@ -26,80 +26,108 @@
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/americas/index.html">Americas</a> > 
-            
-            <a href="/americas/latin-america-and-the-caribbean/index.html">Latin America and the Caribbean</a> >
-            
-            <span>Belize</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/americas/index.html">Americas</a> > 
+        
+        <a href="/americas/latin-america-and-the-caribbean/index.html">Latin America and the Caribbean</a> >
+        
+        <span>Belize</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="17.189877"
-                 data-lon="-88.49765"
-                 data-name="belize">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="17.189877"
+                     data-lon="-88.49765"
+                     data-name="belize">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            <div class="clues-item">
-                <h3>Language</h3>
-                <p>English is the official language; Spanish and Kriol are also widely spoken. The alphabet is the same as in English with no special characters.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Cars</h3>
-                <p>Vehicle registration plates are white with a blue border, featuring the word 'Belize' at the top and a unique alphanumeric code.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Driving</h3>
-                <p>Vehicles drive on the right side of the road.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Signs</h3>
-                <p>Road signs are in English and often feature a mix of standard and unique designs, including some with colorful graphics and local themes.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Environment</h3>
-                <p>The landscape includes coastal areas, rainforests, and barrier reefs, with tropical vegetation and diverse wildlife.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Infrastructure</h3>
-                <p>Architecture is a mix of colonial styles, including wooden houses, and modern concrete buildings, often with vibrant colors.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Culture</h3>
-                <p>Look for cultural markers like Garifuna music, Mayan ruins, and local markets that reflect the diverse heritage.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Bonus</h3>
-                <p>Distinctive features include the presence of palm trees, Caribbean-style architecture, and the use of English in most public signage.</p>
-            </div>
-        
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">English is the official language; Spanish and Kriol are also widely spoken. The alphabet is the same as in English with no special characters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Culture</h4>
+                            <p class="clues-item-text">Look for cultural markers like Garifuna music, Mayan ruins, and local markets that reflect the diverse heritage.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Miscellaneous</h4>
+                            <p class="clues-item-text">Distinctive features include the presence of palm trees, Caribbean-style architecture, and the use of English in most public signage.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Capital</h4>
+                            <p class="clues-item-text">Belmopan</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Environment</h4>
+                            <p class="clues-item-text">The landscape includes coastal areas, rainforests, and barrier reefs, with tropical vegetation and diverse wildlife.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Infrastructure</h4>
+                            <p class="clues-item-text">Architecture is a mix of colonial styles, including wooden houses, and modern concrete buildings, often with vibrant colors.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Cars</h4>
+                            <p class="clues-item-text">Vehicle registration plates are white with a blue border, featuring the word 'Belize' at the top and a unique alphanumeric code.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Driving</h4>
+                            <p class="clues-item-text">Vehicles drive on the right side of the road.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Signs</h4>
+                            <p class="clues-item-text">Road signs are in English and often feature a mix of standard and unique designs, including some with colorful graphics and local themes.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->

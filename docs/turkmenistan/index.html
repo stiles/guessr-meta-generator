@@ -26,80 +26,138 @@
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/asia/index.html">Asia</a> > 
-            
-            <a href="/asia/central-asia/index.html">Central Asia</a> >
-            
-            <span>Turkmenistan</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/asia/index.html">Asia</a> > 
+        
+        <a href="/asia/central-asia/index.html">Central Asia</a> >
+        
+        <span>Turkmenistan</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="38.969719"
-                 data-lon="59.556278"
-                 data-name="turkmenistan">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="38.969719"
+                     data-lon="59.556278"
+                     data-name="turkmenistan">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            <div class="clues-item">
-                <h3>Language</h3>
-                <p>Turkmen (Latin script), with some letters like 'ň', 'ä', 'ö', 'ü', and 'ş' that are specific to the Turkmen alphabet.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Cars</h3>
-                <p>Vehicle registration plates are white with a blue band at the top featuring the country code 'TM' and a sequence of numbers. The plates often have a green stripe indicating the region.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Driving</h3>
-                <p>Vehicles drive on the right side of the road.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Signs</h3>
-                <p>Road signs are typically in Turkmen and may also include Cyrillic script. They are often rectangular with white backgrounds and black or blue text.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Environment</h3>
-                <p>The landscape is characterized by vast deserts, particularly the Karakum Desert, as well as mountainous regions in the east. The Caspian Sea borders the west.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Infrastructure</h3>
-                <p>Architecture includes Soviet-style buildings, modern constructions, and traditional Turkmen yurt-style structures. Ashgabat features many grandiose buildings with white marble facades.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Culture</h3>
-                <p>Distinctive cultural markers include traditional carpets, the presence of large monuments (like the Turkmenbashi Palace), and significant representation of horses, particularly the Akhal-Teke breed.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Bonus</h3>
-                <p>Look for unique roadside features like the 'Gates of Hell' gas crater in Darvaza, as well as signs in Turkmen and the prevalence of the color white in urban areas.</p>
-            </div>
-        
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">Turkmen is the official language, using a Latin-based alphabet with specific characters such as 'ä', 'ö', 'ü', and 'ň'.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Culture</h4>
+                            <p class="clues-item-text">Distinctive cultural markers include traditional carpets, the presence of large monuments (like the Turkmenbashi Palace), and significant representation of horses, particularly the Akhal-Teke breed.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Miscellaneous</h4>
+                            <p class="clues-item-text">Look for unique roadside features like the 'Gates of Hell' gas crater in Darvaza, as well as signs in Turkmen and the prevalence of the color white in urban areas.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Capital</h4>
+                            <p class="clues-item-text">Ashgabat</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Environment</h4>
+                            <p class="clues-item-text">The landscape is characterized by vast deserts, particularly the Karakum Desert, as well as mountainous regions in the east. The Caspian Sea borders the west.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Infrastructure</h4>
+                            <p class="clues-item-text">Architecture includes Soviet-style buildings, modern constructions, and traditional Turkmen yurt-style structures. Ashgabat features many grandiose buildings with white marble facades.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Coverage</h4>
+                            <p class="clues-item-text">False</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Foliage</h4>
+                            <p class="clues-item-text">Common tree types include poplars and willows, while grasses are typically sparse due to the arid climate.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Topography</h4>
+                            <p class="clues-item-text">Turkmenistan is largely flat with some desert regions, but it also contains mountain ranges in the southeast, such as the Kopet Dag.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Cars</h4>
+                            <p class="clues-item-text">Vehicle registration plates are white with a blue band at the top featuring the country code 'TM' and a sequence of numbers. The plates often have a green stripe indicating the region.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Driving</h4>
+                            <p class="clues-item-text">Vehicles drive on the right side of the road.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Signs</h4>
+                            <p class="clues-item-text">Road signs are typically in Turkmen and may also include Cyrillic script. They are often rectangular with white backgrounds and black or blue text.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Stop</h4>
+                            <p class="clues-item-text">Stop signs in Turkmenistan read 'STOP' in capital letters.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Bollards</h4>
+                            <p class="clues-item-text">Bollards are typically simple and functional, often painted in bright colors for visibility.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Poles</h4>
+                            <p class="clues-item-text">Utility poles are generally made of wood or concrete and are spaced regularly along roads, often featuring wires for telephone and electricity.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->

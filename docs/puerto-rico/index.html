@@ -26,80 +26,138 @@
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/americas/index.html">Americas</a> > 
-            
-            <a href="/americas/latin-america-and-the-caribbean/index.html">Latin America and the Caribbean</a> >
-            
-            <span>Puerto Rico</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/americas/index.html">Americas</a> > 
+        
+        <a href="/americas/latin-america-and-the-caribbean/index.html">Latin America and the Caribbean</a> >
+        
+        <span>Puerto Rico</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="18.220833"
-                 data-lon="-66.590149"
-                 data-name="puerto-rico">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="18.220833"
+                     data-lon="-66.590149"
+                     data-name="puerto-rico">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            <div class="clues-item">
-                <h3>Language</h3>
-                <p>Spanish is the official language, with English also widely spoken. The alphabet is similar to the English alphabet, featuring special characters like 'ñ'.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Cars</h3>
-                <p>Vehicle registration plates typically have a combination of letters and numbers, often starting with 'J' for Puerto Rico. Plates are colorful and may feature a tropical theme.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Driving</h3>
-                <p>Vehicles drive on the right side of the road.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Signs</h3>
-                <p>Road signs are primarily in Spanish, using familiar shapes like rectangles, circles, and triangles. Warning signs often feature bright colors.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Environment</h3>
-                <p>The landscape includes tropical features such as lush greenery, mountainous regions, and coastal areas with beaches. It is often characterized by palm trees and vibrant flora.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Infrastructure</h3>
-                <p>Architecture ranges from colonial Spanish-style buildings to modern structures. Urban areas may have colorful facades and tiled roofs, while rural areas feature wooden houses.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Culture</h3>
-                <p>Cultural markers include the presence of salsa music, street vendors selling local food like mofongo, and colorful murals depicting Puerto Rican history.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Bonus</h3>
-                <p>Look for tropical plants, beaches, and the occasional presence of roosters in urban areas. Street art is also common.</p>
-            </div>
-        
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">Spanish is the primary language, with some English usage. The alphabet is similar to the English alphabet, with no special characters aside from accents.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Culture</h4>
+                            <p class="clues-item-text">Cultural markers include the presence of salsa music, street vendors selling local food like mofongo, and colorful murals depicting Puerto Rican history.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Miscellaneous</h4>
+                            <p class="clues-item-text">Look for tropical plants, beaches, and the occasional presence of roosters in urban areas. Street art is also common.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Capital</h4>
+                            <p class="clues-item-text">San Juan</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Environment</h4>
+                            <p class="clues-item-text">The landscape includes tropical features such as lush greenery, mountainous regions, and coastal areas with beaches. It is often characterized by palm trees and vibrant flora.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Infrastructure</h4>
+                            <p class="clues-item-text">Architecture ranges from colonial Spanish-style buildings to modern structures. Urban areas may have colorful facades and tiled roofs, while rural areas feature wooden houses.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Coverage</h4>
+                            <p class="clues-item-text">True</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Foliage</h4>
+                            <p class="clues-item-text">Common tree types include palm trees, mango trees, and flamboyant trees, with grasses that thrive in tropical climates.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Topography</h4>
+                            <p class="clues-item-text">Puerto Rico features varied topography, including mountainous regions in the interior, coastal plains, and hilly areas.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Cars</h4>
+                            <p class="clues-item-text">Vehicle registration plates typically have a combination of letters and numbers, often starting with 'J' for Puerto Rico. Plates are colorful and may feature a tropical theme.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Driving</h4>
+                            <p class="clues-item-text">Vehicles drive on the right side of the road.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Signs</h4>
+                            <p class="clues-item-text">Road signs are primarily in Spanish, using familiar shapes like rectangles, circles, and triangles. Warning signs often feature bright colors.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Stop</h4>
+                            <p class="clues-item-text">Stop signs read 'pare' in Puerto Rico.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Bollards</h4>
+                            <p class="clues-item-text">Bollards may be painted in bright colors, often seen near pedestrian areas or roads, sometimes with decorative designs.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Poles</h4>
+                            <p class="clues-item-text">Utility poles in Puerto Rico are generally wooden and often have multiple lines, including electrical and telecommunications cables.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->

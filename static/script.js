@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
         style: 'mapbox://styles/stiles/cm5cvawys00ti01su1mxw905f',
         center: [mapLon, mapLat],
         zoom: 5,
-        minzoom: 4,
-        maxzoom: 10
+        minZoom: 4,
+        maxZoom: 6
     });
 
     map.on('load', function () {
@@ -128,9 +128,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
 
-                // Apply bounds to the map
+                // Apply bounds to the map with maxZoom
                 map.fitBounds(bounds, {
                     padding: 20,
+                    maxZoom: 6 // Restrict maximum zoom
                 });
             })
             .catch(error => {
@@ -224,4 +225,52 @@ document.addEventListener("DOMContentLoaded", function () {
         adjustInsetMapLayout();
         window.addEventListener("resize", adjustInsetMapLayout);
     });
+
+    // Enforce max zoom level dynamically
+    map.on('zoom', () => {
+        if (map.getZoom() > 10) {
+            map.setZoom(10); // Reset zoom if it exceeds maxZoom
+        }
+    });
+
+    // Filter countries by name
+    document.getElementById("filter-input").addEventListener("input", () => {
+        const filterValue = document.getElementById("filter-input").value.toLowerCase();
+        const gridItems = document.querySelectorAll(".grid-item");
+        const regionSections = document.querySelectorAll(".region-section");
+
+        gridItems.forEach(item => {
+            const countryName = item.getAttribute("data-name").toLowerCase();
+            if (countryName.includes(filterValue)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
+
+        regionSections.forEach(regionSection => {
+            const subregionTitles = regionSection.querySelectorAll(".subregion-title");
+            let regionHasVisibleItems = false;
+
+            subregionTitles.forEach(subregionTitle => {
+                const gridContainer = subregionTitle.nextElementSibling;
+                const visibleItems = gridContainer.querySelectorAll(".grid-item:not([style*='display: none'])");
+                if (visibleItems.length > 0) {
+                    subregionTitle.style.display = "block";
+                    gridContainer.style.display = "grid";
+                    regionHasVisibleItems = true;
+                } else {
+                    subregionTitle.style.display = "none";
+                    gridContainer.style.display = "none";
+                }
+            });
+
+            if (regionHasVisibleItems) {
+                regionSection.style.display = "block";
+            } else {
+                regionSection.style.display = "none";
+            }
+        });
+    });
 });
+

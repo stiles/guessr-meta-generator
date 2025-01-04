@@ -21,85 +21,138 @@
     <!-- Header Section -->
     <header class="country-header">
         <div class="header-content">
-            <h1 class="main-title">Heard Island/McDonald Islands (Unknown)</h1>
+            <h1 class="main-title">Heard Island/McDonald Islands ()</h1>
             <img src="../static/flags/hm.png" alt="Heard Island/McDonald Islands flag" class="header-flag">
         </div>
     </header>
 
-        <!-- Breadcrumb Navigation -->
-        <nav class="breadcrumb">
-            <a href="../index.html">Home</a> > 
-            <a href="/oceania/index.html">Oceania</a> > 
-            
-            <a href="/oceania/australia-and-new-zealand/index.html">Australia and New Zealand</a> >
-            
-            <span>Heard Island/McDonald Islands</span>
-        </nav>
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <a href="/oceania/index.html">Oceania</a> > 
+        
+        <a href="/oceania/australia-and-new-zealand/index.html">Australia and New Zealand</a> >
+        
+        <span>Heard Island/McDonald Islands</span>
+    </nav>
 
     <!-- Main Content -->
     <main>
-        <!-- Country Map Section -->
-        <section class="overview">
-            <div id="country-map"
-                 class="country-map mapboxgl-map"
-                 data-lat="-53.08181"
-                 data-lon="73.504158"
-                 data-name="heard-islandmcdonald-islands">
-            </div>
-        </section>
+        <!-- Flex container for map and clues -->
+        <div class="content-container">
+            <!-- Country Map Section -->
+            <section class="map-section">
+                <div id="country-map"
+                     class="country-map mapboxgl-map"
+                     data-lat="-53.08181"
+                     data-lon="73.504158"
+                     data-name="heard-islandmcdonald-islands">
+                </div>
+            </section>
 
-        <!-- Clues Section -->
-        
-        <section class="clues">
-            <h2>Clues</h2>
-            <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
-            <div class="clues-grid">
+            <!-- Clues Section -->
+            
+            <section class="clues-section">
+                <h2>Clues</h2>
+                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
                 
-            <div class="clues-item">
-                <h3>Language</h3>
-                <p>English; uses the Latin alphabet</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Cars</h3>
-                <p>No vehicles are present; the islands are uninhabited and have no vehicle registration plates.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Driving</h3>
-                <p>N/A; there are no roads or vehicles.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Signs</h3>
-                <p>N/A; there are no road signs due to the uninhabited nature of the islands.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Environment</h3>
-                <p>Volcanic islands with rugged terrain, glaciers, and a sub-Antarctic climate; characterized by rocky coastlines and sparse vegetation.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Infrastructure</h3>
-                <p>Minimal infrastructure; primarily research stations and scientific facilities; no urban design elements due to lack of permanent residents.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Culture</h3>
-                <p>N/A; the islands are uninhabited and do not have a distinct culture.</p>
-            </div>
-        
-            <div class="clues-item">
-                <h3>Bonus</h3>
-                <p>Located in the Southern Ocean, southeast of Australia; often identified by the absence of human activity and unique wildlife.</p>
-            </div>
-        
-            </div>
-        </section>
-        
-        
-        <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                <div class="category-section">
+                    <h3 class="category-title">Identity & symbols</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Language</h4>
+                            <p class="clues-item-text">English, no special characters</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Culture</h4>
+                            <p class="clues-item-text">N/A; the islands are uninhabited and do not have a distinct culture.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Miscellaneous</h4>
+                            <p class="clues-item-text">Located in the Southern Ocean, southeast of Australia; often identified by the absence of human activity and unique wildlife.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Environment & landscape</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Environment</h4>
+                            <p class="clues-item-text">Volcanic islands with rugged terrain, glaciers, and a sub-Antarctic climate; characterized by rocky coastlines and sparse vegetation.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Infrastructure</h4>
+                            <p class="clues-item-text">Minimal infrastructure; primarily research stations and scientific facilities; no urban design elements due to lack of permanent residents.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Coverage</h4>
+                            <p class="clues-item-text">False</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Foliage</h4>
+                            <p class="clues-item-text">The islands are characterized by a subantarctic climate with mosses, lichens, and some grass species; there are no significant trees.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Topography</h4>
+                            <p class="clues-item-text">The topography is primarily rugged and mountainous, with volcanic features and glaciers.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="category-section">
+                    <h3 class="category-title">Roads & transportation</h3>
+                    <div class="clues-grid">
+                        
+                        <div class="clues-item">
+                            <h4>Cars</h4>
+                            <p class="clues-item-text">No vehicles are present; the islands are uninhabited and have no vehicle registration plates.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Driving</h4>
+                            <p class="clues-item-text">N/A; there are no roads or vehicles.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Signs</h4>
+                            <p class="clues-item-text">N/A; there are no road signs due to the uninhabited nature of the islands.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Stop</h4>
+                            <p class="clues-item-text">Stop signs do not exist in Heard Island/McDonald Islands due to the absence of developed roads.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Bollards</h4>
+                            <p class="clues-item-text">There are no roadside bollards as there are no paved roads or urban infrastructure.</p>
+                        </div>
+                        
+                        <div class="clues-item">
+                            <h4>Poles</h4>
+                            <p class="clues-item-text">There are no utility poles as the islands are largely uninhabited and lack infrastructure.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="notes">
+                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
+                </div>
+            </section>
+            
+        </div>
     </main>
 
     <!-- Footer Section -->
