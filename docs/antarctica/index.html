@@ -3,164 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antarctica</title>
+    <title>Antarctica - GeoGuessr Tools</title>
     <link rel="stylesheet" href="../static/style.css">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css" rel="stylesheet" />
-    <link rel="icon" href="../static/favicon.ico">
 </head>
 <body>
-    <!-- Top Navbar -->
     <div class="topnav">
-        <a href="/index.html">Home</a>
-        <a href="/quiz.html">Map quiz</a>
+        <a href="../index.html">Home</a>
+        <a href="quiz.html">Map quiz</a>
         <a href="/flags.html">Flashcards</a>
         <a href="https://github.com/stiles/guessr-meta-generator/blob/main/README.md">About</a>
     </div>
 
-    <!-- Header Section -->
-    <header class="country-header">
-        <div class="header-content">
-            <h1 class="main-title">Antarctica ()</h1>
-            <img src="../static/flags/aq.png" alt="Antarctica flag" class="header-flag">
-        </div>
+    <header>
+        <h1>Antarctica</h1>
+        <p class="region-dek">Explore countries in the Antarctica region.</p>
     </header>
-
-    <!-- Breadcrumb Navigation -->
-    <nav class="breadcrumb">
-        <a href="../index.html">Home</a> > 
-        <a href="/antarctica/index.html">Antarctica</a> > 
-        
-        <a href="/antarctica/antarctica/index.html">Antarctica</a> >
-        
-        <span>Antarctica</span>
-    </nav>
-
-    <!-- Main Content -->
+    
     <main>
-        <!-- Flex container for map and clues -->
-        <div class="content-container">
-            <!-- Country Map Section -->
-            <section class="map-section">
-                <div id="country-map"
-                     class="country-map mapboxgl-map"
-                     data-lat="-75.250973"
-                     data-lon="-0.071389"
-                     data-name="antarctica">
-                </div>
-            </section>
-
-            <!-- Clues Section -->
-            
-            <section class="clues-section">
-                <h2>Clues</h2>
-                <p class="subhead">Use these details to boost your ability to identify specific countries in the game.</p>
+        
+        <section>
+            <h2>Antarctica</h2>
+            <div class="grid-container">
                 
-                <div class="category-section">
-                    <h3 class="category-title">Identity & symbols</h3>
-                    <div class="clues-grid">
-                        
-                        <div class="clues-item">
-                            <h4>Language</h4>
-                            <p class="clues-item-text">English is the primary language used in research stations, with various other languages spoken by international teams.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Culture</h4>
-                            <p class="clues-item-text">Presence of international research stations; visitors may see flags of various countries.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Miscellaneous</h4>
-                            <p class="clues-item-text">Limited human presence; typical features include snowmobiles, scientific equipment, and weather monitoring stations.</p>
-                        </div>
-                        
-                    </div>
-                </div>
+                <a href="../antarctica/index.html" class="grid-item" data-name="Antarctica">
+                    <img src="../static/flags/aq.png" alt="Antarctica flag">
+                    <p class="country-name">Antarctica</p>
+                </a>
                 
-                <div class="category-section">
-                    <h3 class="category-title">Environment & landscape</h3>
-                    <div class="clues-grid">
-                        
-                        <div class="clues-item">
-                            <h4>Environment</h4>
-                            <p class="clues-item-text">Ice-covered landscape, glaciers, snowfields, and mountain ranges; no vegetation.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Infrastructure</h4>
-                            <p class="clues-item-text">Research stations with basic facilities; often prefabricated buildings designed for extreme weather.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Coverage</h4>
-                            <p class="clues-item-text">False: Antarctica does not have official Google Street View coverage.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Foliage</h4>
-                            <p class="clues-item-text">Antarctica has very limited vegetation, mainly consisting of mosses, lichens, and a few hardy grasses; no trees are found.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Topography</h4>
-                            <p class="clues-item-text">Antarctica is predominantly mountainous with extensive ice sheets and glaciers, characterized by vast ice shelves and some flat areas in the interior.</p>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-                <div class="category-section">
-                    <h3 class="category-title">Roads & transportation</h3>
-                    <div class="clues-grid">
-                        
-                        <div class="clues-item">
-                            <h4>Cars</h4>
-                            <p class="clues-item-text">No vehicle registration plates; vehicles are often specialized for harsh conditions.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Driving</h4>
-                            <p class="clues-item-text">No standard roadways; vehicles operate in research stations and bases.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Signs</h4>
-                            <p class="clues-item-text">Minimal signage; any signs present are related to research activities or safety warnings.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Stop</h4>
-                            <p class="clues-item-text">There are no stop signs in Antarctica as road traffic is minimal and primarily exists around research stations.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Bollards</h4>
-                            <p class="clues-item-text">Bollards are generally non-existent in Antarctica; any barriers are primarily temporary and related to specific research operations.</p>
-                        </div>
-                        
-                        <div class="clues-item">
-                            <h4>Poles</h4>
-                            <p class="clues-item-text">Utility poles are rare in Antarctica; most communication relies on satellite systems rather than traditional utility infrastructure.</p>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-                <div class="notes">
-                    <p class="disclaimer">This content was <a href="https://github.com/stiles/guessr-meta-generator/blob/main/scripts/fetch_world_meta_ai.py">derived</a> using OpenAI's <span class="code">gpt-4o-mini</span> model. Spot an error? <a href="mailto:mattstiles@gmail.com">Holler</a>. </p>
-                </div>
-            </section>
-            
-        </div>
+            </div>
+        </section>
+        
     </main>
-
-    <!-- Footer Section -->
     <footer>
         <p class="credits">Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/LA Times -example-page-template?tab=readme-ov-file">LA Times Baker</a>. Flag images via <a href="https://flagpedia.net/">Flagpedia</a>.</p>
     </footer>
-
-    <!-- Scripts -->
-    <script src="../static/script.js"></script>
 </body>
 </html>

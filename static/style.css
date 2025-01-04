@@ -112,6 +112,31 @@ p {
     line-height: 1.2;
 }
 
+.region-section {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.region-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--battleship-gray);
+    text-align: center;
+}
+
+.subregion-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--battleship-gray);
+    text-align: left;
+    border-bottom: 2px solid var(--gray);
+    padding-bottom: 5px;
+}
+
 @media only screen and (max-width: 500px) {
     .main-title {
         font-size: 2rem;
