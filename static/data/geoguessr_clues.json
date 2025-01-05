@@ -3401,7 +3401,7 @@
                 "language": "Persian (Farsi) is the official language, using the Persian script which is a variant of the Arabic script with additional letters."
             },
             "Environment & landscape": {
-                "coverage": "True",
+                "coverage": "False",
                 "foliage": "Common tree types include cypress, plane trees, and various fruit trees; grasses vary widely but include both wild and cultivated species.",
                 "topography": "Iran has a diverse topography, including mountainous regions like the Zagros and Alborz mountains, high plateaus, and desert areas."
             },
@@ -6173,7 +6173,7 @@
             "Environment & landscape": {
                 "environment": "The landscape includes vast deserts, mountainous regions, and occasional oases; the terrain is generally arid with sandy or rocky surfaces.",
                 "infrastructure": "Architectural styles vary from traditional mud-brick houses to modern skyscrapers; urban areas may feature Islamic architecture with domes and arches.",
-                "coverage": "True",
+                "coverage": "False",
                 "foliage": "Common tree types include date palms and acacia trees, while grasses are typically sparse due to arid conditions.",
                 "topography": "Saudi Arabia features vast desert landscapes, with mountain ranges in the west (e.g., the Sarawat Mountains) and flat areas like the Arabian Peninsula's central plateau."
             },
@@ -7458,7 +7458,7 @@
             "Environment & landscape": {
                 "environment": "Vatican City is an urban area with limited green spaces, characterized by historical architecture and cobblestone streets.",
                 "infrastructure": "The architecture is predominantly Renaissance and Baroque, with notable structures like St. Peter's Basilica and the Vatican Museums.",
-                "coverage": "True",
+                "coverage": "False",
                 "foliage": "Common tree types include cypress and olive trees, while grassy areas may feature well-maintained lawns and ornamental plants.",
                 "topography": "Vatican City is predominantly flat, with slight elevations in certain areas, notably around St. Peter's Basilica."
             },

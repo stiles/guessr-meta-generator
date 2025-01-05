@@ -80,10 +80,10 @@
     </header>
 
     <main>
-        {% for region, subregions in regions.items() %}
+        {% for region, subregions in regions.items() if region != "Antarctica"%}
         <section class="region-section">
             <h2 class="region-title">{{ region }}</h2>
-            {% for subregion, countries in subregions.items() %}
+            {% for subregion, countries in subregions.items() if subregion != "Antarctica"%}
             <h3 class="subregion-title">{{ subregion }}</h3>
             <div class="grid-container">
                 {% for country in countries if country.name != "Antarctica"%}

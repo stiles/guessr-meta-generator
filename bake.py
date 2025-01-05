@@ -18,7 +18,7 @@ import random
 env = Environment(loader=FileSystemLoader("templates"))
 
 # Load and process country data
-with open("./static/data/geoguessr_clues.json", "r") as f:
+with open("./static/data/geoguessr_coverage.json", "r") as f:
     country_data = json.load(f)
 
 # Group countries by region and sub-region
