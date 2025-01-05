@@ -1,59 +1,13 @@
-// Filter countries by name
-function filterCountries() {
-    const filterValue = document.getElementById("filter-input").value.toLowerCase();
-    const gridItems = document.querySelectorAll(".grid-item");
+// Adjust longitude to handle countries spanning the International Date Line
+function adjustLngLat(coord, bounds) {
+    let [lng, lat] = coord;
 
-    gridItems.forEach(item => {
-        const countryName = item.getAttribute("data-name").toLowerCase();
-        if (countryName.includes(filterValue)) {
-            item.style.display = "block";
-        } else {
-            item.style.display = "none";
-        }
-    });
+    // Normalize longitudes to handle the International Date Line
+    if (lng > 180) lng -= 360;
+    if (lng < -180) lng += 360;
+
+    bounds.extend([lng, lat]);
 }
-
-function filterCountries() {
-    const filterValue = document.getElementById("filter-input").value.toLowerCase();
-    const gridItems = document.querySelectorAll(".grid-item");
-    const regionSections = document.querySelectorAll(".region-section");
-
-    gridItems.forEach(item => {
-        const countryName = item.getAttribute("data-name").toLowerCase();
-        if (countryName.includes(filterValue)) {
-            item.style.display = "block";
-        } else {
-            item.style.display = "none";
-        }
-    });
-
-    // Check each region section for visible items
-    regionSections.forEach(regionSection => {
-        const subregionTitles = regionSection.querySelectorAll(".subregion-title");
-        let regionHasVisibleItems = false;
-
-        subregionTitles.forEach(subregionTitle => {
-            const gridContainer = subregionTitle.nextElementSibling; // The grid-container after the subregion title
-            const visibleItems = gridContainer.querySelectorAll(".grid-item:not([style*='display: none'])");
-            if (visibleItems.length > 0) {
-                subregionTitle.style.display = "block";
-                gridContainer.style.display = "grid";
-                regionHasVisibleItems = true;
-            } else {
-                subregionTitle.style.display = "none";
-                gridContainer.style.display = "none";
-            }
-        });
-
-        // Hide the entire region if no subregions have visible items
-        if (regionHasVisibleItems) {
-            regionSection.style.display = "block";
-        } else {
-            regionSection.style.display = "none";
-        }
-    });
-}
-
 
 document.addEventListener("DOMContentLoaded", function () {
     mapboxgl.accessToken = 'pk.eyJ1Ijoic3RpbGVzIiwiYSI6ImNsd3Rpc3V2aTAzeXUydm9sMHdoN210b2oifQ.66AJmPYxe2ixku1o7Rwdlg';
@@ -83,9 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
         container: 'country-map',
         style: 'mapbox://styles/stiles/cm5cvawys00ti01su1mxw905f',
         center: [mapLon, mapLat],
-        zoom: 5,
-        minZoom: 4,
-        maxZoom: 6
+        zoom: 4,
+        minZoom: 3,
+        maxZoom: 10,
+        worldCopyJump: true // Ensures wrapping for maps crossing the Date Line
     });
 
     map.on('load', function () {
@@ -116,14 +71,14 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(geojsonData => {
                 const bounds = new mapboxgl.LngLatBounds();
 
-                // Calculate bounds for all features
                 geojsonData.features.forEach(feature => {
                     const coordinates = feature.geometry.coordinates;
+
                     if (feature.geometry.type === 'Polygon') {
-                        coordinates[0].forEach(coord => bounds.extend(coord));
+                        coordinates[0].forEach(coord => adjustLngLat(coord, bounds));
                     } else if (feature.geometry.type === 'MultiPolygon') {
                         coordinates.forEach(polygon => {
-                            polygon[0].forEach(coord => bounds.extend(coord));
+                            polygon[0].forEach(coord => adjustLngLat(coord, bounds));
                         });
                     }
                 });
@@ -131,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Apply bounds to the map with maxZoom
                 map.fitBounds(bounds, {
                     padding: 20,
-                    maxZoom: 6 // Restrict maximum zoom
+                    maxZoom: 10
                 });
             })
             .catch(error => {
@@ -229,48 +184,50 @@ document.addEventListener("DOMContentLoaded", function () {
     // Enforce max zoom level dynamically
     map.on('zoom', () => {
         if (map.getZoom() > 10) {
-            map.setZoom(10); // Reset zoom if it exceeds maxZoom
+            map.setZoom(10);
         }
     });
 
-    // Filter countries by name
-    document.getElementById("filter-input").addEventListener("input", () => {
-        const filterValue = document.getElementById("filter-input").value.toLowerCase();
-        const gridItems = document.querySelectorAll(".grid-item");
-        const regionSections = document.querySelectorAll(".region-section");
+    // Filter countries by name (with null-check for country pages)
+    const filterInput = document.getElementById("filter-input");
+    if (filterInput) {
+        filterInput.addEventListener("input", () => {
+            const filterValue = filterInput.value.toLowerCase();
+            const gridItems = document.querySelectorAll(".grid-item");
+            const regionSections = document.querySelectorAll(".region-section");
 
-        gridItems.forEach(item => {
-            const countryName = item.getAttribute("data-name").toLowerCase();
-            if (countryName.includes(filterValue)) {
-                item.style.display = "block";
-            } else {
-                item.style.display = "none";
-            }
-        });
-
-        regionSections.forEach(regionSection => {
-            const subregionTitles = regionSection.querySelectorAll(".subregion-title");
-            let regionHasVisibleItems = false;
-
-            subregionTitles.forEach(subregionTitle => {
-                const gridContainer = subregionTitle.nextElementSibling;
-                const visibleItems = gridContainer.querySelectorAll(".grid-item:not([style*='display: none'])");
-                if (visibleItems.length > 0) {
-                    subregionTitle.style.display = "block";
-                    gridContainer.style.display = "grid";
-                    regionHasVisibleItems = true;
+            gridItems.forEach(item => {
+                const countryName = item.getAttribute("data-name").toLowerCase();
+                if (countryName.includes(filterValue)) {
+                    item.style.display = "block";
                 } else {
-                    subregionTitle.style.display = "none";
-                    gridContainer.style.display = "none";
+                    item.style.display = "none";
                 }
             });
 
-            if (regionHasVisibleItems) {
-                regionSection.style.display = "block";
-            } else {
-                regionSection.style.display = "none";
-            }
-        });
-    });
-});
+            regionSections.forEach(regionSection => {
+                const subregionTitles = regionSection.querySelectorAll(".subregion-title");
+                let regionHasVisibleItems = false;
 
+                subregionTitles.forEach(subregionTitle => {
+                    const gridContainer = subregionTitle.nextElementSibling;
+                    const visibleItems = gridContainer.querySelectorAll(".grid-item:not([style*='display: none'])");
+                    if (visibleItems.length > 0) {
+                        subregionTitle.style.display = "block";
+                        gridContainer.style.display = "grid";
+                        regionHasVisibleItems = true;
+                    } else {
+                        subregionTitle.style.display = "none";
+                        gridContainer.style.display = "none";
+                    }
+                });
+
+                if (regionHasVisibleItems) {
+                    regionSection.style.display = "block";
+                } else {
+                    regionSection.style.display = "none";
+                }
+            });
+        });
+    }
+});
