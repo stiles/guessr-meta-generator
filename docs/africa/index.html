@@ -8,23 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Mapbox CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet" />
+    <!-- Mapbox JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+
 </head>
 <body>
+    <!-- Top Navigation -->
     <div class="topnav">
         <a href="../index.html">Home</a>
-        <a href="quiz.html">Map quiz</a>
-        <a href="/flags.html">Flashcards</a>
+        <a href="../quiz.html">Map quiz</a>
+        <a href="../flags.html">Flashcards</a>
         <a href="https://github.com/stiles/guessr-meta-generator/blob/main/README.md">About</a>
     </div>
 
+    <!-- Header Section -->
     <header>
         <h1>Africa</h1>
         <p class="region-dek">Explore countries in the Africa region.</p>
     </header>
+
+    <!-- Breadcrumb navigation -->
+    <nav class="breadcrumb">
+        <a href="../index.html">Home</a> > 
+        <span>Africa</span>
+    </nav>
     
+    <!-- Main Content -->
     <main>
         
-        <section>
+        <section class="region-section">
             <h2>Sub-Saharan Africa</h2>
             <div class="grid-container">
                 
@@ -146,7 +160,7 @@
             </div>
         </section>
         
-        <section>
+        <section class="region-section">
             <h2>Northern Africa</h2>
             <div class="grid-container">
                 
@@ -169,8 +183,13 @@
         </section>
         
     </main>
+
+    <!-- Footer -->
     <footer>
         <p class="credits">Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/LA Times -example-page-template?tab=readme-ov-file">LA Times Baker</a>. Flag images via <a href="https://flagpedia.net/">Flagpedia</a>.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="../static/script.js"></script>
 </body>
 </html>

@@ -161,13 +161,19 @@ def build_subregions():
     for region, subregions in regions.items():
         for subregion, countries in subregions.items():
             output_path = os.path.join(
-                output_dir, region.lower().replace(" ", "-"),
-                subregion.lower().replace(" ", "-"), "index.html"
+                output_dir, slugify(region),
+                slugify(subregion), "index.html"
             )
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
             with open(output_path, "w", encoding="utf-8") as f:
-                f.write(template.render(subregion_name=subregion, countries=countries))
+                f.write(
+                    template.render(
+                        region_name=region,  # Pass the region name to the template
+                        subregion_name=subregion,
+                        countries=countries
+                    )
+                )
             print(f"Generated subregion page: {output_path}")
 
 @baker.command

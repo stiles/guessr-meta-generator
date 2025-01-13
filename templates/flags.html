@@ -37,7 +37,7 @@
                     <h2 class="country-name"><a href="/{{ flashcard.name | slugify }}/index.html">{{ flashcard.name }}</a></h2>
                     <img 
                         class="static-map" 
-                        src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-s+c8553d({{ flashcard.lon }},{{ flashcard.lat }})/{{ flashcard.lon }},{{ flashcard.lat }},3,0/300x200@2x?access_token=pk.eyJ1Ijoic3RpbGVzIiwiYSI6ImNsd3Rpc3V2aTAzeXUydm9sMHdoN210b2oifQ.66AJmPYxe2ixku1o7Rwdlg" 
+                        src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/pin-s+c8553d({{ flashcard.lon }},{{ flashcard.lat }})/{{ flashcard.lon }},{{ flashcard.lat }},3,0/400x400@2x?access_token=pk.eyJ1Ijoic3RpbGVzIiwiYSI6ImNsd3Rpc3V2aTAzeXUydm9sMHdoN210b2oifQ.66AJmPYxe2ixku1o7Rwdlg" 
                         alt="Map of {{ flashcard.name }}"
                     >
                 </div>
@@ -48,8 +48,8 @@
             <p id="region-hint" class="hint"></p>
             <p id="subregion-hint" class="hint"></p>
             <p id="clue-hint" class="hint"></p>
-            <button id="show-hint" class="hint-button">Need a hint?</button>  
-            <button id="next-card" class="hint-button">Next ❯</button>
+            <button id="show-hint" class="flag-button">Need a hint?</button>  
+            <button id="next-card" class="flag-button">Next ❯</button>
         </div>
     </main>
 

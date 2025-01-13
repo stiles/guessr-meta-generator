@@ -21,7 +21,16 @@
         <h1>{{ subregion_name }}</h1>
         <p class="region-dek">Explore countries in the {{ subregion_name }} subregion.</p>
     </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb">
+        <a href="../../index.html">Home</a> > 
+        <a href="../../{{ region_name | slugify }}/index.html">{{ region_name }}</a> > 
+        <span>{{ subregion_name }}</span>
+    </nav>
+    
     <main>
+        <section class="region-section">
         <div class="grid-container">
             {% for country in countries %}
             <a href="../../{{ country.name | slugify }}/index.html" class="grid-item" data-name="{{ country.name }}">
@@ -30,7 +39,9 @@
             </a>
             {% endfor %}
         </div>
+        </section>
     </main>
+
     <footer>
         <p class="credits">Made by <a href="https://mattstiles.me">Matt Stiles</a> with <a href="https://github.com/datadesk/LA Times -example-page-template?tab=readme-ov-file">LA Times Baker</a>. Flag images via <a href="https://flagpedia.net/">Flagpedia</a>.</p>
     </footer>
